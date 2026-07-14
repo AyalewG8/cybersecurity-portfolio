@@ -1,61 +1,75 @@
-# Ayalew Cherenet — Cybersecurity Portfolio
+<div align="center">
 
-Welcome to my cybersecurity and information technology portfolio. This repository documents hands-on projects in risk management, threat analysis, network security, cryptography, cloud security, and security operations.
+# Hi, I'm Ayalew Cherenet 👋
+
+### Information Technology Student · Cybersecurity Portfolio · Dallas, Texas
+
+I build practical cybersecurity projects focused on **risk management, secure architecture, vulnerability management, cloud defense, web security, and security operations**.
+
+[![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-49D6C7?style=for-the-badge&logo=githubpages&logoColor=05101A)](https://ayalewg8.github.io/cybersecurity-portfolio/)
+[![Email](https://img.shields.io/badge/Email-7CA8FF?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chereneta@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AyalewG8)
+
+</div>
+
+---
 
 ## About Me
 
-I am an Information Technology student building practical cybersecurity skills through academic projects, labs, technical documentation, and security architecture design. My goal is to begin an IT or cybersecurity career where I can solve problems, protect systems, and help users work securely.
+I am an Information Technology student at Wade College developing practical cybersecurity skills through academic projects, labs, technical documentation, and security architecture design. My career goal is to begin in IT or cybersecurity where I can **protect systems, solve problems, and help users succeed**.
 
-## Portfolio Projects
+My professional operations background has strengthened my discipline, teamwork, quality control, documentation, and ability to perform reliably in fast-paced environments.
 
-| Project | Focus Areas | Status |
+## Featured Projects
+
+| Project | What It Demonstrates | Key Technologies |
 |---|---|---|
-| [Northbridge Logistics Risk Assessment](projects/northbridge-risk-assessment/README.md) | Risk analysis, IAM, MFA, SIEM, EDR, BCP/DR | In progress |
-| [Cryptography and Network Security](projects/cryptography-network-security/README.md) | AES, RSA, PKI, hashing, MACs, secure architecture | In progress |
-| [Threat and Vulnerability Management](projects/threat-vulnerability-management/README.md) | Reconnaissance, scanning, prioritization, remediation | In progress |
-| [Web Application Security](projects/web-application-security/README.md) | OWASP risks, secure coding, testing, policy | In progress |
-| [Cloud Security Lab](projects/cloud-security/README.md) | Cloud models, IAM, logging, shared responsibility | Planned |
-| [Security Operations Lab](projects/security-operations/README.md) | SIEM, incident response, alert triage, playbooks | Planned |
+| [Northbridge Logistics Risk Assessment](projects/northbridge-risk-assessment/README.md) | Enterprise risk analysis and defense strategy | IAM, MFA, SIEM, EDR, BCP/DR |
+| [Cryptography & Secure Architecture](projects/cryptography-network-security/README.md) | Layered network security and key management | AES, RSA, ECC, PKI, HMAC, WPA3 |
+| [Threat & Vulnerability Management](projects/threat-vulnerability-management/README.md) | Discovery-to-remediation lifecycle | Nmap, CVSS, scanning, prioritization |
+| [Web Application Security](projects/web-application-security/README.md) | Secure development and application risk review | OWASP, secure SDLC, testing, policy |
+| [Cloud Security Foundations](projects/cloud-security/README.md) | Cloud governance and defensive controls | Cloud IAM, logging, encryption, backup |
+| [SOC Alert Triage & Incident Response](projects/security-operations/README.md) | Security monitoring and response workflow | SIEM, playbooks, IR, MITRE ATT&CK |
 
-## Core Skills
+## Technical Toolkit
 
-- Cybersecurity risk assessment and treatment
-- Threat, vulnerability, and control analysis
-- Identity and access management: RBAC, MFA, and AAA
-- Network defense and defense-in-depth architecture
-- Security monitoring with SIEM and SOAR concepts
-- Endpoint, email, wireless, and cloud security
-- Cryptography: AES, RSA, ECC, hashing, HMAC, and PKI
-- Incident response, business continuity, and disaster recovery
-- Technical documentation and executive presentations
+**Security:** Risk Assessment · IAM/RBAC · MFA/AAA · SIEM/SOAR · Incident Response · Vulnerability Management · Network Security · Cloud Security · Security Policy · BCP/DR
 
-## Tools and Technologies
+**Cryptography:** AES · RSA · ECC · Hashing · HMAC · Digital Signatures · PKI · Secure Key Management
 
-`Wireshark` · `Nmap` · `Metasploit` · `Maltego` · `Recon-ng` · `Linux` · `Windows` · `Python` · `Git` · `GitHub`
+**Tools & Platforms:** Wireshark · Nmap · Metasploit · Maltego · Recon-ng · Linux · Windows · Python · Git · GitHub
 
-## Repository Structure
+## Education
 
-```text
-cybersecurity-portfolio/
-├── README.md
-├── projects/
-│   ├── northbridge-risk-assessment/
-│   ├── cryptography-network-security/
-│   ├── threat-vulnerability-management/
-│   ├── web-application-security/
-│   ├── cloud-security/
-│   └── security-operations/
-├── assets/
-└── docs/
-```
+**Wade College** — Information Technology, Current  
+Coursework includes cybersecurity risk management, threat and vulnerability management, web application security, networking, databases, programming, and project management.
 
-## Professional Development
+**Le Cordon Bleu College of Culinary Arts** — Associate Degree, Culinary Arts
 
-I am continuing to expand this portfolio with sanitized lab evidence, architecture diagrams, risk registers, security policies, scripts, screenshots, and project reports.
+## Recruiter Resources
+
+The live site includes:
+
+- A responsive dark cybersecurity interface
+- Interactive project filtering and animated project cards
+- GitHub activity statistics
+- A downloadable professional resume
+- A downloadable portfolio overview
+- Six detailed cybersecurity case studies
+- Automated GitHub Pages deployment
+
+### [Explore the Live Portfolio →](https://ayalewg8.github.io/cybersecurity-portfolio/)
+
+## GitHub Activity
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=AyalewG8&show_icons=true&hide_border=true&bg_color=0d1b2a&title_color=49d6c7&text_color=a7b8ca&icon_color=7ca8ff" alt="Ayalew Cherenet GitHub statistics" />
+</div>
 
 ## Contact
 
-- GitHub: [AyalewG8](https://github.com/AyalewG8)
-- Email: chereneta@gmail.com
+- **Email:** chereneta@gmail.com
+- **GitHub:** [AyalewG8](https://github.com/AyalewG8)
+- **Portfolio:** [ayalewg8.github.io/cybersecurity-portfolio](https://ayalewg8.github.io/cybersecurity-portfolio/)
 
 > All portfolio materials are educational. Sensitive information, credentials, and unsafe exploit details are excluded or sanitized.
