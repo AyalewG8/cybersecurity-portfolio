@@ -7,7 +7,8 @@
 I build practical cybersecurity projects focused on **risk management, secure architecture, vulnerability management, cloud defense, web security, and security operations**.
 
 [![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-49D6C7?style=for-the-badge&logo=githubpages&logoColor=05101A)](https://ayalewg8.github.io/cybersecurity-portfolio/)
-[![Email](https://img.shields.io/badge/Email-7CA8FF?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chereneta@gmail.com)
+[![Interview Guide](https://img.shields.io/badge/Interview_Guide-7CA8FF?style=for-the-badge&logo=readme&logoColor=white)](docs/RECRUITER_INTERVIEW_GUIDE.md)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chereneta@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AyalewG8)
 
 </div>
@@ -48,17 +49,14 @@ Coursework includes cybersecurity risk management, threat and vulnerability mana
 
 ## Recruiter Resources
 
-The live site includes:
-
-- A responsive dark cybersecurity interface
-- Interactive project filtering and animated project cards
-- GitHub activity statistics
-- A downloadable professional resume
-- A downloadable portfolio overview
+- [Live recruiter-focused portfolio](https://ayalewg8.github.io/cybersecurity-portfolio/)
+- [Project interview and recruiter guide](docs/RECRUITER_INTERVIEW_GUIDE.md)
+- Downloadable professional resume on the live website
+- Downloadable portfolio overview on the live website
 - Six detailed cybersecurity case studies
 - Automated GitHub Pages deployment
 
-### [Explore the Live Portfolio →](https://ayalewg8.github.io/cybersecurity-portfolio/)
+The interview guide includes a challenge, approach, outcome, and interview talking points for every featured project, plus a 30-second portfolio introduction.
 
 ## GitHub Activity
 
