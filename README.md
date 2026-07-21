@@ -8,6 +8,7 @@ I build practical cybersecurity projects focused on **risk management, secure ar
 
 [![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-49D6C7?style=for-the-badge&logo=githubpages&logoColor=05101A)](https://ayalewg8.github.io/cybersecurity-portfolio/)
 [![Interview Guide](https://img.shields.io/badge/Interview_Guide-7CA8FF?style=for-the-badge&logo=readme&logoColor=white)](docs/RECRUITER_INTERVIEW_GUIDE.md)
+[![Executive Resume](https://img.shields.io/badge/Executive_Resume-C9A227?style=for-the-badge&logo=readme&logoColor=07111F)](resume/EXECUTIVE_RESUME.md)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chereneta@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AyalewG8)
 
@@ -32,6 +33,12 @@ My professional operations background has strengthened my discipline, teamwork, 
 | [Cloud Security Foundations](projects/cloud-security/README.md) | Cloud governance and defensive controls | Cloud IAM, logging, encryption, backup |
 | [SOC Alert Triage & Incident Response](projects/security-operations/README.md) | Security monitoring and response workflow | SIEM, playbooks, IR, MITRE ATT&CK |
 
+## Architecture & Branding
+
+- [Architecture diagrams for all six projects](architecture/ARCHITECTURE_DIAGRAMS.md)
+- [Cybersecurity portfolio brand guide](branding/BRAND_GUIDE.md)
+- [Redesigned executive resume source](resume/EXECUTIVE_RESUME.md)
+
 ## Technical Toolkit
 
 **Security:** Risk Assessment · IAM/RBAC · MFA/AAA · SIEM/SOAR · Incident Response · Vulnerability Management · Network Security · Cloud Security · Security Policy · BCP/DR
@@ -51,12 +58,11 @@ Coursework includes cybersecurity risk management, threat and vulnerability mana
 
 - [Live recruiter-focused portfolio](https://ayalewg8.github.io/cybersecurity-portfolio/)
 - [Project interview and recruiter guide](docs/RECRUITER_INTERVIEW_GUIDE.md)
-- Downloadable professional resume on the live website
-- Downloadable portfolio overview on the live website
+- [Executive resume](resume/EXECUTIVE_RESUME.md)
+- [Architecture diagrams](architecture/ARCHITECTURE_DIAGRAMS.md)
+- [Brand guide](branding/BRAND_GUIDE.md)
 - Six detailed cybersecurity case studies
 - Automated GitHub Pages deployment
-
-The interview guide includes a challenge, approach, outcome, and interview talking points for every featured project, plus a 30-second portfolio introduction.
 
 ## GitHub Activity
 
@@ -67,6 +73,7 @@ The interview guide includes a challenge, approach, outcome, and interview talki
 ## Contact
 
 - **Email:** chereneta@gmail.com
+- **LinkedIn:** [Ayalew Cherenet](https://www.linkedin.com/in/ayalew-cherenet-84513577)
 - **GitHub:** [AyalewG8](https://github.com/AyalewG8)
 - **Portfolio:** [ayalewg8.github.io/cybersecurity-portfolio](https://ayalewg8.github.io/cybersecurity-portfolio/)
 
