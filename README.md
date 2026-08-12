@@ -7,6 +7,7 @@
 I build practical cybersecurity projects focused on **risk management, secure architecture, vulnerability management, cloud defense, web security, and security operations**.
 
 [![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-49D6C7?style=for-the-badge&logo=githubpages&logoColor=05101A)](https://ayalewg8.github.io/cybersecurity-portfolio/)
+[![Business Card](https://img.shields.io/badge/Business_Card-49D6C7?style=for-the-badge&logo=contactlesspayment&logoColor=05101A)](assets/business-card.html)
 [![Interview Guide](https://img.shields.io/badge/Interview_Guide-7CA8FF?style=for-the-badge&logo=readme&logoColor=white)](docs/RECRUITER_INTERVIEW_GUIDE.md)
 [![Executive Resume](https://img.shields.io/badge/Executive_Resume-C9A227?style=for-the-badge&logo=readme&logoColor=07111F)](resume/EXECUTIVE_RESUME.md)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chereneta@gmail.com)
@@ -38,6 +39,7 @@ My professional operations background has strengthened my discipline, teamwork, 
 - [Architecture diagrams for all six projects](architecture/ARCHITECTURE_DIAGRAMS.md)
 - [Cybersecurity portfolio brand guide](branding/BRAND_GUIDE.md)
 - [Redesigned executive resume source](resume/EXECUTIVE_RESUME.md)
+- [Digital business card](assets/business-card.html)
 
 ## Technical Toolkit
 
@@ -57,6 +59,7 @@ Coursework includes cybersecurity risk management, threat and vulnerability mana
 ## Recruiter Resources
 
 - [Live recruiter-focused portfolio](https://ayalewg8.github.io/cybersecurity-portfolio/)
+- [Digital business card](assets/business-card.html)
 - [Project interview and recruiter guide](docs/RECRUITER_INTERVIEW_GUIDE.md)
 - [Executive resume](resume/EXECUTIVE_RESUME.md)
 - [Architecture diagrams](architecture/ARCHITECTURE_DIAGRAMS.md)
