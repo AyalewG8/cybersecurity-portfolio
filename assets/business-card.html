@@ -3,42 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ayalew Cherenet cybersecurity and IT digital business card with portfolio QR code.">
-  <title>Ayalew Cherenet | Digital Business Card</title>
+  <meta name="description" content="Ayalew Cherenet cybersecurity and IT professional business card with portfolio QR code.">
+  <title>Ayalew Cherenet | Business Card</title>
   <style>
-    :root { --bg:#07111f; --panel:#0f2237; --text:#eef6ff; --muted:#a7b8ca; --accent:#49d6c7; --accent2:#7ca8ff; }
+    :root{--navy:#07111f;--navy2:#0d1b2a;--panel:#10243a;--text:#f4f8fc;--muted:#aab9c8;--cyan:#49d6c7;--blue:#7ca8ff}
     *{box-sizing:border-box}
-    body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at top right,rgba(73,214,199,.14),transparent 30%),var(--bg);font-family:Inter,Arial,sans-serif;color:var(--text);padding:28px}
-    .wrap{display:grid;gap:22px;justify-items:center}
-    .card{width:3.5in;height:2in;border-radius:18px;background:linear-gradient(145deg,#10243a,#091624);border:1px solid rgba(255,255,255,.12);box-shadow:0 24px 70px rgba(0,0,0,.35);padding:.22in;display:grid;grid-template-columns:1fr 1.05in;gap:14px;position:relative;overflow:hidden}
-    .card:after{content:"";position:absolute;width:180px;height:180px;border:1px solid rgba(73,214,199,.18);border-radius:50%;right:-55px;top:-65px;pointer-events:none}
-    .left{position:relative;z-index:2}
-    .brand{font-weight:800;letter-spacing:.02em;font-size:15px}.mark{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:11px;background:rgba(73,214,199,.12);border:1px solid rgba(73,214,199,.4);color:var(--accent);margin-bottom:9px;font-weight:800}.title{font-size:12px;color:var(--accent);font-weight:700;margin:4px 0 7px}.meta{font-size:9.6px;color:var(--muted);line-height:1.55}.right{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;text-align:right}.tag{font-size:8px;color:#04121d;background:linear-gradient(90deg,var(--accent),#6fe5ba);padding:5px 7px;border-radius:999px;font-weight:800}.qr-wrap{display:grid;justify-items:center;gap:3px;background:white;padding:5px;border-radius:9px}.qr{width:.72in;height:.72in;display:block}.scan{font-size:7px;color:#07111f;font-weight:800;letter-spacing:.04em;text-transform:uppercase}.url{font-size:7.5px;color:var(--accent2);max-width:100px;word-break:break-word;line-height:1.25}.actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}.actions a,.actions button{border:1px solid rgba(255,255,255,.14);background:#10243a;color:white;padding:11px 16px;border-radius:10px;text-decoration:none;font-weight:700;cursor:pointer}.actions a.primary{background:linear-gradient(90deg,var(--accent),#6fe5ba);color:#04121d;border:none}.note{max-width:520px;text-align:center;color:var(--muted);font-size:12px;line-height:1.5;margin:0}
+    html,body{margin:0}
+    body{min-height:100vh;display:grid;place-items:center;padding:30px;background:radial-gradient(circle at 80% 10%,rgba(73,214,199,.14),transparent 28%),var(--navy);font-family:Arial,Helvetica,sans-serif;color:var(--text)}
+    .page{display:grid;gap:18px;justify-items:center}
+    .card{width:3.5in;height:2in;position:relative;overflow:hidden;border-radius:14px;padding:.21in .22in;background:linear-gradient(135deg,#10243a 0%,#091522 72%);border:1px solid rgba(255,255,255,.12);box-shadow:0 22px 60px rgba(0,0,0,.4);display:grid;grid-template-columns:minmax(0,1fr) .9in;gap:.14in;align-items:stretch}
+    .card:before{content:"";position:absolute;inset:auto -42px -74px auto;width:170px;height:170px;border-radius:50%;background:radial-gradient(circle,rgba(73,214,199,.14),transparent 68%)}
+    .card:after{content:"";position:absolute;left:0;bottom:0;width:100%;height:3px;background:linear-gradient(90deg,var(--cyan),var(--blue))}
+    .info,.side{position:relative;z-index:1}
+    .info{display:flex;flex-direction:column;min-width:0}
+    .identity{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+    .monogram{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;border:1px solid rgba(73,214,199,.45);background:rgba(73,214,199,.1);color:var(--cyan);font-weight:800;font-size:12px}
+    .name{font-size:15px;font-weight:800;line-height:1.05;letter-spacing:.01em}
+    .role{font-size:9.5px;line-height:1.25;color:var(--cyan);font-weight:700;margin-top:3px}
+    .contact{margin-top:auto;display:grid;gap:4px;font-size:8.2px;color:var(--muted);line-height:1.25}
+    .contact div{display:flex;align-items:center;gap:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .bullet{width:5px;height:5px;border-radius:50%;background:var(--blue);flex:0 0 5px}
+    .side{display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center}
+    .status{font-size:7.2px;line-height:1;color:#04121d;background:linear-gradient(90deg,var(--cyan),#72e2bd);padding:5px 7px;border-radius:999px;font-weight:800;white-space:nowrap}
+    .qrbox{background:#fff;border-radius:8px;padding:5px;display:grid;place-items:center}
+    .qr{width:.66in;height:.66in;display:block}
+    .scan{font-size:6.8px;font-weight:800;letter-spacing:.06em;color:#06111c;text-transform:uppercase;margin-top:2px}
+    .portfolio{font-size:7px;line-height:1.2;color:var(--blue);font-weight:700}
+    .actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.actions a,.actions button{font:700 13px Arial;border:1px solid rgba(255,255,255,.14);border-radius:9px;padding:10px 14px;background:var(--panel);color:#fff;text-decoration:none;cursor:pointer}.actions .primary{background:linear-gradient(90deg,var(--cyan),#70e1bc);color:#04121d;border:0}
+    .help{margin:0;max-width:540px;text-align:center;color:var(--muted);font-size:11px;line-height:1.45}
     @page{size:3.5in 2in;margin:0}
-    @media print{html,body{width:3.5in;height:2in}body{background:white;padding:0;margin:0}.wrap{display:block}.actions,.note{display:none}.card{width:3.5in;height:2in;box-shadow:none;border:none;border-radius:0;margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
-    @media(max-width:500px){body{padding:16px}.card{width:min(100%,3.5in);height:auto;min-height:2in;grid-template-columns:1fr 1.05in}}
+    @media print{html,body{width:3.5in;height:2in}body{display:block;width:3.5in;height:2in;padding:0;background:#fff}.page{display:block}.card{width:3.5in;height:2in;margin:0;border:0;border-radius:0;box-shadow:none;-webkit-print-color-adjust:exact;print-color-adjust:exact}.actions,.help{display:none}}
+    @media(max-width:430px){body{padding:14px}.card{width:min(100%,3.5in);height:2in}}
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <section class="card" aria-label="Ayalew Cherenet business card">
-      <div class="left">
-        <div class="mark">AC</div>
-        <div class="brand">Ayalew Cherenet</div>
-        <div class="title">Cybersecurity &amp; Information Technology</div>
-        <div class="meta">Dallas, Texas<br>chereneta@gmail.com<br>github.com/AyalewG8</div>
-      </div>
-      <div class="right">
-        <div class="tag">Open to Opportunities</div>
-        <div class="qr-wrap">
-          <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fayalewg8.github.io%2Fcybersecurity-portfolio%2F" alt="QR code linking to Ayalew Cherenet's cybersecurity portfolio">
-          <span class="scan">Scan Portfolio</span>
+  <main class="page">
+    <section class="card" aria-label="Ayalew Cherenet professional business card">
+      <div class="info">
+        <div class="identity">
+          <div class="monogram">AC</div>
+          <div>
+            <div class="name">Ayalew Cherenet</div>
+            <div class="role">Cybersecurity &amp; Information Technology</div>
+          </div>
         </div>
-        <div class="url">ayalewg8.github.io/<br>cybersecurity-portfolio</div>
+        <div class="contact">
+          <div><span class="bullet"></span>Dallas, Texas</div>
+          <div><span class="bullet"></span>chereneta@gmail.com</div>
+          <div><span class="bullet"></span>github.com/AyalewG8</div>
+          <div><span class="bullet"></span>linkedin.com/in/ayalew-cherenet-84513577</div>
+        </div>
+      </div>
+      <div class="side">
+        <div class="status">OPEN TO OPPORTUNITIES</div>
+        <div class="qrbox">
+          <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&amp;margin=0&amp;data=https%3A%2F%2Fayalewg8.github.io%2Fcybersecurity-portfolio%2F" alt="QR code linking to Ayalew Cherenet's portfolio">
+          <div class="scan">Scan Portfolio</div>
+        </div>
+        <div class="portfolio">ayalewg8.github.io/<br>cybersecurity-portfolio</div>
       </div>
     </section>
-    <div class="actions"><a class="primary" href="../index.html">Back to Portfolio</a><button onclick="window.print()">Print / Save as PDF</button></div>
-    <p class="note">The QR code opens the live cybersecurity portfolio. For printing, enable background graphics in your browser's print settings for the full dark design.</p>
-  </div>
+    <div class="actions"><a class="primary" href="../index.html">Back to Portfolio</a><button type="button" onclick="window.print()">Print / Save PDF</button></div>
+    <p class="help">Standard U.S. business-card size: 3.5 × 2 inches. For the dark design when printing, enable “Background graphics” in the print dialog.</p>
+  </main>
 </body>
 </html>
