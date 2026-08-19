@@ -1,0 +1,667 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R 25 0 R 27 0 R 29 0 R 31 0 R 33 0 R 35 0 R 37 0 R 39 0 R 41 0 R] /Count 20 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 235 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Cybersecurity Student Portfolio) Tj
+0 -30 Td
+/F1 10 Tf
+(Ayalew Cherenet) Tj
+0 -14 Td
+0 -5 Td
+(Information Technology Program) Tj
+0 -14 Td
+0 -5 Td
+(Wade College) Tj
+0 -14 Td
+0 -5 Td
+(2026) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 993 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(About Me) Tj
+0 -30 Td
+/F1 10 Tf
+(IT Student | Cybersecurity Focus) Tj
+0 -14 Td
+0 -5 Td
+(Motivated Information Technology student with a cybersecurity focus and hands-on) Tj
+0 -14 Td
+(experience in risk assessment, network security, secure architecture, cryptography, IoT) Tj
+0 -14 Td
+(systems, and e-commerce design.) Tj
+0 -14 Td
+0 -5 Td
+(Current Role: Information Technology Student, Wade College \(Graduation: September 2026\);) Tj
+0 -14 Td
+(Cook Chill Specialist, City of Dallas, TX.) Tj
+0 -14 Td
+0 -5 Td
+(Career Goal: Cybersecurity professional focused on risk assessment, vulnerability) Tj
+0 -14 Td
+(management, network security architecture, and secure systems design.) Tj
+0 -14 Td
+0 -5 Td
+(Key Skills: Risk assessment, threat analysis, vulnerability management, AES-256, RSA,) Tj
+0 -14 Td
+(ECDSA, PKI, TLS, Zero Trust, HIPAA, NIST, IAM, MFA, MQTT, Raspberry Pi/Arduino,) Tj
+0 -14 Td
+(AWS/Azure, Python, Linux, PostgreSQL, Git, Wireshark.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 392 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Table of Contents) Tj
+0 -30 Td
+/F1 10 Tf
+(About Me - 2) Tj
+0 -14 Td
+0 -5 Td
+(Northbridge Logistics Risk Assessment - 4-7) Tj
+0 -14 Td
+0 -5 Td
+(Cryptography & Network Security - 8-11) Tj
+0 -14 Td
+0 -5 Td
+(IoT Smart Home Monitoring - 12-15) Tj
+0 -14 Td
+0 -5 Td
+(E-Commerce Shopify Storefront \(Makeda\) - 16-19) Tj
+0 -14 Td
+0 -5 Td
+(Contact - 20) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 635 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Project 01 - Northbridge Logistics Risk Assessment) Tj
+0 -30 Td
+/F1 10 Tf
+(Cybersecurity Risk Assessment & Defense Strategy | May 2026) Tj
+0 -14 Td
+0 -5 Td
+(Overview: 3 offices, 150 employees, 180 endpoints, 20 servers, cloud email, public) Tj
+0 -14 Td
+(customer portal, and remote access.) Tj
+0 -14 Td
+0 -5 Td
+(Threats: phishing/spear phishing \(critical\), ransomware \(high\), insider threat \(high\),) Tj
+0 -14 Td
+(man-in-the-middle \(high\), credential stuffing & brute force \(high\).) Tj
+0 -14 Td
+0 -5 Td
+(CIA Impact: confidentiality, integrity, and availability are all at risk.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 12 0 R >>
+endobj
+12 0 obj
+<< /Length 521 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Project 01 - Design & Strategy) Tj
+0 -30 Td
+/F1 10 Tf
+(Technical Controls: NGFW with deep packet inspection, EDR, MFA, automated patch) Tj
+0 -14 Td
+(management, email security gateway with sandboxing, WPA3 with VLAN segmentation.) Tj
+0 -14 Td
+0 -5 Td
+(Administrative Controls: security awareness training, AUP, password policy, data) Tj
+0 -14 Td
+(classification, incident response plan.) Tj
+0 -14 Td
+0 -5 Td
+(Physical Controls: badge/key-card access and CCTV surveillance.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 14 0 R >>
+endobj
+14 0 obj
+<< /Length 511 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Project 01 - Implementation) Tj
+0 -30 Td
+/F1 10 Tf
+(Priority 2 \(30-60 days\): deploy EDR across all endpoints.) Tj
+0 -14 Td
+0 -5 Td
+(Priority 3 \(30-60 days\): centralized automated patch management; close known CVEs within) Tj
+0 -14 Td
+(30 days.) Tj
+0 -14 Td
+0 -5 Td
+(Priority 4 \(60-90 days\): deploy WAF and conduct external penetration testing.) Tj
+0 -14 Td
+0 -5 Td
+(Priority 5 \(60-90 days\): mandatory phishing-recognition and incident-reporting training.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 16 0 R >>
+endobj
+16 0 obj
+<< /Length 426 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Project 01 - Results & Reflection) Tj
+0 -30 Td
+/F1 10 Tf
+(Key Learning: cybersecurity requires continuous improvement across technology,) Tj
+0 -14 Td
+(processes, and people.) Tj
+0 -14 Td
+0 -5 Td
+(Defense-in-depth works through overlapping controls.) Tj
+0 -14 Td
+0 -5 Td
+(The MGM Resorts case study reinforced that social engineering can bypass technical) Tj
+0 -14 Td
+(controls.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 18 0 R >>
+endobj
+18 0 obj
+<< /Length 519 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Project 02 - Cryptography & Network Security) Tj
+0 -30 Td
+/F1 10 Tf
+(SecureHealth Systems handles PHI across internal EHR servers, cloud services, and) Tj
+0 -14 Td
+(partner hospital connections.) Tj
+0 -14 Td
+0 -5 Td
+(Attack vectors: eavesdropping, MITM, ransomware, insider threats, and DoS.) Tj
+0 -14 Td
+0 -5 Td
+(Objectives: confidentiality with AES-256, integrity with HMAC and digital signatures,) Tj
+0 -14 Td
+(authenticity and non-repudiation for clinical decisions.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 20 0 R >>
+endobj
+20 0 obj
+<< /Length 615 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Project 02 - Design & Strategy) Tj
+0 -30 Td
+/F1 10 Tf
+(AES-256-GCM for data in transit.) Tj
+0 -14 Td
+0 -5 Td
+(RSA-2048 for legacy compatibility; ECDSA P-256 for digital signatures; ECDH for) Tj
+0 -14 Td
+(ephemeral session keys.) Tj
+0 -14 Td
+0 -5 Td
+(SHA-256 for signatures/HMAC; SHA-3-256 for root CA fingerprinting.) Tj
+0 -14 Td
+0 -5 Td
+(HMAC-SHA-256 on API payloads and database records; ECDSA signatures on clinical records.) Tj
+0 -14 Td
+0 -5 Td
+(Three-tier PKI with offline Root CA and online Intermediate CA; private keys stored in) Tj
+0 -14 Td
+(FIPS 140-3 HSM.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+21 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 22 0 R >>
+endobj
+22 0 obj
+<< /Length 598 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Project 02 - Implementation) Tj
+0 -30 Td
+/F1 10 Tf
+(Key lifecycle: HSM-based generation, X.509 v3 distribution, HSM storage, 90-day) Tj
+0 -14 Td
+(rotation, CRL and OCSP stapling.) Tj
+0 -14 Td
+0 -5 Td
+(DMZ: patient portal with WAF and TLS 1.3; no direct database access.) Tj
+0 -14 Td
+0 -5 Td
+(Internal: EHR servers, AES-256-CBC at rest + HMAC-SHA-256; mutual TLS between services.) Tj
+0 -14 Td
+0 -5 Td
+(Cloud: client-side AES-256-GCM before upload.) Tj
+0 -14 Td
+0 -5 Td
+(Partners: site-to-site IPsec VPN with IKEv2; mutual TLS for HL7 FHIR API calls.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 24 0 R >>
+endobj
+24 0 obj
+<< /Length 371 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Project 02 - Results & Reflection) Tj
+0 -30 Td
+/F1 10 Tf
+(HIPAA verification: PHI encrypted in transit and at rest, audit controls, integrity) Tj
+0 -14 Td
+(controls.) Tj
+0 -14 Td
+0 -5 Td
+(Key Insight: strong cryptography depends on disciplined key generation, distribution,) Tj
+0 -14 Td
+(storage, rotation, and revocation.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+25 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 26 0 R >>
+endobj
+26 0 obj
+<< /Length 567 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Project 03 - IoT Smart Home Monitoring) Tj
+0 -30 Td
+/F1 10 Tf
+(Objective: prototype system using temperature, humidity, and air-quality sensors with) Tj
+0 -14 Td
+(Raspberry Pi/Arduino and cloud dashboard.) Tj
+0 -14 Td
+0 -5 Td
+(Challenge: integrate heterogeneous sensors, transmit reliably over wireless networks,) Tj
+0 -14 Td
+(and provide real-time and historical visualization.) Tj
+0 -14 Td
+0 -5 Td
+(Targets: 95% sensor accuracy, 10-second refresh, 95%+ uptime, alerts through a) Tj
+0 -14 Td
+(user-friendly interface.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+27 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 28 0 R >>
+endobj
+28 0 obj
+<< /Length 446 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Project 03 - Design & Strategy) Tj
+0 -30 Td
+/F1 10 Tf
+(MQTT for lightweight publish-subscribe communication.) Tj
+0 -14 Td
+0 -5 Td
+(Cloud broker: AWS IoT Core or Blynk; time-series storage for historical analysis.) Tj
+0 -14 Td
+0 -5 Td
+(Dashboard: real-time charts/gauges and threshold alerts by email/SMS/push.) Tj
+0 -14 Td
+0 -5 Td
+(Security: MQTT over SSL/TLS, API tokens, encrypted cloud storage.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+29 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 30 0 R >>
+endobj
+30 0 obj
+<< /Length 506 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Project 03 - Implementation) Tj
+0 -30 Td
+/F1 10 Tf
+(Phase 1: planning, procurement, GPIO wiring, Raspberry Pi OS, Python libraries.) Tj
+0 -14 Td
+0 -5 Td
+(Phase 2: Python firmware, MQTT publishing, cloud setup, connectivity testing.) Tj
+0 -14 Td
+0 -5 Td
+(Phase 3: dashboard, calibration, alert rules, data persistence.) Tj
+0 -14 Td
+0 -5 Td
+(Phase 4: 7-day reliability test, accuracy verification, Wi-Fi dropout recovery,) Tj
+0 -14 Td
+(dashboard load testing.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+31 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 32 0 R >>
+endobj
+32 0 obj
+<< /Length 502 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Project 03 - Results & Reflection) Tj
+0 -30 Td
+/F1 10 Tf
+(Deliverables: functional prototype, 10-second collection, 95%+ accuracy, 30-day) Tj
+0 -14 Td
+(historical trends, alerts, technical documentation.) Tj
+0 -14 Td
+0 -5 Td
+(Key Learnings: MQTT is efficient; calibration is essential; cloud dashboards and network) Tj
+0 -14 Td
+(resilience matter.) Tj
+0 -14 Td
+0 -5 Td
+(Future: early procurement, secondary Wi-Fi AP, offline buffering for cloud outages.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+33 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 34 0 R >>
+endobj
+34 0 obj
+<< /Length 500 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Project 04 - E-Commerce Storefront: Makeda) Tj
+0 -30 Td
+/F1 10 Tf
+(Opportunity: authentic Ethiopian and African fashion is underrepresented in mainstream) Tj
+0 -14 Td
+(e-commerce.) Tj
+0 -14 Td
+0 -5 Td
+(Challenge: establish cultural authenticity and brand trust with no initial brand) Tj
+0 -14 Td
+(recognition.) Tj
+0 -14 Td
+0 -5 Td
+(Scope: Shopify storefront, product catalog, SEO strategy, cohesive brand identity,) Tj
+0 -14 Td
+(payments and shipping.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+35 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 36 0 R >>
+endobj
+36 0 obj
+<< /Length 498 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Project 04 - Design & Strategy) Tj
+0 -30 Td
+/F1 10 Tf
+(Store architecture: homepage, curated collections, About Us, Contact, mobile-first) Tj
+0 -14 Td
+(design.) Tj
+0 -14 Td
+0 -5 Td
+(Brand: Makeda - The Queen of Sheba; elegant minimalism with culturally inspired accents.) Tj
+0 -14 Td
+0 -5 Td
+(SEO keywords: authentic Ethiopian fashion, African clothing online, traditional habesha) Tj
+0 -14 Td
+(clothing, diaspora style, sustainable African fashion.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+37 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 38 0 R >>
+endobj
+38 0 obj
+<< /Length 523 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Project 04 - Implementation) Tj
+0 -30 Td
+/F1 10 Tf
+(Platform: Shopify with Horizon theme.) Tj
+0 -14 Td
+0 -5 Td
+(Store URL: queen-of-sheba.myshopify.com) Tj
+0 -14 Td
+0 -5 Td
+(Catalog: 15+ SKUs across traditional and contemporary African fashion.) Tj
+0 -14 Td
+0 -5 Td
+(Payments/logistics: Shopify Payments, Stripe/PayPal, diaspora shipping zones,) Tj
+0 -14 Td
+(GDPR-conscious handling.) Tj
+0 -14 Td
+0 -5 Td
+(Apps: Judge.me reviews, newsletter capture, abandoned-cart recovery.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+39 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 40 0 R >>
+endobj
+40 0 obj
+<< /Length 567 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Project 04 - Results & Reflection) Tj
+0 -30 Td
+/F1 10 Tf
+(Strengths: unique niche and strong cultural identity.) Tj
+0 -14 Td
+0 -5 Td
+(Weaknesses: new store and limited launch catalog.) Tj
+0 -14 Td
+0 -5 Td
+(Opportunities: growing diaspora demand and social-media reach.) Tj
+0 -14 Td
+0 -5 Td
+(Threats: larger competitors and rising international shipping costs.) Tj
+0 -14 Td
+0 -5 Td
+(Strategic Insight: success connects authentic storytelling, mobile-first UX, and) Tj
+0 -14 Td
+(discoverability through SEO/social media.) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+41 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 43 0 R >> >> /Contents 42 0 R >>
+endobj
+42 0 obj
+<< /Length 392 >>
+stream
+BT
+/F1 20 Tf
+54 740 Td
+(Get in Touch) Tj
+0 -30 Td
+/F1 10 Tf
+(Ayalew Cherenet) Tj
+0 -14 Td
+0 -5 Td
+(Information Technology | Cybersecurity) Tj
+0 -14 Td
+0 -5 Td
+(Wade College IT Portfolio | 2026) Tj
+0 -14 Td
+0 -5 Td
+(Email: chereneta@gmail.com) Tj
+0 -14 Td
+0 -5 Td
+(GitHub: github.com/AyalewG8) Tj
+0 -14 Td
+0 -5 Td
+(Portfolio: ayalewg8.github.io/cybersecurity-portfolio) Tj
+0 -14 Td
+0 -5 Td
+ET
+endstream
+endobj
+43 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 44
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000246 00000 n 
+0000000373 00000 n 
+0000000658 00000 n 
+0000000785 00000 n 
+0000001828 00000 n 
+0000001955 00000 n 
+0000002397 00000 n 
+0000002525 00000 n 
+0000003211 00000 n 
+0000003340 00000 n 
+0000003912 00000 n 
+0000004041 00000 n 
+0000004603 00000 n 
+0000004732 00000 n 
+0000005209 00000 n 
+0000005338 00000 n 
+0000005908 00000 n 
+0000006037 00000 n 
+0000006703 00000 n 
+0000006832 00000 n 
+0000007481 00000 n 
+0000007610 00000 n 
+0000008032 00000 n 
+0000008161 00000 n 
+0000008779 00000 n 
+0000008908 00000 n 
+0000009405 00000 n 
+0000009534 00000 n 
+0000010091 00000 n 
+0000010220 00000 n 
+0000010773 00000 n 
+0000010902 00000 n 
+0000011453 00000 n 
+0000011582 00000 n 
+0000012131 00000 n 
+0000012260 00000 n 
+0000012834 00000 n 
+0000012963 00000 n 
+0000013581 00000 n 
+0000013710 00000 n 
+0000014153 00000 n 
+trailer
+<< /Size 44 /Root 1 0 R >>
+startxref
+14224
+%%EOF
