@@ -1,58 +1,68 @@
-# Web Application Security
+# RetailHub OWASP Web Assessment
 
-## Project Summary
+## Public E-Commerce Application — OWASP Top 10 Review
 
-This project examines common web application risks and the secure design, policy, testing, and remediation practices used to reduce them. The work follows an authorized, risk-based assessment approach rather than testing public systems.
+### Objective
+Assess a fictional public e-commerce application against the **OWASP Top 10** and produce a prioritized remediation plan based on exploitability, business impact, and remediation urgency.
 
-## Objectives
+### My Role
+Performed a structured application-security review, translated findings into business risk, and organized a remediation roadmap for identity, authorization, input handling, encryption, logging, and API protections.
 
-- Map application assets, users, data flows, and trust boundaries
-- Identify authentication, authorization, input-handling, and configuration risks
-- Connect technical findings to business impact
-- Recommend secure development and operational controls
-- Verify remediation with repeatable testing
+## Key Findings
 
-## Focus Areas
+### Critical
+- **Broken access control** — unauthorized actions could be performed
+- **Injection and XSS** — risk of data manipulation and account compromise
+- **No MFA** — elevated account-takeover risk
 
-- Authentication, MFA, password storage, and session security
-- Authorization, least privilege, and access-control testing
-- Input validation, parameterized queries, and output encoding
-- Injection and cross-site scripting prevention
-- Secure configuration, secrets handling, and dependency management
-- TLS, security headers, logging, monitoring, and incident response
-- Enterprise, issue-specific, and system-specific security policies
+### High / Medium
+- Weak encryption choices
+- Missing or insufficient logging
+- Missing API rate limits
 
-## Assessment Method
+## Assessment Flow
 
-1. Define scope and authorization
-2. Create a simple application and data-flow model
-3. Identify assets, entry points, trust boundaries, and likely threats
-4. Review security requirements, code concepts, and configurations
-5. Test controls in an isolated lab
-6. Rank findings by likelihood and business impact
-7. Recommend fixes and verify remediation
+```text
+Browser / User Input
+        |
+       WAF
+        |
+    RetailHub App
+   /      |       \
+Access  Injection  No MFA
+   \      |       /
+ Crypto  Logging  API Limits
+        |
+Prioritized Remediation
+```
 
-## Defensive Control Examples
+## Priority Remediation Actions
 
-| Risk | Primary defensive controls |
-|---|---|
-| Injection | Parameterized queries, validation, least-privileged database accounts |
-| Cross-site scripting | Context-aware output encoding, CSP, safe templating |
-| Broken access control | Server-side authorization checks and deny-by-default rules |
-| Session theft | Secure, HttpOnly, SameSite cookies and session rotation |
-| Vulnerable dependencies | Software inventory, scanning, patching, and upgrade planning |
-| Security misconfiguration | Hardened baselines, automated checks, and change control |
+1. **Enforce MFA and secure sessions**
+2. **Correct authorization logic and least privilege**
+3. **Validate input and prevent injection/XSS**
+4. **Improve encryption, logging, and API controls**
 
-## Deliverables
+## Recommended Practices
+- Secure coding standards
+- Server-side authorization checks
+- Parameterized queries and input validation
+- Context-aware output encoding
+- WAF protections
+- OAuth 2.0 where appropriate
+- SAST / DAST in the SDLC
+- Centralized security logging / SIEM concepts
+- API rate limiting
 
-- Application threat model
-- Security testing checklist
-- Findings and remediation report
-- Secure development recommendations
-- Supporting security-policy documentation
+## Outcome
+Delivered a risk register and remediation roadmap focused on **MFA, authorization, secure coding, encryption, logging, and API controls**.
 
-## Skills Demonstrated
+## Key Learning
+The most urgent web-security issues are those that directly affect **unauthorized access, input handling, identity protection, and sensitive data**. Effective application security requires prioritization rather than treating every finding equally.
 
-Web security · Threat modeling · Secure coding concepts · Access control · Policy development · Risk communication · Remediation verification
+## Career Relevance
+Web applications are a frequent attack surface. Identifying, prioritizing, and communicating these weaknesses supports **blue-team, SOC, vulnerability-management, and application-security analyst** responsibilities.
 
-> Testing examples are educational, sanitized, and restricted to authorized lab environments.
+**Skills:** OWASP Top 10 · Broken Access Control · Injection · XSS · MFA · Secure Sessions · SAST/DAST · WAF · OAuth 2.0 · Logging · API Security · Risk Prioritization
+
+> Educational, sanitized assessment of a fictional application. No public systems were tested.
