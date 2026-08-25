@@ -1,15 +1,12 @@
 <div align="center">
 
-# Hi, I'm Ayalew Cherenet 👋
+# Ayalew Cherenet
 
-### Information Technology Student · Cybersecurity Portfolio · Dallas, Texas
+### IT / Cybersecurity Student · Aspiring SOC Analyst · Dallas, Texas
 
-I build practical cybersecurity projects focused on **risk management, secure architecture, vulnerability management, cloud defense, web security, and security operations**.
+**Security monitoring · Incident response · Vulnerability management · Risk-based defense**
 
 [![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-49D6C7?style=for-the-badge&logo=githubpages&logoColor=05101A)](https://ayalewg8.github.io/cybersecurity-portfolio/)
-[![Business Card](https://img.shields.io/badge/Business_Card-49D6C7?style=for-the-badge&logo=contactlesspayment&logoColor=05101A)](assets/business-card.html)
-[![Interview Guide](https://img.shields.io/badge/Interview_Guide-7CA8FF?style=for-the-badge&logo=readme&logoColor=white)](docs/RECRUITER_INTERVIEW_GUIDE.md)
-[![Executive Resume](https://img.shields.io/badge/Executive_Resume-C9A227?style=for-the-badge&logo=readme&logoColor=07111F)](resume/EXECUTIVE_RESUME.md)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chereneta@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AyalewG8)
 
@@ -17,67 +14,82 @@ I build practical cybersecurity projects focused on **risk management, secure ar
 
 ---
 
-## About Me
+## Professional Profile
 
-I am an Information Technology student at Wade College developing practical cybersecurity skills through academic projects, labs, technical documentation, and security architecture design. My career goal is to begin in IT or cybersecurity where I can **protect systems, solve problems, and help users succeed**.
+I am an IT and Cybersecurity student at Wade College preparing for a **Security Operations Center (SOC) Analyst** role in the Dallas–Fort Worth area. My portfolio demonstrates applied academic work in risk assessment, secure systems design, databases, web security, threat and vulnerability management, network security, and IoT.
 
-My professional operations background has strengthened my discipline, teamwork, quality control, documentation, and ability to perform reliably in fast-paced environments.
+My work focuses on analyzing threats and business impact, selecting practical controls, documenting recommendations clearly, and connecting technical security decisions to operational and business needs.
 
-## Featured Projects
+**Expected Graduation:** September 2026
 
-| Project | What It Demonstrates | Key Technologies |
-|---|---|---|
-| [Northbridge Logistics Risk Assessment](projects/northbridge-risk-assessment/README.md) | Enterprise risk analysis and defense strategy | IAM, MFA, SIEM, EDR, BCP/DR |
-| [Cryptography & Secure Architecture](projects/cryptography-network-security/README.md) | Layered network security and key management | AES, RSA, ECC, PKI, HMAC, WPA3 |
-| [Threat & Vulnerability Management](projects/threat-vulnerability-management/README.md) | Discovery-to-remediation lifecycle | Nmap, CVSS, scanning, prioritization |
-| [Web Application Security](projects/web-application-security/README.md) | Secure development and application risk review | OWASP, secure SDLC, testing, policy |
-| [Cloud Security Foundations](projects/cloud-security/README.md) | Cloud governance and defensive controls | Cloud IAM, logging, encryption, backup |
-| [SOC Alert Triage & Incident Response](projects/security-operations/README.md) | Security monitoring and response workflow | SIEM, playbooks, IR, MITRE ATT&CK |
+## Featured Portfolio Projects
 
-## Architecture & Branding
+These six projects match my current portfolio presentation and 29-page submission.
 
-- [Architecture diagrams for all six projects](architecture/ARCHITECTURE_DIAGRAMS.md)
-- [Cybersecurity portfolio brand guide](branding/BRAND_GUIDE.md)
-- [Redesigned executive resume source](resume/EXECUTIVE_RESUME.md)
-- [Digital business card](assets/business-card.html)
+| # | Project | What It Demonstrates | Key Concepts / Technologies |
+|---|---|---|---|
+| 01 | [Northbridge Logistics Risk Assessment](projects/northbridge-risk-assessment/README.md) | Cybersecurity risk assessment and defense strategy for a 150-employee, three-office logistics company | NIST SP 800-30 concepts, CVSS, MITRE ATT&CK awareness, MFA, EDR, NGFW, SIEM, patching, BCP/DR |
+| 02 | [SecureHealth Cryptography & Network Security](projects/cryptography-network-security/README.md) | Protection of PHI across EHR, cloud, and partner connections | TLS 1.3, AES-256-GCM, ECDSA, ECDH, SHA-256, HMAC, PKI, HSM, IPsec VPN, HIPAA/HITECH |
+| 03 | [Healthcare Clinic Secure Database](projects/healthcare-secure-database/README.md) | Secure normalized PostgreSQL healthcare data model | PostgreSQL, SQL, RBAC, least privilege, MFA concepts, encryption at rest, TLS, audit logging, backup/DR |
+| 04 | [RetailHub OWASP Web Assessment](projects/web-application-security/README.md) | OWASP Top 10 review and prioritized remediation plan for a public e-commerce application | Broken access control, injection, XSS, MFA, WAF, OAuth 2.0, SAST/DAST, secure SDLC |
+| 05 | [ABC Logistics Vulnerability Management](projects/threat-vulnerability-management/README.md) | Repeatable discovery-to-reporting vulnerability management lifecycle | Discover, prioritize, remediate, verify, report, CVSS, exploitability, asset criticality, remediation tracking |
+| 06 | [IoT Smart Home Monitoring System](projects/iot-smart-home-monitoring/README.md) | Sensor-based monitoring with secure telemetry and cloud dashboards | Raspberry Pi 4B, DHT22, MQ135, MQTT over TLS, cloud broker, time-series data, alerts, offline buffering |
+
+## Presentation Priority Projects
+
+For my portfolio presentation, the most SOC-relevant projects are:
+
+1. **Northbridge Logistics Risk Assessment** — translates business risk into a 90-day defense-in-depth roadmap.
+2. **RetailHub OWASP Web Assessment** — identifies application risks and prioritizes remediation.
+3. **ABC Logistics Vulnerability Management** — demonstrates the repeatable analyst workflow of discover → prioritize → remediate → verify → report.
+
+## Core Frameworks & Security Concepts
+
+- NIST risk concepts
+- CIA triad
+- OWASP Top 10
+- CVSS scoring
+- MITRE ATT&CK awareness
+- Defense in depth
+- Least privilege and RBAC
+- Incident response and security operations concepts
 
 ## Technical Toolkit
 
-**Security:** Risk Assessment · IAM/RBAC · MFA/AAA · SIEM/SOAR · Incident Response · Vulnerability Management · Network Security · Cloud Security · Security Policy · BCP/DR
+**Security:** Risk Assessment · Threat & Vulnerability Management · Network Security · Web Application Security · Incident Response · SIEM concepts · IAM/RBAC · MFA · Security Documentation
 
-**Cryptography:** AES · RSA · ECC · Hashing · HMAC · Digital Signatures · PKI · Secure Key Management
+**Cryptography:** AES · ECDSA · ECDH · SHA-256 · HMAC · PKI · TLS · Secure Key Management
 
-**Tools & Platforms:** Wireshark · Nmap · Metasploit · Maltego · Recon-ng · Linux · Windows · Python · Git · GitHub
+**Tools & Platforms:** Git / GitHub · Wireshark · Nmap · Metasploit · PostgreSQL · SQL · Python · Linux · Raspberry Pi · AWS IoT concepts
 
-## Education
+## Certifications & Career Development
 
-**Wade College** — Information Technology, Current  
-Coursework includes cybersecurity risk management, threat and vulnerability management, web application security, networking, databases, programming, and project management.
+**Completed / In Progress**
+- Google Foundations of Cybersecurity Certificate
+- Google Cybersecurity Professional Certificate — in progress
+- Associate of Science in Information Technology / Cybersecurity — expected September 2026
 
-**Le Cordon Bleu College of Culinary Arts** — Associate Degree, Culinary Arts
+**Next Milestones**
+- CompTIA Security+
+- Expand GitHub portfolio artifacts
+- Continue building SOC-focused projects and documentation
 
-## Recruiter Resources
+## Additional Projects
 
-- [Live recruiter-focused portfolio](https://ayalewg8.github.io/cybersecurity-portfolio/)
-- [Digital business card](assets/business-card.html)
-- [Project interview and recruiter guide](docs/RECRUITER_INTERVIEW_GUIDE.md)
-- [Executive resume](resume/EXECUTIVE_RESUME.md)
-- [Architecture diagrams](architecture/ARCHITECTURE_DIAGRAMS.md)
-- [Brand guide](branding/BRAND_GUIDE.md)
-- Six detailed cybersecurity case studies
-- Automated GitHub Pages deployment
+The following projects remain available as additional evidence of cybersecurity growth, but they are not part of the six-project presentation sequence:
 
-## GitHub Activity
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AyalewG8&show_icons=true&hide_border=true&bg_color=0d1b2a&title_color=49d6c7&text_color=a7b8ca&icon_color=7ca8ff" alt="Ayalew Cherenet GitHub statistics" />
-</div>
+- [SOC Alert Triage & Incident Response](projects/security-operations/README.md)
+- [Cloud Security Foundations](projects/cloud-security/README.md)
+- [Enterprise Security Risk Management](projects/ISEC1373-enterprise-security-risk-management/)
 
 ## Contact
 
 - **Email:** chereneta@gmail.com
-- **LinkedIn:** [Ayalew Cherenet](https://www.linkedin.com/in/ayalew-cherenet-84513577)
 - **GitHub:** [AyalewG8](https://github.com/AyalewG8)
 - **Portfolio:** [ayalewg8.github.io/cybersecurity-portfolio](https://ayalewg8.github.io/cybersecurity-portfolio/)
+- **LinkedIn:** https://linkedin.com/in/ayalewcherenet
+- **Location:** Dallas, Texas
+
+> **Protect systems · Solve problems · Keep learning**
 
 > All portfolio materials are educational. Sensitive information, credentials, and unsafe exploit details are excluded or sanitized.
