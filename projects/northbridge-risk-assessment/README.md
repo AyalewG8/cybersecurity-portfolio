@@ -1,138 +1,91 @@
-# Northbridge Logistics — Cybersecurity Risk Assessment
+# Northbridge Logistics Risk Assessment
 
-## Project Overview
+## Cybersecurity Risk Assessment & Defense Strategy
 
-Northbridge Logistics is a fictional logistics company with approximately 150 employees across three offices. Its environment includes on-premises systems, cloud services, remote users, email, endpoints, and business-critical operational data. The project evaluates indicators of compromise involving phishing, unauthorized logins, and malware, then proposes a practical defense strategy.
+### Objective
+Identify business risks and build a practical security roadmap for a fictional logistics company with **150 employees, three offices, 180 endpoints, and 20 servers**.
 
-## Business Problem
-
-The organization needs to reduce cyber risk without interrupting daily logistics operations. Weak access controls, inconsistent monitoring, limited endpoint visibility, and gaps in recovery readiness could allow a routine phishing event to become a major business disruption.
-
-## Objectives
-
-- Identify critical assets, threats, vulnerabilities, and business impacts.
-- Prioritize risk using likelihood and impact.
-- Recommend administrative, technical, and physical controls.
-- Design a defense-in-depth security architecture.
-- Improve detection, response, continuity, and recovery.
-- Communicate technical findings to leadership in clear business language.
-
-## Scope
-
-### In Scope
-
-- User identities and privileged accounts
-- Email and collaboration systems
-- Employee endpoints
-- Local and wide-area networks
-- Cloud applications and storage
-- Security monitoring and logging
-- Backup, continuity, and disaster recovery
-
-### Out of Scope
-
-- Offensive exploitation of production systems
-- Collection of real employee credentials
-- Destructive testing
-- Vendor contract negotiation
-
-## Risk Assessment Method
-
-1. **Asset identification** — Determine systems, data, services, and processes that support the business.
-2. **Threat identification** — Review phishing, credential theft, malware, insider misuse, cloud misconfiguration, and service interruption.
-3. **Vulnerability analysis** — Identify weaknesses in authentication, patching, monitoring, segmentation, user awareness, and recovery.
-4. **Risk evaluation** — Rate likelihood and impact using a qualitative scale.
-5. **Risk treatment** — Select mitigation, transfer, avoidance, or acceptance based on business needs.
-6. **Continuous monitoring** — Reassess risk as systems, threats, and controls change.
+### My Role
+Assessed assets, threats, vulnerabilities, and business impact using **NIST SP 800-30 concepts** and **CVSS prioritization**. Mapped key threats to **MITRE ATT&CK awareness** and produced a **90-day phased control roadmap** with clear sequencing and ownership.
 
 ## Priority Risks
 
-| Risk | Likelihood | Impact | Priority | Recommended Treatment |
-|---|---:|---:|---:|---|
-| Phishing leads to account compromise | High | High | Critical | MFA, secure email gateway, awareness training, conditional access |
-| Malware spreads from an endpoint | Medium-High | High | High | EDR, segmentation, patching, application control, tested backups |
-| Privileged account misuse | Medium | High | High | RBAC, PAM, separate admin accounts, logging, access reviews |
-| Cloud data exposure | Medium | High | High | Least privilege, encryption, configuration reviews, DLP |
-| Business interruption after ransomware | Medium | Critical | Critical | Immutable backups, BCP/DR, incident exercises, recovery testing |
+| Risk | Priority | Why It Matters |
+|---|---|---|
+| Phishing / spear phishing | Critical | Credential theft, malware delivery, account compromise |
+| Ransomware | High | Operational disruption and recovery impact |
+| Insider threat | High | Misuse of broad employee or privileged access |
+| MITM / Wi-Fi exposure | High | Interception of traffic and session compromise |
+| Credential stuffing / brute force | High | Risk to external portal and VPN access |
 
-## Recommended Security Controls
+## Business & CIA Impact
+- **Confidentiality:** exposure of customer and employee data
+- **Integrity:** unauthorized modification of systems or records
+- **Availability:** ransomware or outages disrupting logistics operations
 
-### Identity and Access Management
+## Defense-in-Depth Strategy
 
-- Enforce multi-factor authentication for employees, administrators, and remote access.
-- Apply role-based access control and least privilege.
-- Use separate administrative accounts for privileged work.
-- Review access when employees change roles or leave the company.
-- Add conditional-access rules for risky sign-ins and unmanaged devices.
+### Technical Controls
+- Next-generation firewall (NGFW)
+- Endpoint detection and response (EDR)
+- Multi-factor authentication (MFA)
+- Automated patch management
+- Secure email gateway
+- WPA3 and VLAN segmentation
+- WAF for the public-facing portal
+- SIEM / SOAR concepts
+- Backup and disaster recovery controls
 
-### Email Security
+### Administrative Controls
+- Security awareness training
+- Acceptable use policy
+- Password policy
+- Data classification
+- Incident response plan
 
-- Deploy a secure email gateway with attachment and URL analysis.
-- Configure SPF, DKIM, and DMARC.
-- Provide recurring phishing-awareness exercises.
-- Add an easy method for employees to report suspicious messages.
+### Physical Controls
+- Badge / key-card access
+- CCTV with 90-day retention
 
-### Endpoint and Network Defense
-
-- Deploy endpoint detection and response across supported systems.
-- Establish patching and vulnerability-remediation targets.
-- Segment users, servers, management systems, and sensitive services.
-- Restrict unnecessary ports, protocols, and administrative pathways.
-- Monitor DNS, authentication, endpoint, firewall, and cloud logs.
-
-### Security Operations
-
-- Centralize logs in a SIEM.
-- Develop alert rules for impossible travel, repeated login failures, privilege changes, malware detections, and unusual data transfer.
-- Use documented response playbooks for phishing, compromised accounts, malware, and ransomware.
-- Track lessons learned and control improvements after incidents.
-
-### Resilience
-
-- Maintain offline or immutable backups.
-- Define recovery time and recovery point objectives.
-- Test restoration procedures regularly.
-- Document crisis communications and leadership responsibilities.
-- Conduct tabletop exercises involving IT, security, operations, and management.
-
-## Target Architecture
+## Recommended Architecture
 
 ```text
 Internet
    |
-[DNS / Email Security / Web Filtering]
+ NGFW
    |
-[Next-Generation Firewall]
-   |
-+------------------ Segmented Network ------------------+
-| Users | Servers | Management | Guest | Security Tools |
-+--------------------------------------------------------+
-   |          |          |               |
- [EDR]      [Backup]   [Privileged]     [SIEM/SOAR]
-   |          |        [Access Mgmt]         |
-   +----------+-------------+----------------+
-                        |
-                  Incident Response
++-------------------------------+
+| DMZ / WAF | Internal | VPN    |
++-------------------------------+
+      |          |        |
+   Users      Servers    Admin
+ MFA + EDR   Patch+EDR  PAM+MFA
+      \          |        /
+       \---------+-------/
+             SIEM / SOAR
+                 |
+           Backups / DR
 ```
 
-## Deliverables
+## 90-Day Implementation Roadmap
 
-- Executive summary
-- Asset and risk register
-- Threat and vulnerability analysis
-- Risk treatment plan
-- Defense-in-depth architecture diagram
-- Identity and access strategy
-- Incident response recommendations
-- Business continuity and disaster recovery recommendations
-- Final presentation
+| Timeframe | Priority Action |
+|---|---|
+| 0–30 days | Enforce MFA |
+| 30–60 days | Deploy EDR |
+| 30–60 days | Improve patch management |
+| 60–90 days | Add WAF and penetration testing |
+| 60–90 days | Expand security awareness training |
 
-## Skills Demonstrated
+## Outcome
+Converted business risk into a practical defense-in-depth roadmap that strengthens **prevention, detection, response, and recovery**.
 
-`Risk Assessment` · `IAM` · `MFA` · `RBAC` · `SIEM` · `EDR` · `Email Security` · `Network Segmentation` · `Incident Response` · `BCP/DR` · `Executive Communication`
+## Key Learning
+Security is not a single product. Effective protection requires continuous improvement across **technology, processes, and people**. Social engineering can bypass technical controls when user awareness is weak.
 
-## Key Takeaway
+## Career Relevance
+This project demonstrates the ability to translate a risk assessment into an action plan that leadership can understand and operations can execute — directly relevant to entry-level **SOC Analyst, Cybersecurity Analyst, Blue Team, and risk-support roles**.
 
-Cybersecurity controls are most effective when they work together. Identity protection, endpoint defense, segmentation, monitoring, user awareness, and tested recovery create multiple opportunities to prevent, detect, contain, and recover from an attack.
+**Skills:** Risk Assessment · NIST · CVSS · MITRE ATT&CK · MFA · EDR · Network Segmentation · SIEM/SOAR · Incident Response · BCP/DR
 
-> This project is educational and uses a fictional organization. No real credentials, private data, or production systems were used.
+> Educational project using a fictional organization. No real credentials, private data, or production systems were used.
