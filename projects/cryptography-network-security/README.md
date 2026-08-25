@@ -1,76 +1,87 @@
-# Cryptography and Network Security
+# SecureHealth Cryptography & Network Security
 
-## Project Summary
+## Protected Health Information Architecture
 
-This project explains how modern cryptography protects confidentiality, integrity, authentication, and nonrepudiation across networks. It combines encryption, hashing, message authentication, public-key infrastructure, wireless security, and secure architecture into a defense-in-depth design.
+### Objective
+Protect **protected health information (PHI)** across internal EHR servers, cloud services, and partner hospital connections against eavesdropping, man-in-the-middle attacks, ransomware, insider threats, and denial-of-service while aligning the design to **HIPAA/HITECH** requirements.
+
+### My Role
+Mapped threats to controls and selected cryptographic protocols, access controls, network zones, and key-management protections appropriate for a healthcare environment.
 
 ## Security Objectives
+- Confidentiality
+- Integrity
+- Authenticity
+- Non-repudiation
+- Secure key management
+- Protection of PHI in transit and at rest
 
-- Protect sensitive data at rest and in transit
-- Detect unauthorized data modification
-- Verify users, devices, servers, and messages
-- Establish and maintain trusted cryptographic keys
-- Reduce exposure to interception, replay, spoofing, and on-path attacks
+## Cryptographic Controls
 
-## Technologies and Concepts
+| Need | Control |
+|---|---|
+| PHI in transit | TLS 1.3 / AES-256-GCM |
+| Digital signatures | ECDSA P-256 |
+| Ephemeral session keys | ECDH with Perfect Forward Secrecy |
+| Hashing / integrity | SHA-256 / SHA-3-256 |
+| Message authentication | HMAC-SHA-256 |
+| Legacy compatibility concept | RSA-2048 |
 
-### Symmetric Encryption
+## Key Management
+- Three-tier PKI
+- Offline Root CA
+- Online Intermediate CA
+- X.509 certificate validation
+- FIPS 140-3 HSM for protected private-key storage
+- Key generation, storage, rotation, revocation, and archival
+- CRL and OCSP certificate-status support
 
-- AES for efficient data protection
-- CBC, CTR, GCM, and XTS modes for different use cases
-- DES and 3DES as legacy algorithms requiring replacement
-- Secure initialization vectors, nonces, padding, and key handling
+## Network Security Zones
 
-### Public-Key Cryptography
+### DMZ
+Patient portal protected by a WAF and TLS 1.3.
 
-- RSA encryption and digital signatures
-- Diffie–Hellman key exchange
-- ElGamal concepts
-- Elliptic-curve cryptography for efficient security
-- Hybrid encryption combining asymmetric key exchange with symmetric data encryption
+### Internal
+EHR services protected with network segmentation, encryption, and mutual TLS concepts.
 
-### Integrity and Authentication
+### Cloud
+Client-side encryption before sensitive data is uploaded.
 
-- SHA-256, SHA-512, and SHA-3
-- HMAC and CMAC
-- Authenticated encryption with AES-GCM
-- Digital signatures and certificate validation
+### Partners
+IPsec VPN and mutual TLS for trusted healthcare-system connections such as HL7/FHIR exchanges.
 
-### Public-Key Infrastructure
+## Trust Flow
 
-- Certificate authorities and registration authorities
-- Certificate signing requests
-- Certificate chains and trust stores
-- Certificate status through CRLs and OCSP
-- Key generation, storage, rotation, recovery, and revocation
+```text
+Patient Portal
+     |
+   TLS 1.3
+     |
+  DMZ / WAF
+     |
+     EHR
+   /     \
+PKI     AES-256 / HSM
+ |            |
+Partner     Cloud
+IPsec VPN   Encrypted data
+     \
+      Audit / signed logs
+```
 
-## Secure Architecture
+## Compliance Alignment
+- Encryption for PHI in transit
+- Encryption for PHI at rest
+- Audit controls through logging and digital-signature concepts
+- Integrity controls for protected records
+- Key lifecycle and certificate validation supporting trusted communications
 
-The proposed architecture uses TLS for communications, AES-GCM for protected data, centralized certificate management, multifactor authentication, segmented networks, WPA3 wireless security, secure email controls, continuous logging, and monitored key-lifecycle processes.
+## Key Insight
+Strong cryptography depends on more than selecting secure algorithms. **Key generation, storage, rotation, revocation, certificate validation, and lifecycle management** are what make cryptographic protection operationally effective.
 
-## Threats Addressed
+## Career Relevance
+This project demonstrates the ability to connect technical security controls with **business, compliance, and architecture requirements** — useful in SOC, healthcare security, enterprise security, and regulated environments.
 
-- Eavesdropping
-- Replay attacks
-- Man-in-the-middle attacks
-- Weak or reused keys
-- Certificate spoofing
-- Unauthorized decryption
-- Data tampering
-- Rogue wireless access
+**Skills:** TLS 1.3 · AES-256-GCM · ECDSA · ECDH · PKI · X.509 · HSM · SHA-256 · HMAC · IPsec · Network Segmentation · HIPAA/HITECH
 
-## Deliverables
-
-- Cryptography comparison matrix
-- AES and RSA process diagrams
-- PKI trust-chain diagram
-- Key-management lifecycle
-- Secure network architecture
-- Threat and mitigation analysis
-- Technical report and executive presentation
-
-## Skills Demonstrated
-
-Cryptography · Key management · PKI · TLS · Network security · Wireless security · Architecture design · Technical communication
-
-> Examples use educational, nonproduction values and do not expose real credentials or sensitive keys.
+> Educational architecture. No real patient information, production credentials, or sensitive cryptographic keys are used.
