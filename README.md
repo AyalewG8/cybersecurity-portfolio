@@ -111,3 +111,8 @@ The following projects remain available as additional evidence of cybersecurity 
 
 - [View the live GitHub Pages showcase](https://ayalewg8.github.io/cybersecurity-portfolio/makeda-shopify.html)
 - [Visit the live MAKEDA store](https://www-queen-of-hseba.myshopify.com/)
+
+
+## Updated Portfolio Presentation
+
+- [View the live web presentation](https://ayalewg8.github.io/cybersecurity-portfolio/portfolio-presentation.html)
