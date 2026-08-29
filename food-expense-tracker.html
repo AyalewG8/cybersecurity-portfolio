@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive Food Expense Tracker practice demo by Ayalew Cherenet.">
+  <title>Food Expense Tracker | Ayalew Cherenet</title>
+  <style>
+    :root{--navy:#071a38;--blue:#1366f5;--pale:#eaf3ff;--ink:#0b1830;--muted:#536782;--line:#c8d9ed}*{box-sizing:border-box}body{margin:0;background:#f4f8fe;color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit}.top{background:var(--navy);color:#fff;padding:20px clamp(20px,7vw,100px);display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-size:14px;font-weight:800;text-decoration:none}.back{color:#bdd8ff;font-size:13px}.wrap{max-width:1120px;margin:auto;padding:72px 24px}.eyebrow{margin:0 0 13px;color:var(--blue);font-size:11px;font-weight:800;letter-spacing:1.5px}.intro{display:flex;justify-content:space-between;gap:28px;align-items:end;margin-bottom:34px}.intro h1{margin:0 0 13px;font-size:clamp(34px,6vw,61px);letter-spacing:-2.6px;line-height:1}.intro p:last-child{max-width:690px;margin:0;color:var(--muted);line-height:1.6}.total{min-width:180px;padding:22px;background:var(--navy);color:#fff;box-shadow:10px 10px 0 #cfe2fb}.total span,.total small{display:block;font-size:10px;font-weight:800;letter-spacing:1px;color:#a7cbff}.total strong{display:block;font-size:34px;margin:8px 0}.card{background:#fff;border:1px solid var(--line);box-shadow:12px 12px 0 #dceafd}.form{display:grid;grid-template-columns:1fr 1.5fr 1fr .8fr auto;gap:12px;align-items:end;padding:24px;border-bottom:1px solid #dce8f5}.form label,.toolbar label{display:grid;gap:7px;color:#466282;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.7px}.form input,.form select,.toolbar input,.toolbar select{height:42px;border:1px solid #b7cbe5;background:#fbfdff;padding:0 10px;color:var(--ink);font:inherit;font-size:13px;text-transform:none;letter-spacing:0}.form button,.button{height:42px;border:0;background:var(--blue);color:#fff;padding:0 16px;font-size:13px;font-weight:800;cursor:pointer}.body{padding:0 24px 22px}.toolbar{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:12px;padding:21px 0 0}.table-head{display:flex;justify-content:space-between;align-items:center;padding:19px 0 12px;font-size:13px;font-weight:800}.actions{display:flex;gap:15px}.link-button{border:0;background:transparent;color:#1a60bb;font:inherit;font-size:11px;font-weight:800;cursor:pointer}.link-button:disabled{color:#95a9c0;cursor:not-allowed}table{width:100%;border-collapse:collapse;border-top:1px solid var(--line)}th,td{text-align:left;padding:13px 5px;border-bottom:1px solid #e1eaf5;font-size:12px;color:#425b77}th{font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:#7087a3}td.amount{font-weight:800;color:#103867}.tag{display:inline-block;padding:4px 7px;background:var(--pale);color:#235b9f;font-size:10px}.empty{padding:22px 5px;color:#68809b}.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;padding-top:18px}.summary div{padding:12px;background:#f1f7ff;border:1px solid #d8e6f8}.summary span{display:block;color:#557391;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.7px}.summary strong{display:block;margin-top:5px;color:#153e74;font-size:17px}.message{min-height:18px;margin:14px 0 0;color:#2d61a5;font-size:12px}.note{max-width:760px;margin:24px auto 0;text-align:center;color:#5a6f89;font-size:12px;line-height:1.6}@media(max-width:800px){.intro{align-items:start;flex-direction:column}.form{grid-template-columns:1fr 1fr}.form button{grid-column:span 2}.toolbar{grid-template-columns:1fr 1fr}.toolbar label:first-child{grid-column:span 2}}@media(max-width:560px){.top{padding:17px 20px}.wrap{padding:50px 18px}.form,.toolbar{grid-template-columns:1fr}.form button,.toolbar label:first-child{grid-column:auto}.body{padding:0 16px 18px}.table-head{align-items:start;gap:10px;flex-direction:column}.summary{grid-template-columns:1fr 1fr}table th:nth-child(1),table td:nth-child(1){display:none}table th:nth-child(5),table td:nth-child(5){width:42px}.actions{gap:10px}}
+  </style>
+</head>
+<body>
+  <header class="top"><a class="brand" href="index.html">AC · Ayalew Cherenet</a><a class="back" href="index.html">← Back to portfolio</a></header>
+  <main class="wrap">
+    <section class="intro">
+      <div><p class="eyebrow">PROGRAMMING I · LIVE PRACTICE DEMO</p><h1>Food Expense Tracker</h1><p>Practice adding, searching, filtering, sorting, and removing sample food expenses. This is a browser-only practice tool; your entries are not saved or shared.</p></div>
+      <div class="total"><span>PRACTICE TOTAL</span><strong id="total">$0.00</strong><small id="count">0 items</small></div>
+    </section>
+    <section class="card" aria-label="Food expense practice tracker">
+      <form class="form" id="expense-form">
+        <label>Date<input id="date" type="date" required></label>
+        <label>Food or merchant<input id="description" type="text" placeholder="Example: Grocery store" required></label>
+        <label>Category<select id="category"><option>Breakfast</option><option>Lunch</option><option>Dinner</option><option>Snack</option></select></label>
+        <label>Amount ($)<input id="amount" type="number" min="0" step="0.01" placeholder="0.00" required></label>
+        <button type="submit">Add expense +</button>
+      </form>
+      <div class="body">
+        <div class="toolbar">
+          <label>Search<input id="search" type="search" placeholder="Search expense"></label>
+          <label>Filter category<select id="filter"><option>All</option><option>Breakfast</option><option>Lunch</option><option>Dinner</option><option>Snack</option></select></label>
+          <label>Sort by<select id="sort"><option value="date-newest">Newest date</option><option value="date-oldest">Oldest date</option><option value="amount-high">Highest amount</option><option value="amount-low">Lowest amount</option><option value="description">Description A–Z</option></select></label>
+        </div>
+        <div class="table-head"><span id="showing">Showing 0 expenses</span><div class="actions"><button class="link-button" id="reset" type="button">Reset sample</button><button class="link-button" id="clear" type="button">Clear list</button></div></div>
+        <table><thead><tr><th>Date</th><th>Description</th><th>Category</th><th>Amount</th><th>Action</th></tr></thead><tbody id="rows"></tbody></table>
+        <div class="summary" id="summary"></div>
+        <p class="message" id="message">Tip: add your own sample food expenses to practice.</p>
+      </div>
+    </section>
+    <p class="note">Built as a live companion to my <a href="projects/food-expense-tracker/README.md">Python and Tkinter Food Expense Tracker project</a>. Practice data disappears when this page is refreshed.</p>
+  </main>
+  <script>
+    const sample = [
+      {id:1,date:"2026-01-14",description:"Coffee shop",category:"Breakfast",amount:4.75},
+      {id:2,date:"2026-01-14",description:"Lunch café",category:"Lunch",amount:12.50}
+    ];
+    let expenses = sample.map(function(item){return Object.assign({},item);});
+    const categories = ["Breakfast","Lunch","Dinner","Snack"];
+    const form = document.getElementById("expense-form");
+    const dateInput = document.getElementById("date");
+    const descriptionInput = document.getElementById("description");
+    const categoryInput = document.getElementById("category");
+    const amountInput = document.getElementById("amount");
+    const searchInput = document.getElementById("search");
+    const filterInput = document.getElementById("filter");
+    const sortInput = document.getElementById("sort");
+    const rows = document.getElementById("rows");
+    const total = document.getElementById("total");
+    const count = document.getElementById("count");
+    const showing = document.getElementById("showing");
+    const summary = document.getElementById("summary");
+    const message = document.getElementById("message");
+    function setMessage(text){message.textContent=text;}
+    function cell(text,className){const td=document.createElement("td");td.textContent=text;if(className)td.className=className;return td;}
+    function visibleExpenses(){
+      const query=searchInput.value.trim().toLowerCase();
+      const filtered=expenses.filter(function(expense){
+        const found=!query||[expense.date,expense.description,expense.category,expense.amount.toFixed(2)].some(function(value){return value.toLowerCase().includes(query);});
+        return found&&(filterInput.value==="All"||expense.category===filterInput.value);
+      });
+      return filtered.sort(function(a,b){
+        if(sortInput.value==="amount-high")return b.amount-a.amount;
+        if(sortInput.value==="amount-low")return a.amount-b.amount;
+        if(sortInput.value==="description")return a.description.localeCompare(b.description);
+        return sortInput.value==="date-oldest"?a.date.localeCompare(b.date):b.date.localeCompare(a.date);
+      });
+    }
+    function render(){
+      const visible=visibleExpenses();
+      rows.innerHTML="";
+      if(!visible.length){const row=document.createElement("tr");const td=cell(expenses.length?"No expenses match your search or filter.":"No practice expenses yet. Add one above.","empty");td.colSpan=5;row.appendChild(td);rows.appendChild(row);}
+      visible.forEach(function(expense){
+        const row=document.createElement("tr");row.appendChild(cell(expense.date));row.appendChild(cell(expense.description));const categoryCell=cell(expense.category);const tag=document.createElement("span");tag.className="tag";tag.textContent=expense.category;categoryCell.textContent="";categoryCell.appendChild(tag);row.appendChild(categoryCell);row.appendChild(cell("$"+expense.amount.toFixed(2),"amount"));const action=cell("");const remove=document.createElement("button");remove.type="button";remove.className="link-button";remove.textContent="Remove";remove.addEventListener("click",function(){expenses=expenses.filter(function(item){return item.id!==expense.id;});setMessage("Practice expense removed.");render();});action.appendChild(remove);row.appendChild(action);rows.appendChild(row);
+      });
+      const totalValue=expenses.reduce(function(sum,expense){return sum+expense.amount;},0);
+      total.textContent="$"+totalValue.toFixed(2);count.textContent=expenses.length+" item"+(expenses.length===1?"":"s");showing.textContent="Showing "+visible.length+" of "+expenses.length+" practice expenses";
+      summary.innerHTML="";
+      categories.forEach(function(category){const box=document.createElement("div");const label=document.createElement("span");label.textContent=category;const value=document.createElement("strong");const categoryTotal=expenses.filter(function(expense){return expense.category===category;}).reduce(function(sum,expense){return sum+expense.amount;},0);value.textContent="$"+categoryTotal.toFixed(2);box.appendChild(label);box.appendChild(value);summary.appendChild(box);});
+      document.getElementById("clear").disabled=expenses.length===0;
+    }
+    form.addEventListener("submit",function(event){event.preventDefault();const amount=Number(amountInput.value);if(!dateInput.value||!descriptionInput.value.trim()||!Number.isFinite(amount)||amount<0){setMessage("Please enter a date, food description, and valid amount.");return;}expenses.push({id:Date.now(),date:dateInput.value,description:descriptionInput.value.trim(),category:categoryInput.value,amount:amount});form.reset();categoryInput.value="Breakfast";setMessage("Practice expense added. This list only stays in your browser.");render();});
+    [searchInput,filterInput,sortInput].forEach(function(input){input.addEventListener("input",render);input.addEventListener("change",render);});
+    document.getElementById("clear").addEventListener("click",function(){expenses=[];setMessage("Practice list cleared.");render();});
+    document.getElementById("reset").addEventListener("click",function(){expenses=sample.map(function(item){return Object.assign({},item);});searchInput.value="";filterInput.value="All";sortInput.value="date-newest";setMessage("Sample practice data restored.");render();});
+    render();
+  </script>
+</body>
+</html>
