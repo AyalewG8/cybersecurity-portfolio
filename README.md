@@ -105,3 +105,9 @@ The following projects remain available as additional evidence of cybersecurity 
 > **Protect systems · Solve problems · Keep learning**
 
 > All portfolio materials are educational. Sensitive information, credentials, and unsafe exploit details are excluded or sanitized.
+
+
+## MAKEDA Shopify E-Commerce Project
+
+- [View the live GitHub Pages showcase](https://ayalewg8.github.io/cybersecurity-portfolio/makeda-shopify.html)
+- [Visit the live MAKEDA store](https://www-queen-of-hseba.myshopify.com/)
