@@ -45,7 +45,7 @@ These six projects match my current portfolio presentation and 29-page submissio
 
 | Project | What It Demonstrates | Technologies |
 |---|---|---|
-| [Simple Food Expense Tracker](projects/food-expense-tracker/README.md) | A desktop expense-management application with JSON persistence, filtering, sorting, totals, and CSV export | Python · Tkinter · JSON · CSV |
+| [Simple Food Expense Tracker](projects/food-expense-tracker/README.md) | A desktop expense-management application with JSON persistence, filtering, sorting, totals, CSV export, and a browser-based practice demo | [Try live demo](https://ayalewg8.github.io/cybersecurity-portfolio/food-expense-tracker.html) · Python · Tkinter · JSON · CSV |
 
 ## Presentation Priority Projects
 
