@@ -35,6 +35,12 @@ These six projects match my current portfolio presentation and 29-page submissio
 | 05 | [ABC Logistics Vulnerability Management](projects/threat-vulnerability-management/README.md) | Repeatable discovery-to-reporting vulnerability management lifecycle | Discover, prioritize, remediate, verify, report, CVSS, exploitability, asset criticality, remediation tracking |
 | 06 | [IoT Smart Home Monitoring System](projects/iot-smart-home-monitoring/README.md) | Sensor-based monitoring with secure telemetry and cloud dashboards | Raspberry Pi 4B, DHT22, MQ135, MQTT over TLS, cloud broker, time-series data, alerts, offline buffering |
 
+## E-Commerce Project
+
+| Project | What It Demonstrates | Live Site |
+|---|---|---|
+| [MAKEDA — Queen of Sheba Fashion Store](projects/makeda-shopify-ecommerce/README.md) | Shopify storefront design, product organization, brand storytelling, mobile usability, and e-commerce security awareness | [Visit the store](https://www-queen-of-hseba.myshopify.com/) |
+
 ## Presentation Priority Projects
 
 For my portfolio presentation, the most SOC-relevant projects are:
