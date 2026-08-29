@@ -41,6 +41,12 @@ These six projects match my current portfolio presentation and 29-page submissio
 |---|---|---|
 | [MAKEDA — Queen of Sheba Fashion Store](projects/makeda-shopify-ecommerce/README.md) | Shopify storefront design, product organization, brand storytelling, mobile usability, and e-commerce security awareness | [Visit the store](https://www-queen-of-hseba.myshopify.com/) |
 
+## Programming Project
+
+| Project | What It Demonstrates | Technologies |
+|---|---|---|
+| [Simple Food Expense Tracker](projects/food-expense-tracker/README.md) | A desktop expense-management application with JSON persistence, filtering, sorting, totals, and CSV export | Python · Tkinter · JSON · CSV |
+
 ## Presentation Priority Projects
 
 For my portfolio presentation, the most SOC-relevant projects are:
