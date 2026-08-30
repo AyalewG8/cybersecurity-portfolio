@@ -24,7 +24,7 @@ My work focuses on analyzing threats and business impact, selecting practical co
 
 ## Featured Portfolio Projects
 
-These six projects match my current portfolio presentation and 29-page submission.
+These eight projects match my current portfolio presentation and 31-page submission. They include six cybersecurity case studies plus the Food Expense Tracker (Python/Tkinter) and MAKEDA - Queen of Sheba Shopify e-commerce project.
 
 | # | Project | What It Demonstrates | Key Concepts / Technologies |
 |---|---|---|---|
