@@ -107,128 +107,118 @@
 
   <script>
     const CARDS = [
-      {
-        timing: "0:00–0:42", title: "Opening", cues: [
-          "I’m <b>Ayalew Cherenet</b>, an IT &amp; Cybersecurity student at Wade College graduating in September 2026",
-          "Career goal: begin as an <b>entry-level SOC Analyst</b> in Dallas–Fort Worth",
-          "Portfolio combines cybersecurity case studies, programming, documentation, and business problem-solving",
-          "My professional theme: <b>protect systems, solve problems, and keep learning</b>"
-        ]
-      },
-      {
-        timing: "0:42–1:23", title: "About Me", cues: [
-          "I’m detail-oriented because secure operations depend on people who notice problems early",
-          "Professional experience developed reliability, process discipline, teamwork, and clear documentation",
-          "Core areas: risk assessment, threat &amp; vulnerability management, network security, and web application security",
-          "Supporting skills: Linux, cryptography, database security, Python, SQL, and incident response"
-        ]
-      },
-      {
-        timing: "1:23–1:52", title: "Why These Projects", cues: [
-          "A SOC Analyst monitors systems, investigates alerts, prioritizes risk, and communicates findings",
-          "I selected projects that demonstrate risk-based thinking, investigation, remediation planning, and documentation",
-          "<b>Eight projects total:</b> six cybersecurity case studies plus programming and e-commerce work"
-        ]
-      },
-      {
-        timing: "1:52–2:57", title: "Project 1 — Northbridge Logistics Risk Assessment", cues: [
-          "Academic risk assessment: 150 employees, 3 offices, 180 endpoints, and 20 servers",
-          "I identified assets, threats, vulnerabilities, likelihood, and business impact",
-          "I prioritized phishing, ransomware, insider risk, and man-in-the-middle exposure",
-          "I recommended MFA, EDR, segmentation, SIEM, patching, and tested backup and recovery controls",
-          "Roadmap: <b>0–30 contain → 30–60 detect &amp; harden → 60–90 validate</b>"
-        ]
-      },
-      {
-        timing: "2:57–3:48", title: "Project 2 — SecureHealth Cryptography & Network Security", cues: [
-          "Academic design: I created a layered architecture for protecting sensitive healthcare information",
-          "I selected <b>TLS 1.3</b> for data in transit and <b>AES-256-GCM</b> for sensitive stored data",
-          "I mapped PKI, certificates, secure key management, and an IPsec VPN to the trust zones",
-          "I connected the recommended controls to HIPAA and HITECH security objectives",
-          "Key lesson: strong algorithms still require secure generation, storage, rotation, revocation, and recovery"
-        ]
-      },
-      {
-        timing: "3:48–4:35", title: "Project 3 — Healthcare Clinic Secure Database Design", cues: [
-          "I designed a normalized PostgreSQL healthcare data model—not a production clinical system",
-          "I mapped staff roles to RBAC and least-privilege access",
-          "I recommended encryption, protected connections, audit logging, backups, and recovery planning",
-          "Outcome: a documented schema and control rationale supporting confidentiality, integrity, and availability",
-          "Key lesson: weak access control and poor logging can turn a small issue into a serious incident"
-        ]
-      },
-      {
-        timing: "4:35–5:28", title: "Project 4 — RetailHub OWASP Web App Assessment", cues: [
-          "Academic assessment scenario: I reviewed an e-commerce application against the <b>OWASP Top 10</b>",
-          "I identified broken access control, injection, XSS, weak authentication, and insufficient logging as priority risks",
-          "I recommended MFA, stronger authorization, input validation, secure coding, and SAST/DAST testing",
-          "I organized remediation by risk and included logging, monitoring, and WAF protection",
-          "SOC connection: web weaknesses create alerts, incidents, customer impact, and business risk"
-        ]
-      },
-      {
-        timing: "5:28–6:19", title: "Project 5 — ABC Logistics Threat & Vulnerability Mgmt", cues: [
-          "I created a repeatable lifecycle: <b>discover → prioritize → remediate → verify → report</b>",
-          "I prioritized findings using CVSS, exploitability, asset criticality, and business impact",
-          "I connected each action to ownership, evidence, re-scanning, and leadership reporting",
-          "Outcome: a defensible process that focuses limited resources on the most important risks",
-          "This project is closest to an <b>operational security workflow</b>"
-        ]
-      },
-      {
-        timing: "6:19–7:09", title: "Project 6 — IoT Smart Home Monitoring System", cues: [
-          "Documented system design: sensors → Raspberry Pi → MQTT broker → dashboard and alerts",
-          "I specified <b>MQTT over TLS</b> to protect telemetry in transit",
-          "The design includes sensor calibration, local buffering during outages, and defined measurement intervals",
-          "I designed threshold-based alerts for readings outside a safe range",
-          "Key lesson: every connected device provides useful data but also introduces security and reliability risk"
-        ]
-      },
-      {
-        timing: "7:09–7:55", title: "Additional Project — Food Expense Tracker", cues: [
-          "Programming I practice project: I built a Python and <b>Tkinter</b> desktop application",
-          "Users can add, edit, delete, filter, sort, and search expense records",
-          "I implemented JSON storage, input validation, category totals, and CSV export",
-          "Outcome: practical programming, structured data handling, and user-focused problem-solving",
-          "It supports my technical foundation without being presented as a cybersecurity system"
-        ]
-      },
-      {
-        timing: "7:55–8:36", title: "Additional Project — MAKEDA (Queen of Sheba)", cues: [
-          "I created a Shopify storefront focused on Ethiopian-inspired fashion and cultural storytelling",
-          "I organized products and designed a clear mobile customer journey",
-          "Security considerations include administrator MFA, least privilege, Shopify secure checkout, and customer privacy",
-          "It demonstrates how technical decisions must support business goals and customer trust",
-          "Connection to RetailHub: online stores must protect customers, data, payments, and reputation"
-        ]
-      },
-      {
-        timing: "8:36–9:08", title: "Live GitHub Portfolio", cues: [
-          "My GitHub Pages site brings all eight projects together in one recruiter-friendly location",
-          "Recruiters can review case studies, diagrams, documentation, the live practice demo, and the MAKEDA showcase",
-          "Each project follows a clear story: <b>problem → approach → tools and concepts → result or recommendation</b>",
-          "My goal is to make the work easy to explore, understand, and discuss in an interview"
-        ]
-      },
-      {
-        timing: "9:08–9:32", title: "Certifications & Growth", cues: [
-          "<b>Completed:</b> Google Foundations of Cybersecurity",
-          "<b>In progress:</b> Google Cybersecurity Professional Certificate",
-          "<b>Next milestone:</b> CompTIA Security+",
-          "Next steps: expand SOC practice, log analysis, incident response, and monitoring skills",
-          "Goal: contribute to a cybersecurity team in Dallas–Fort Worth"
-        ]
-      },
-      {
-        timing: "9:32–10:00", title: "Closing", cues: [
-          "My portfolio translates academic work into documented career preparation",
-          "I’m ready to learn from experienced professionals and contribute with humility and discipline",
-          "I bring attention to detail, process reliability, and clear documentation to a SOC Analyst role",
-          "Thank the audience and invite questions"
-        ]
-      }
-
-    ];
+  {
+    timing: "0:00–0:42", title: "Opening", cues: [
+      "I’m Ayalew Cherenet, an IT & Cybersecurity student at Wade College graduating September 2026",
+      "My goal is an entry-level SOC Analyst role in Dallas–Fort Worth",
+      "This portfolio shows risk-based thinking, clear documentation, and practical problem-solving",
+      "Theme: Protect systems. Solve problems. Keep learning."
+    ]
+  },
+  {
+    timing: "0:42–1:23", title: "About Me", cues: [
+      "I’m detail-oriented because secure operations depend on people who notice problems early",
+      "High-pressure operational experience taught me reliability, process discipline, teamwork, and clear documentation",
+      "Core strengths: risk assessment, threat & vulnerability management, network security, and web application security",
+      "Supporting skills: Linux, cryptography, database security, Python, SQL, and incident response fundamentals"
+    ]
+  },
+  {
+    timing: "1:23–1:52", title: "Why These Projects", cues: [
+      "A SOC Analyst monitors systems, investigates alerts, prioritizes risk, and communicates findings",
+      "I chose projects that build exactly those skills: risk thinking, investigation, remediation planning, and clear documentation",
+      "Eight projects total — six cybersecurity case studies plus programming and e-commerce work"
+    ]
+  },
+  {
+    timing: "1:52–2:57", title: "Project 1 — Northbridge Logistics Risk Assessment", cues: [
+      "Risk assessment for a mid-sized logistics company: 150 employees, 3 offices, 180 endpoints, 20 servers",
+      "I identified assets, threats, vulnerabilities, likelihood, and business impact — prioritizing phishing, ransomware, insider risk, and MITM",
+      "Recommended layered controls: MFA, EDR, segmentation, SIEM, patching, and tested backup/recovery",
+      "SOC takeaway: Turning technical findings into a prioritized, time-bound plan that leadership can act on"
+    ]
+  },
+  {
+    timing: "2:57–3:48", title: "Project 2 — SecureHealth Cryptography & Network Security", cues: [
+      "Designed a layered architecture to protect sensitive healthcare information",
+      "Chose TLS 1.3 for data in transit and AES-256-GCM for sensitive data at rest",
+      "Mapped PKI, key management, and IPsec VPN to trust zones and HIPAA/HITECH objectives",
+      "Key lesson: Strong algorithms still require secure generation, storage, rotation, revocation, and recovery"
+    ]
+  },
+  {
+    timing: "3:48–4:35", title: "Project 3 — Healthcare Clinic Secure Database Design", cues: [
+      "Designed a normalized PostgreSQL healthcare data model focused on confidentiality, integrity, and availability",
+      "Applied RBAC and least-privilege access for different staff roles",
+      "Recommended encryption, protected connections, audit logging, backups, and recovery planning",
+      "SOC takeaway: Weak access control and poor logging can turn a small issue into a serious incident"
+    ]
+  },
+  {
+    timing: "4:35–5:28", title: "Project 4 — RetailHub OWASP Web App Assessment", cues: [
+      "Assessed an e-commerce application against the OWASP Top 10",
+      "Prioritized broken access control, injection, XSS, weak authentication, and insufficient logging",
+      "Recommended MFA, stronger authorization, input validation, secure coding, SAST/DAST, logging, and WAF",
+      "SOC connection: Web weaknesses generate alerts, incidents, customer impact, and business risk"
+    ]
+  },
+  {
+    timing: "5:28–6:19", title: "Project 5 — ABC Logistics Threat & Vulnerability Mgmt", cues: [
+      "Built a repeatable lifecycle: discover → prioritize → remediate → verify → report",
+      "Prioritized findings using CVSS, exploitability, asset criticality, and business impact",
+      "Tied every action to ownership, evidence, re-scanning, and leadership reporting",
+      "This is the closest project to a real operational security workflow"
+    ]
+  },
+  {
+    timing: "6:19–7:09", title: "Project 6 — IoT Smart Home Monitoring System", cues: [
+      "Designed the full path: sensors → Raspberry Pi → MQTT broker → dashboard and alerts",
+      "Specified MQTT over TLS to protect telemetry in transit",
+      "Included local buffering during outages, calibration, and threshold-based alerts",
+      "Key lesson: Every connected device adds useful data — and new security and reliability risk"
+    ]
+  },
+  {
+    timing: "7:09–7:55", title: "Additional Project — Food Expense Tracker", cues: [
+      "Built a Python + Tkinter desktop app as a Programming I practice project",
+      "Users can add, edit, delete, filter, sort, and search expense records",
+      "Implemented JSON storage, input validation, category totals, and CSV export",
+      "Shows practical programming, structured data handling, and user-focused problem-solving"
+    ]
+  },
+  {
+    timing: "7:55–8:36", title: "Additional Project — MAKEDA (Queen of Sheba)", cues: [
+      "Created a Shopify storefront for Ethiopian-inspired fashion with clear product organization and mobile experience",
+      "Applied security awareness: administrator MFA, least privilege, secure checkout, and customer privacy",
+      "Shows how technical decisions must support business goals and customer trust",
+      "Connects to the RetailHub project: online stores must protect customers, data, payments, and reputation"
+    ]
+  },
+  {
+    timing: "8:36–9:08", title: "Live GitHub Portfolio", cues: [
+      "My GitHub Pages site brings all eight projects into one recruiter-friendly home",
+      "Recruiters can review case studies, diagrams, documentation, the live practice demo, and the MAKEDA showcase",
+      "Every project follows a clear story: problem → approach → tools & concepts → result or recommendation",
+      "Goal: make the work easy to explore, understand, and discuss in an interview"
+    ]
+  },
+  {
+    timing: "9:08–9:32", title: "Certifications & Growth", cues: [
+      "Completed: Google Foundations of Cybersecurity",
+      "In progress: Google Cybersecurity Professional Certificate",
+      "Next milestone: CompTIA Security+",
+      "Next focus: deeper SOC practice — log analysis, incident response, and monitoring skills"
+    ]
+  },
+  {
+    timing: "9:32–10:00", title: "Closing", cues: [
+      "My portfolio turns academic work into documented, risk-focused career preparation",
+      "I’m ready to contribute as a detail-oriented, process-driven junior analyst who communicates clearly",
+      "Looking for the opportunity to learn from experienced SOC professionals in Dallas–Fort Worth",
+      "Thank you — I’m happy to take any questions"
+    ]
+  }
+];
 
     let i = 0;
     let flipped = false;
