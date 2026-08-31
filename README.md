@@ -22,6 +22,12 @@ My work focuses on analyzing threats and business impact, selecting practical co
 
 **Expected Graduation:** September 2026
 
+## Education
+
+- **Wade College — Dallas, Texas** — Associate of Science, Information Technology / Cybersecurity, expected September 2026
+- **Addis Ababa University — School of Law** — Bachelor of Laws (LL.B.), Law, 2006–2010
+- **Le Cordon Bleu College of Culinary Arts** — Associate Degree, Culinary Arts / Chef Training, 2015–2017
+
 ## Featured Portfolio Projects
 
 These eight projects match my current portfolio presentation and 31-page submission. They include six cybersecurity case studies plus the Food Expense Tracker (Python/Tkinter) and MAKEDA - Queen of Sheba Shopify e-commerce project.
