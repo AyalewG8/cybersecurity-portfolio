@@ -20,6 +20,10 @@ September 2024 – Expected September 2026
 
 Relevant coursework: Cybersecurity, Network Security, Database Systems, Project Management, Programming Logic and Design, Computer Systems Organization, Systems Software, E-Commerce Technology, Technical Documentation, Security Risk Management, Threat & Vulnerability Management, Web Application Security, and Portfolio Design & Presentation.
 
+### Addis Ababa University — School of Law
+**Bachelor of Laws (LL.B.), Law**  
+2006 – 2010
+
 ### Le Cordon Bleu
 **Associate Degree, Culinary Arts / Chef Training**  
 2015 – 2017
