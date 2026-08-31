@@ -109,8 +109,8 @@
     const CARDS = [
   {
     timing: "0:00–0:42", title: "Opening", cues: [
-      "I’m <b>Ayalew Cherenet</b>, an IT and Cybersecurity student at Wade College graduating in September 2026",
-      "My goal is an entry-level <b>SOC Analyst</b> job in Dallas–Fort Worth. SOC means Security Operations Center — the team that watches for cyber threats",
+      "I’m <b>Ayalew Cherenet</b>, an Information Technology (IT) and Cybersecurity student at Wade College graduating in September 2026",
+      "My goal is an entry-level <b>SOC Analyst</b> job in Dallas–Fort Worth. SOC means <b>Security Operations Center</b> — the team that watches for cyber threats",
       "This portfolio shows how I think about risk, write clear documentation, and solve problems",
       "My theme: <b>Protect systems. Solve problems. Keep learning.</b>"
     ]
@@ -120,7 +120,7 @@
       "I’m detail-oriented because security work depends on people who notice problems early",
       "My previous jobs taught me reliability, following processes, teamwork, and clear documentation",
       "My main strengths: risk assessment, finding and fixing vulnerabilities, network security, and web application security",
-      "I also have skills in Linux, encryption, databases, Python, SQL, and the basics of incident response"
+      "I also have skills in Linux, encryption, databases, Python, SQL (Structured Query Language), and the basics of incident response"
     ]
   },
   {
@@ -134,46 +134,46 @@
     timing: "1:52–2:57", title: "Project 1 — Northbridge Logistics Risk Assessment", cues: [
       "Risk assessment for a mid-sized logistics company: 150 employees, 3 offices, 180 computers, and 20 servers",
       "I listed the important assets, possible threats, weak points, how likely attacks were, and the business impact",
-      "I recommended stronger logins (MFA), better endpoint protection (EDR), network separation, a security monitoring system (SIEM), regular updates, and tested backups",
+      "I recommended stronger logins using MFA (Multi-Factor Authentication), endpoint protection using EDR (Endpoint Detection and Response), network separation, SIEM (Security Information and Event Management), regular updates, and tested backups",
       "<b>SOC takeaway:</b> Turning technical findings into a clear, prioritized plan that leaders can act on"
     ]
   },
   {
     timing: "2:57–3:48", title: "Project 2 — SecureHealth Cryptography & Network Security", cues: [
       "I designed a layered security plan to protect sensitive healthcare information",
-      "I chose strong modern encryption: <b>TLS 1.3</b> for data moving across the network and <b>AES-256-GCM</b> for stored data",
-      "I also planned how digital certificates and secure keys would be managed, plus a private network connection (IPsec VPN)",
+      "I chose <b>TLS 1.3</b> (Transport Layer Security) for data moving across the network and <b>AES-256-GCM</b> (Advanced Encryption Standard with Galois/Counter Mode) for stored data",
+      "I also planned certificate and key management plus an IPsec VPN: Internet Protocol Security over a Virtual Private Network",
       "<b>Key lesson:</b> Strong encryption only works if keys are created, stored, rotated, and revoked safely"
     ]
   },
   {
     timing: "3:48–4:35", title: "Project 3 — Healthcare Clinic Secure Database Design", cues: [
       "I designed a clean PostgreSQL database model for a healthcare clinic focused on keeping data private, accurate, and available",
-      "I used role-based access control (RBAC) so each staff member only sees what they need",
+      "I used RBAC (Role-Based Access Control) so each staff member only sees what they need",
       "I recommended encryption, secure connections, activity logs, backups, and a recovery plan",
       "<b>SOC takeaway:</b> Weak access control and missing logs can turn a small problem into a serious incident"
     ]
   },
   {
     timing: "4:35–5:28", title: "Project 4 — RetailHub OWASP Web App Assessment", cues: [
-      "I reviewed an online store against the <b>OWASP Top 10</b> — the ten most common web security risks",
-      "The highest risks were broken access control, injection attacks, cross-site scripting (XSS), weak logins, and missing logs",
-      "I recommended multi-factor login, stronger permissions, input checking, secure coding practices, automated testing, better logging, and a web firewall (WAF)",
+      "I reviewed an online store against the <b>OWASP Top 10</b>. OWASP means Open Worldwide Application Security Project, and its Top 10 highlights critical web application risks",
+      "The highest risks were broken access control, injection attacks, XSS (Cross-Site Scripting), weak logins, and missing logs",
+      "I recommended multi-factor login, stronger permissions, input checking, secure coding, automated testing, better logging, and a WAF (Web Application Firewall)",
       "<b>SOC connection:</b> Web weaknesses create alerts, incidents, customer problems, and business risk"
     ]
   },
   {
     timing: "5:28–6:19", title: "Project 5 — ABC Logistics Threat & Vulnerability Mgmt", cues: [
       "I built a clear process: <b>discover → prioritize → fix → verify → report</b>",
-      "I ranked problems using a severity score (CVSS), how easy they were to exploit, how important the system was, and business impact",
+      "I ranked problems using CVSS (Common Vulnerability Scoring System), exploitability, system importance, and business impact",
       "Every step included who owns the fix, what evidence is needed, re-checking after the fix, and reporting to leadership",
       "This project is the closest to real day-to-day security operations work"
     ]
   },
   {
-    timing: "6:19–7:09", title: "Project 6 — IoT Smart Home Monitoring System", cues: [
+    timing: "6:19–7:09", title: "Project 6 — IoT (Internet of Things) Smart Home Monitoring System", cues: [
       "I designed the full system path: sensors → Raspberry Pi → message broker → dashboard and alerts",
-      "I required encrypted communication (<b>MQTT over TLS</b>) so the sensor data stays private while moving",
+      "I required <b>MQTT over TLS</b>: Message Queuing Telemetry Transport protected by Transport Layer Security, so sensor data stays private while moving",
       "The design includes local storage if the internet goes down, sensor calibration, and alerts when readings go outside safe limits",
       "<b>Key lesson:</b> Every connected device gives useful data but also adds new security and reliability risks"
     ]
@@ -182,7 +182,7 @@
     timing: "7:09–7:55", title: "Additional Project — Food Expense Tracker", cues: [
       "I built a desktop app with Python and <b>Tkinter</b> as a programming practice project",
       "Users can add, edit, delete, search, filter, and sort expense records",
-      "It saves data in JSON files, checks user input, calculates category totals, and can export to CSV",
+      "It saves data in JSON (JavaScript Object Notation), checks user input, calculates totals, and exports CSV (Comma-Separated Values)",
       "This shows practical programming, handling structured data, and building something useful for users"
     ]
   },
@@ -216,6 +216,19 @@
       "I’m ready to contribute as a careful, process-oriented junior analyst who communicates clearly",
       "I’m looking for the chance to learn from experienced SOC professionals in Dallas–Fort Worth",
       "Thank you — I’m happy to answer any questions"
+    ]
+  },
+  {
+    timing: "Reference — not timed", title: "Technical Acronym Glossary", cues: [
+      "<b>IT:</b> Information Technology · <b>SOC:</b> Security Operations Center",
+      "<b>MFA:</b> Multi-Factor Authentication · <b>EDR:</b> Endpoint Detection and Response",
+      "<b>SIEM:</b> Security Information and Event Management · <b>SQL:</b> Structured Query Language",
+      "<b>TLS:</b> Transport Layer Security · <b>AES:</b> Advanced Encryption Standard · <b>GCM:</b> Galois/Counter Mode",
+      "<b>IPsec:</b> Internet Protocol Security · <b>VPN:</b> Virtual Private Network",
+      "<b>RBAC:</b> Role-Based Access Control · <b>OWASP:</b> Open Worldwide Application Security Project",
+      "<b>XSS:</b> Cross-Site Scripting · <b>WAF:</b> Web Application Firewall",
+      "<b>CVSS:</b> Common Vulnerability Scoring System · <b>IoT:</b> Internet of Things",
+      "<b>MQTT:</b> Message Queuing Telemetry Transport · <b>JSON:</b> JavaScript Object Notation · <b>CSV:</b> Comma-Separated Values"
     ]
   }
 ];
