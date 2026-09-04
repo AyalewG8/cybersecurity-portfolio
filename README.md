@@ -92,6 +92,10 @@ For my portfolio presentation, the most SOC-relevant projects are:
 - Expand GitHub portfolio artifacts
 - Continue building SOC-focused projects and documentation
 
+## Learning Resources
+
+- [NotebookLM Study Resource](https://notebooklm.link.google/UbsFgQxxU9TS) — shared NotebookLM link for study and review materials.
+
 ## Additional Projects
 
 The following projects remain available as additional evidence of cybersecurity growth, but they are not part of the six-project presentation sequence:
