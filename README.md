@@ -94,7 +94,8 @@ For my portfolio presentation, the most SOC-relevant projects are:
 
 ## Learning Resources
 
-- [NotebookLM Study Resource](https://notebooklm.link.google/UbsFgQxxU9TS) — shared NotebookLM link for study and review materials.
+- [NotebookLM Study Resource 1](https://notebooklm.link.google/UbsFgQxxU9TS) — shared NotebookLM link for study and review materials.
+- [NotebookLM Study Resource 2](https://notebooklm.link.google/qQRmnZyZ9kB2) — additional shared NotebookLM link for study and review materials.
 
 ## Additional Projects
 
