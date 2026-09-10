@@ -25,8 +25,17 @@ I am an IT and Cybersecurity student preparing for an entry-level SOC Analyst or
 
 1. [Open the live recruiter portfolio](https://ayalewg8.github.io/cybersecurity-portfolio/)
 2. [Review the professional resume](https://ayalewg8.github.io/cybersecurity-portfolio/resume.html)
-3. [Read the four-page portfolio overview](https://ayalewg8.github.io/cybersecurity-portfolio/portfolio-overview.html)
-4. Review the three highlighted security case studies below.
+3. [Try the interactive cybersecurity labs](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html)
+4. [Read the four-page portfolio overview](https://ayalewg8.github.io/cybersecurity-portfolio/portfolio-overview.html)
+5. Review the three highlighted security case studies below.
+
+## Interactive Hands-On Labs
+
+The [browser-based lab suite](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html) uses synthetic data and requires no installation.
+
+- **SOC Alert Triage:** interpret indicators, assign severity, and select a response.
+- **Vulnerability Prioritization:** combine CVSS with business and threat context.
+- **Risk Assessment:** calculate inherent and projected residual risk.
 
 ## Highlighted Security Case Studies
 
