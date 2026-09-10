@@ -36,6 +36,7 @@ The [browser-based lab suite](https://ayalewg8.github.io/cybersecurity-portfolio
 - **SOC Alert Triage:** interpret indicators, assign severity, and select a response.
 - **Vulnerability Prioritization:** combine CVSS with business and threat context.
 - **Risk Assessment:** calculate inherent and projected residual risk.
+- **Documentation:** [review the lab methodology, formulas, assumptions, and security boundaries](projects/hands-on-cybersecurity-labs/README.md).
 
 ## Highlighted Security Case Studies
 
