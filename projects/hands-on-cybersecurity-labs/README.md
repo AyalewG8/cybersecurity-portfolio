@@ -1,0 +1,128 @@
+# Hands-On Cybersecurity Labs
+
+Interactive, browser-based simulations demonstrating practical security-analysis decisions with synthetic data.
+
+**Live lab:** [Open the Hands-On Cybersecurity Labs](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html)
+
+## Project Purpose
+
+This project turns three cybersecurity workflows into safe, repeatable practice exercises:
+
+1. SOC alert triage
+2. Vulnerability prioritization
+3. Risk assessment
+
+The goal is to show analytical reasoning, not simply display definitions. Each simulation asks the user to review evidence, make a decision, and compare that decision with a documented model.
+
+## Skills Demonstrated
+
+- Security alert triage
+- Indicator identification
+- Incident-response decision making
+- CVSS interpretation
+- Asset-criticality analysis
+- Vulnerability remediation prioritization
+- Inherent and residual risk calculation
+- Control-effectiveness reasoning
+- Clear communication for technical and non-technical audiences
+- Accessible, responsive front-end development
+
+## Lab 1 — SOC Alert Triage
+
+The analyst reviews synthetic authentication, endpoint, or network evidence and selects:
+
+- an alert severity;
+- the most appropriate first response; and
+- whether the event should be documented, verified, contained, or escalated.
+
+### Included Scenarios
+
+| Scenario | Key indicators | Recommended decision |
+|---|---|---|
+| Repeated MFA prompts and impossible travel | MFA fatigue, distant successful logins, recovery-method change | High severity; contain the account and escalate |
+| Encoded PowerShell and outbound traffic | Encoded command, unsigned child process, unexpected external connection | Critical severity; isolate the endpoint and escalate |
+| Approved internal vulnerability scan | Port sweep, approved scanner identity, authorized change window | Informational; validate, document, and close |
+
+This lab demonstrates that alerts should be evaluated in context. Similar technical activity may be malicious or expected depending on identity, authorization, timing, and business purpose.
+
+## Lab 2 — Vulnerability Prioritization
+
+The tool combines four inputs:
+
+- CVSS base score;
+- asset criticality;
+- network exposure; and
+- known active exploitation.
+
+### Portfolio Formula
+
+```text
+Priority score =
+(CVSS × 55%)
++ (asset criticality scaled to 10 × 25%)
++ (network exposure scaled to 10 × 12%)
++ (known exploitation × 8%)
+```
+
+| Priority score | Rating | Example remediation target |
+|---:|---|---|
+| 8.0–10.0 | Critical | 24–72 hours |
+| 6.0–7.9 | High | 7 days |
+| 3.5–5.9 | Medium | 30 days |
+| 0.0–3.4 | Low | 90 days |
+
+The service targets and weights are illustrative. A production organization should define them through its approved risk policy, regulatory obligations, asset inventory, and threat intelligence.
+
+## Lab 3 — Risk Assessment
+
+The calculator distinguishes risk before and after proposed controls.
+
+```text
+Inherent risk = likelihood × impact
+Residual risk = inherent risk × (1 − estimated control effectiveness)
+```
+
+| Score | Rating |
+|---:|---|
+| 16–25 | Critical |
+| 11–15 | High |
+| 6–10 | Moderate |
+| 1–5 | Low |
+
+Residual scores are projections, not proof of actual risk reduction. Control effectiveness should be supported by testing, monitoring, audit evidence, and ownership.
+
+## Technology
+
+- Semantic HTML
+- Responsive CSS
+- Vanilla JavaScript
+- Client-side calculations
+- Accessible labels, keyboard focus, and live result announcements
+- GitHub Pages deployment
+
+No frameworks, external APIs, databases, accounts, or installations are required.
+
+## Security and Privacy Boundaries
+
+- All logs, users, IP addresses, organizations, and events are fictional or synthetic.
+- Documentation IP ranges are used where examples require public addresses.
+- No real systems are scanned, contacted, or modified.
+- No personal data, credentials, or user-entered information is transmitted or stored.
+- The simulations reset when the page is reloaded.
+- Results are educational decision-support examples, not production security advice.
+
+## How to Review the Project
+
+1. Open the [live lab](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html).
+2. Complete each simulation with different inputs.
+3. Review the explanation produced after each decision.
+4. Inspect the source in [hands-on-labs.html](../../hands-on-labs.html).
+
+## Future Improvements
+
+- Add more synthetic SOC scenarios mapped to MITRE ATT&CK techniques.
+- Add downloadable incident-triage notes.
+- Add a log-search exercise using a larger synthetic event set.
+- Add unit tests for the scoring functions.
+
+> Educational portfolio project. Use only authorized systems and approved organizational procedures for real security work.
