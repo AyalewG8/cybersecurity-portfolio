@@ -2,128 +2,88 @@
 
 # Ayalew Cherenet
 
-### IT / Cybersecurity Student · Aspiring SOC Analyst · Dallas, Texas
+### Cybersecurity Analyst Portfolio · Dallas–Fort Worth
 
-**Security monitoring · Incident response · Vulnerability management · Risk-based defense**
+**Security operations · Risk assessment · Vulnerability management · Clear technical documentation**
 
 [![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-49D6C7?style=for-the-badge&logo=githubpages&logoColor=05101A)](https://ayalewg8.github.io/cybersecurity-portfolio/)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chereneta@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AyalewG8)
+[![Resume](https://img.shields.io/badge/View_Resume-0D2940?style=for-the-badge&logo=readthedocs&logoColor=white)](https://ayalewg8.github.io/cybersecurity-portfolio/resume.html)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayalewcherenet)
 
 </div>
 
 ---
 
-## Professional Profile
+## Professional Focus
 
-I am an IT and Cybersecurity student at Wade College preparing for a **Security Operations Center (SOC) Analyst** role in the Dallas–Fort Worth area. My portfolio demonstrates applied academic work in risk assessment, secure systems design, databases, web security, threat and vulnerability management, network security, and IoT.
+I am an IT and Cybersecurity student preparing for an entry-level SOC Analyst or cybersecurity analyst role. This repository demonstrates how I define security problems, evaluate business risk, prioritize findings, recommend practical controls, and document results for technical and non-technical audiences.
 
-My work focuses on analyzing threats and business impact, selecting practical controls, documenting recommendations clearly, and connecting technical security decisions to operational and business needs.
+**Expected graduation:** September 2026  
+**Target roles:** SOC Analyst · Cybersecurity Analyst · Junior Blue Team · Risk/Vulnerability Support
 
-**Expected Graduation:** September 2026
+## Start Here
 
-## Education
+1. [Open the live recruiter portfolio](https://ayalewg8.github.io/cybersecurity-portfolio/)
+2. [Review the professional resume](https://ayalewg8.github.io/cybersecurity-portfolio/resume.html)
+3. [Read the four-page portfolio overview](https://ayalewg8.github.io/cybersecurity-portfolio/portfolio-overview.html)
+4. Review the three highlighted security case studies below.
 
-- **Wade College — Dallas, Texas** — Associate of Science, Information Technology / Cybersecurity, expected September 2026
-- **Addis Ababa University — School of Law** — Bachelor of Laws (LL.B.), Law, 2006–2010
-- **Le Cordon Bleu College of Culinary Arts** — Associate Degree, Culinary Arts / Chef Training, 2015–2017
+## Highlighted Security Case Studies
 
-## Featured Portfolio Projects
-
-These eight projects match my current portfolio presentation and 31-page submission. They include six cybersecurity case studies plus the Food Expense Tracker (Python/Tkinter) and MAKEDA - Queen of Sheba Shopify e-commerce project.
-
-| # | Project | What It Demonstrates | Key Concepts / Technologies |
-|---|---|---|---|
-| 01 | [Northbridge Logistics Risk Assessment](projects/northbridge-risk-assessment/README.md) | Cybersecurity risk assessment and defense strategy for a 150-employee, three-office logistics company | NIST SP 800-30 concepts, CVSS, MITRE ATT&CK awareness, MFA, EDR, NGFW, SIEM, patching, BCP/DR |
-| 02 | [SecureHealth Cryptography & Network Security](projects/cryptography-network-security/README.md) | Protection of PHI across EHR, cloud, and partner connections | TLS 1.3, AES-256-GCM, ECDSA, ECDH, SHA-256, HMAC, PKI, HSM, IPsec VPN, HIPAA/HITECH |
-| 03 | [Healthcare Clinic Secure Database](projects/healthcare-secure-database/README.md) | Secure normalized PostgreSQL healthcare data model | PostgreSQL, SQL, RBAC, least privilege, MFA concepts, encryption at rest, TLS, audit logging, backup/DR |
-| 04 | [RetailHub OWASP Web Assessment](projects/web-application-security/README.md) | OWASP Top 10 review and prioritized remediation plan for a public e-commerce application | Broken access control, injection, XSS, MFA, WAF, OAuth 2.0, SAST/DAST, secure SDLC |
-| 05 | [ABC Logistics Vulnerability Management](projects/threat-vulnerability-management/README.md) | Repeatable discovery-to-reporting vulnerability management lifecycle | Discover, prioritize, remediate, verify, report, CVSS, exploitability, asset criticality, remediation tracking |
-| 06 | [IoT Smart Home Monitoring System](projects/iot-smart-home-monitoring/README.md) | Sensor-based monitoring with secure telemetry and cloud dashboards | Raspberry Pi 4B, DHT22, MQ135, MQTT over TLS, cloud broker, time-series data, alerts, offline buffering |
-
-## E-Commerce Project
-
-| Project | What It Demonstrates | Live Site |
+| Case study | Analytical focus | Key deliverable |
 |---|---|---|
-| [MAKEDA — Queen of Sheba Fashion Store](projects/makeda-shopify-ecommerce/README.md) | Shopify storefront design, product organization, brand storytelling, mobile usability, and e-commerce security awareness | [Visit the store](https://www-queen-of-hseba.myshopify.com/) |
+| [Northbridge Logistics Risk Assessment](projects/northbridge-risk-assessment/README.md) | NIST-aligned risk analysis, CVSS prioritization, MITRE ATT&CK awareness | Prioritized risk register and phased 90-day security roadmap |
+| [RetailHub Web Application Security Assessment](projects/web-application-security/README.md) | OWASP Top 10, access control, injection, XSS, authentication, logging, and API risk | Prioritized findings and secure-development remediation plan |
+| [ABC Logistics Threat & Vulnerability Management](projects/threat-vulnerability-management/README.md) | Discover → prioritize → remediate → verify → report | Repeatable workflow with ownership, verification, and reporting metrics |
 
-## Programming Project
+## Applied Project Portfolio
 
-| Project | What It Demonstrates | Technologies |
+| # | Project | Evidence of capability |
 |---|---|---|
-| [Simple Food Expense Tracker](projects/food-expense-tracker/README.md) | A desktop expense-management application with JSON persistence, filtering, sorting, totals, CSV export, and a browser-based practice demo | [Try live demo](https://ayalewg8.github.io/cybersecurity-portfolio/food-expense-tracker.html) · Python · Tkinter · JSON · CSV |
+| 01 | [Northbridge Logistics Risk Assessment](projects/northbridge-risk-assessment/README.md) | Connects threats, vulnerabilities, likelihood, impact, and controls to a business roadmap |
+| 02 | [SecureHealth Cryptography & Network Security](projects/cryptography-network-security/README.md) | Designs layered protection for PHI using TLS, AES, PKI, key management, and secure network zones |
+| 03 | [Healthcare Clinic Secure Database](projects/healthcare-secure-database/README.md) | Applies PostgreSQL, RBAC, least privilege, encryption, audit logging, and recovery planning |
+| 04 | [RetailHub Web Application Security Assessment](projects/web-application-security/README.md) | Evaluates OWASP risks and turns findings into prioritized remediation |
+| 05 | [ABC Logistics Threat & Vulnerability Management](projects/threat-vulnerability-management/README.md) | Demonstrates a complete vulnerability-management lifecycle |
+| 06 | [IoT Smart Home Monitoring System](projects/iot-smart-home-monitoring/README.md) | Designs secure sensor telemetry, MQTT over TLS, alerting, and resilience controls |
+| 07 | [Food Expense Tracker](projects/food-expense-tracker/README.md) | Uses Python, Tkinter, JSON, CSV, validation, filtering, and reporting |
+| 08 | [MAKEDA — Queen of Sheba](projects/makeda-shopify-ecommerce/README.md) | Demonstrates Shopify configuration, product organization, mobile usability, and security awareness |
 
-## Presentation Priority Projects
-
-For my portfolio presentation, the most SOC-relevant projects are:
-
-1. **Northbridge Logistics Risk Assessment** — translates business risk into a 90-day defense-in-depth roadmap.
-2. **RetailHub OWASP Web Assessment** — identifies application risks and prioritizes remediation.
-3. **ABC Logistics Vulnerability Management** — demonstrates the repeatable analyst workflow of discover → prioritize → remediate → verify → report.
-
-## Core Frameworks & Security Concepts
-
-- NIST risk concepts
-- CIA triad
-- OWASP Top 10
-- CVSS scoring
-- MITRE ATT&CK awareness
-- Defense in depth
-- Least privilege and RBAC
-- Incident response and security operations concepts
-
-## Technical Toolkit
-
-**Security:** Risk Assessment · Threat & Vulnerability Management · Network Security · Web Application Security · Incident Response · SIEM concepts · IAM/RBAC · MFA · Security Documentation
-
-**Cryptography:** AES · ECDSA · ECDH · SHA-256 · HMAC · PKI · TLS · Secure Key Management
-
-**Tools & Platforms:** Git / GitHub · Wireshark · Nmap · Metasploit · PostgreSQL · SQL · Python · Linux · Raspberry Pi · AWS IoT concepts
-
-## Certifications & Career Development
-
-**Completed / In Progress**
-- Google Foundations of Cybersecurity Certificate
-- Google Cybersecurity Professional Certificate — in progress
-- Associate of Science in Information Technology / Cybersecurity — expected September 2026
-
-**Next Milestones**
-- CompTIA Security+
-- Expand GitHub portfolio artifacts
-- Continue building SOC-focused projects and documentation
-
-## Learning Resources
-
-- [NotebookLM Study Resource 1](https://notebooklm.link.google/UbsFgQxxU9TS) — shared NotebookLM link for study and review materials.
-- [NotebookLM Study Resource 2](https://notebooklm.link.google/qQRmnZyZ9kB2) — additional shared NotebookLM link for study and review materials.
-
-## Additional Projects
-
-The following projects remain available as additional evidence of cybersecurity growth, but they are not part of the six-project presentation sequence:
+## Additional Security Labs
 
 - [SOC Alert Triage & Incident Response](projects/security-operations/README.md)
 - [Cloud Security Foundations](projects/cloud-security/README.md)
 - [Enterprise Security Risk Management](projects/ISEC1373-enterprise-security-risk-management/)
 
+## Skills and Tools
+
+| Area | Skills |
+|---|---|
+| Security operations | Incident-response concepts, alert analysis, SIEM concepts, documentation |
+| Risk and vulnerability | Risk assessment, CVSS, prioritization, remediation tracking, reporting |
+| Identity and data | IAM, RBAC, least privilege, MFA concepts, PostgreSQL, SQL |
+| Network and application | Wireshark, Nmap, network security, OWASP Top 10, SAST/DAST concepts |
+| Cryptography | AES, TLS, PKI, ECDSA/ECDH, hashing, key-management concepts |
+| Platforms and development | Git, GitHub, Python, Linux, Raspberry Pi, MQTT |
+
+## Education and Development
+
+- **Wade College** — Associate of Science, Information Technology / Cybersecurity; expected September 2026
+- **Addis Ababa University — School of Law** — Bachelor of Laws (LL.B.), 2006–2010
+- **Le Cordon Bleu College of Culinary Arts** — Associate Degree, Culinary Arts
+- **Completed:** Google Foundations of Cybersecurity
+- **In progress:** Google Cybersecurity Professional Certificate
+- **Next milestone:** CompTIA Security+
+
+## Professional Integrity
+
+Portfolio scenarios are educational or simulated unless otherwise identified. Recommendations are separated from controls verified as implemented. Sensitive information, credentials, and unsafe exploit details are excluded or sanitized. MAKEDA security controls are presented as security-awareness recommendations unless the project documentation explicitly confirms configuration.
+
 ## Contact
 
 - **Email:** chereneta@gmail.com
-- **GitHub:** [AyalewG8](https://github.com/AyalewG8)
 - **Portfolio:** [ayalewg8.github.io/cybersecurity-portfolio](https://ayalewg8.github.io/cybersecurity-portfolio/)
-- **LinkedIn:** https://linkedin.com/in/ayalewcherenet
-- **Location:** Dallas, Texas
+- **GitHub:** [github.com/AyalewG8](https://github.com/AyalewG8)
+- **LinkedIn:** [linkedin.com/in/ayalewcherenet](https://www.linkedin.com/in/ayalewcherenet)
 
-> **Protect systems · Solve problems · Keep learning**
-
-> All portfolio materials are educational. Sensitive information, credentials, and unsafe exploit details are excluded or sanitized.
-
-
-## MAKEDA Shopify E-Commerce Project
-
-- [View the live GitHub Pages showcase](https://ayalewg8.github.io/cybersecurity-portfolio/makeda-shopify.html)
-- [Visit the live MAKEDA store](https://www-queen-of-hseba.myshopify.com/)
-
-
-## Updated Portfolio Presentation
-
-- [View the live web presentation](https://ayalewg8.github.io/cybersecurity-portfolio/portfolio-presentation.html)
+> Protect systems · Solve problems · Keep learning.
