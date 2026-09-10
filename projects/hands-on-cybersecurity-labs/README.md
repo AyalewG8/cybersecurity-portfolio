@@ -33,7 +33,8 @@ The analyst reviews synthetic authentication, endpoint, or network evidence and 
 
 - an alert severity;
 - the most appropriate first response; and
-- whether the event should be documented, verified, contained, or escalated.
+- whether the event should be documented, verified, contained, or escalated; and
+- a structured analyst triage note that can be copied or downloaded as a text file.
 
 ### Included Scenarios
 
@@ -108,6 +109,7 @@ No frameworks, external APIs, databases, accounts, or installations are required
 - Documentation IP ranges are used where examples require public addresses.
 - No real systems are scanned, contacted, or modified.
 - No personal data, credentials, or user-entered information is transmitted or stored.
+- Downloaded triage notes are created locally in the browser and are not uploaded.
 - The simulations reset when the page is reloaded.
 - Results are educational decision-support examples, not production security advice.
 
