@@ -7,12 +7,13 @@ Interactive, browser-based simulations demonstrating practical security-analysis
 
 ## Project Purpose
 
-This project turns four cybersecurity workflows into safe, repeatable practice exercises:
+This project turns five cybersecurity workflows into safe, repeatable practice exercises:
 
 1. SOC alert triage
 2. Vulnerability prioritization
 3. Risk assessment
 4. Log analysis and incident investigation
+5. Phishing email analysis and containment
 
 The goal is to show analytical reasoning, not simply display definitions. Each simulation asks the user to review evidence, make a decision, and compare that decision with a documented model.
 
@@ -22,6 +23,8 @@ The goal is to show analytical reasoning, not simply display definitions. Each s
 - Log filtering and event correlation
 - Evidence-based incident investigation
 - Indicator identification
+- Email-header and authentication analysis
+- Phishing triage and containment
 - Incident-response decision making
 - CVSS interpretation
 - Asset-criticality analysis
@@ -103,6 +106,20 @@ The investigator searches and filters a ten-event synthetic timeline, flags susp
 The evidence chain includes repeated failed sign-ins, a later successful sign-in from the same documentation address, encoded PowerShell, credential-storage access, and internal SMB connection attempts. Benign backup, policy, inventory, and software-update events are included to test false-positive control.
 
 The supported conclusion is **suspected endpoint compromise with lateral-movement activity**. The evidence does not prove data exfiltration, reinforcing the difference between a defensible conclusion and an unsupported assumption.
+
+## Lab 5 — Phishing Email Analysis
+
+The analyst inspects a synthetic payroll-themed message and evaluates:
+
+- SPF, DKIM, and DMARC authentication results;
+- sender, Reply-To, and Return-Path alignment;
+- urgency and credential-request language;
+- the displayed destination; and
+- the safest containment and reporting response.
+
+The supported verdict is **credential phishing**. Authentication failures, unrelated sender domains, urgency, and a credential-verification link form a defensible evidence chain. The evidence does not establish that an internal account was compromised, so the simulation does not label the message as confirmed business email compromise.
+
+All domains use the reserved `.example` namespace, and the source uses an RFC 5737 documentation address. The link is displayed as inert text and should not be opened.
 
 ## Technology
 
