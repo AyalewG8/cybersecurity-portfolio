@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Python SOC Alert Triage case study by Ayalew Cherenet: synthetic log generation, behavioral detections, severity-ranked findings, incident reporting, and 28 passing unit tests.">
+  <meta name="theme-color" content="#050b14">
+  <title>Python SOC Alert Triage Case Study | Ayalew Cherenet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .code-panel{overflow:auto;margin:18px 0 0;padding:20px;border:1px solid rgba(124,168,255,.25);border-radius:14px;background:#050b14;color:#c8d9e8;font:14px/1.65 Consolas,monospace;white-space:pre}
+    .finding-critical{color:#ff8a8a;font-weight:800}.finding-high{color:#ffd166;font-weight:800}.finding-medium{color:#7ca8ff;font-weight:800}
+    .test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.test-grid article{padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02)}.test-grid strong{display:block;color:var(--accent);font:700 1.55rem "Space Grotesk"}.test-grid span{color:var(--muted);font-size:.82rem}
+    @media(max-width:760px){.test-grid{grid-template-columns:1fr}.code-panel{font-size:.75rem}}
+  </style>
+</head>
+<body>
+  <main class="case soc-case-page">
+    <a href="index.html#additional-projects">← Back to Portfolio</a>
+
+    <header class="case-hero case-animate">
+      <p class="kicker">Python · Security Operations · Behavioral Detection</p>
+      <h1>Python SOC Alert Triage Lab</h1>
+      <p class="lead">A reproducible security-analysis project that generates synthetic authentication and proxy logs, detects a multi-stage incident, ranks findings by severity, and produces evidence that can be verified through automated tests.</p>
+      <div class="case-hero-actions">
+        <a class="button primary" href="https://github.com/AyalewG8/cybersecurity-portfolio/tree/main/projects/python-soc-alert-triage" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Review Source Code</a>
+        <a class="button secondary" href="hands-on-labs.html#network-lab"><i class="fa-solid fa-play"></i> Try Network Simulation</a>
+      </div>
+    </header>
+
+    <section class="case-metrics" aria-label="Verified project outcomes">
+      <article class="case-stat case-animate"><strong data-case-count="28">0</strong><span>passing unit tests</span></article>
+      <article class="case-stat case-animate"><strong data-case-count="527">0</strong><span>synthetic log events</span></article>
+      <article class="case-stat case-animate"><strong data-case-count="8">0</strong><span>ranked findings</span></article>
+      <article class="case-stat case-animate"><strong data-case-count="5">0</strong><span>detection analytics</span></article>
+    </section>
+
+    <section class="grid">
+      <article class="panel case-animate">
+        <p class="kicker">Challenge</p>
+        <h2>Detect one incident across noisy telemetry.</h2>
+        <p>The dataset mixes routine administrator logins, user mistakes, normal web traffic, and large software downloads with a password spray, compromised login, persistence, regular beaconing, and outbound uploads.</p>
+      </article>
+      <article class="panel case-animate">
+        <p class="kicker">My Role</p>
+        <h2>Build a repeatable analyst workflow.</h2>
+        <p>I used Python to generate deterministic evidence, parse two log formats, correlate events by identity, source, host, destination, and time, rank findings, and test both true-positive and false-positive behavior.</p>
+      </article>
+    </section>
+
+    <section class="panel case-animate">
+      <p class="kicker">Detection Pipeline</p>
+      <h2>Five analytics turn raw logs into findings</h2>
+      <div class="case-flow">
+        <article class="case-animate"><h3>Password Spray</h3><p>Find one source failing against many distinct accounts inside a short window.</p></article>
+        <article class="case-animate"><h3>Compromised Login</h3><p>Correlate later successful authentication from the spray source.</p></article>
+        <article class="case-animate"><h3>Persistence</h3><p>Detect account creation and privileged writes to sudoers or SSH keys.</p></article>
+        <article class="case-animate"><h3>Beaconing</h3><p>Measure request timing and identify a stable median interval despite jitter.</p></article>
+        <article class="case-animate"><h3>Large Upload</h3><p>Aggregate outbound bytes by source and destination within a time window.</p></article>
+      </div>
+    </section>
+
+    <section class="panel case-animate">
+      <p class="kicker">Evidence Timeline</p>
+      <h2>Identity compromise progressed to network activity</h2>
+      <div style="overflow-x:auto">
+        <table class="evidence-table">
+          <thead><tr><th>Time UTC</th><th>Evidence</th><th>Analyst interpretation</th></tr></thead>
+          <tbody>
+            <tr><td>02:35–02:46</td><td>37 accounts targeted from one source</td><td>Password-spray behavior, not single-account brute force.</td></tr>
+            <tr><td>02:47:03</td><td>Password login succeeds for j.okafor</td><td>Critical correlation with the spray source.</td></tr>
+            <tr><td>02:51–03:04</td><td>New account, sudoers entry, SSH key, and key-based re-entry</td><td>Persistence established after account compromise.</td></tr>
+            <tr><td>02:58–07:10</td><td>55 requests with a 300-second median gap and 93% timing agreement</td><td>High-confidence suspected command-and-control beaconing.</td></tr>
+            <tr><td>06:41–06:42</td><td>88.8 MiB sent in three outbound POST requests</td><td>Critical suspected data transfer requiring containment and scoping.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel case-animate">
+      <p class="kicker">Reproducible Analysis</p>
+      <h2>Run locally with Python—no external packages</h2>
+      <pre class="code-panel" tabindex="0" aria-label="Commands for running the Python SOC lab">$ python generate_logs.py
+wrote 52 auth events and 475 proxy events to data
+
+$ python tools/triage.py
+SOC alert triage: 8 findings
+3 critical · 4 high · 1 medium
+
+$ python -m unittest discover -s tools -v
+Ran 28 tests
+OK</pre>
+      <p>The triage command also supports JSON output for machine-readable findings. Exit code 1 intentionally signals that critical findings are present, allowing the tool to act as a pipeline gate.</p>
+    </section>
+
+    <section class="panel case-animate">
+      <p class="kicker">Verified Results</p>
+      <h2>Severity-ranked findings stay tied to evidence</h2>
+      <div style="overflow-x:auto">
+        <table class="tool-table">
+          <thead><tr><th>Severity</th><th>Analytic</th><th>Verified result</th></tr></thead>
+          <tbody>
+            <tr><th class="finding-critical">Critical</th><td>Login after spray</td><td>Password and planted-key logins from the spray source.</td></tr>
+            <tr><th class="finding-critical">Critical</th><td>Large upload</td><td>88.8 MiB outbound to the suspicious destination.</td></tr>
+            <tr><th class="finding-high">High</th><td>Password spray</td><td>37 distinct accounts targeted; 36 failures before success.</td></tr>
+            <tr><th class="finding-high">High</th><td>Persistence</td><td>Privileged sudoers and SSH authorized-key modifications.</td></tr>
+            <tr><th class="finding-high">High</th><td>Beaconing</td><td>55 requests; 300-second median interval; 93% agreement.</td></tr>
+            <tr><th class="finding-medium">Medium</th><td>Persistence</td><td>New local account created on the bastion host.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel case-animate">
+      <p class="kicker">Test Evidence</p>
+      <h2>The suite tests what the analytics catch—and ignore</h2>
+      <div class="test-grid">
+        <article><strong>28 / 28</strong><span>unit tests passing</span></article>
+        <article><strong>52 + 475</strong><span>authentication and proxy events verified</span></article>
+        <article><strong>0</strong><span>external packages or live connections</span></article>
+      </div>
+      <div class="case-outcomes" style="margin-top:14px">
+        <article><i class="fa-solid fa-check-double"></i><h3>Positive coverage</h3><p>Tests validate parsing, spray correlation, persistence, timing analysis, upload aggregation, JSON output, and dataset figures.</p></article>
+        <article><i class="fa-solid fa-filter"></i><h3>False-positive control</h3><p>Tests reject one-account brute force, low-volume failures, irregular traffic, page-load bursts, small uploads, large downloads, and routine sudo activity.</p></article>
+      </div>
+    </section>
+
+    <section class="panel case-note case-animate">
+      <p class="kicker">Incident Decision</p>
+      <h2>Contain the endpoint and identities; preserve evidence</h2>
+      <p><strong>Recommended response:</strong> Isolate the affected workstation, disable compromised and persistence accounts, revoke sessions and keys, block confirmed indicators, preserve authentication, proxy, endpoint, and memory evidence, then scope and escalate through incident response.</p>
+    </section>
+
+    <section class="panel case-animate">
+      <p class="kicker">Tools &amp; Boundaries</p>
+      <h2>Built for safe, reviewable practice</h2>
+      <table class="tool-table">
+        <tbody>
+          <tr><th>Language</th><td>Python standard library: argparse, dataclasses, datetime, pathlib, regular expressions, statistics, unittest, and JSON.</td></tr>
+          <tr><th>Engineering</th><td>Seeded deterministic generation, self-checking dataset, modular analytics, structured findings, CLI output, and automated tests.</td></tr>
+          <tr><th>Security concepts</th><td>Password spraying, account compromise, persistence, command-and-control beaconing, outbound transfer, containment, and evidence preservation.</td></tr>
+          <tr><th>Safety boundary</th><td>Fictional organization and identities, RFC 5737 addresses, reserved .example destination, and no external network connections.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel case-animate">
+      <p class="kicker">Review the Evidence</p>
+      <h2>Code, tests, report, and interactive companion</h2>
+      <div class="evidence-links">
+        <a href="https://github.com/AyalewG8/cybersecurity-portfolio/tree/main/projects/python-soc-alert-triage" target="_blank" rel="noopener noreferrer"><span>Python source and dataset</span><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/AyalewG8/cybersecurity-portfolio/blob/main/projects/python-soc-alert-triage/INCIDENT-REPORT.md" target="_blank" rel="noopener noreferrer"><span>Incident report</span><i class="fa-solid fa-file-shield"></i></a>
+        <a href="hands-on-labs.html#network-lab"><span>Network simulation</span><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <section class="panel case-note case-animate">
+      <p class="kicker">Professional Takeaway</p>
+      <h2>Evidence of Python, SOC reasoning, and clear communication</h2>
+      <p>This project demonstrates that I can translate raw telemetry into testable detection logic, correlate a multi-stage incident, control false positives, document limitations, and recommend a proportionate response.</p>
+      <div class="case-cta"><a class="button primary" href="resume.html"><i class="fa-solid fa-file-lines"></i> View Resume</a><a class="button secondary" href="index.html#contact"><i class="fa-solid fa-envelope"></i> Contact Ayalew</a></div>
+    </section>
+  </main>
+
+  <script>
+    const items=document.querySelectorAll(".case-animate");
+    if("IntersectionObserver" in window){
+      const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");observer.unobserve(entry.target)}}),{threshold:.12});
+      items.forEach(item=>observer.observe(item));
+    }else{items.forEach(item=>item.classList.add("is-visible"))}
+    document.querySelectorAll("[data-case-count]").forEach(counter=>{
+      const target=Number(counter.dataset.caseCount);
+      const duration=Math.min(900,Math.max(300,target*5));
+      const started=performance.now();
+      const step=now=>{const progress=Math.min(1,(now-started)/duration);counter.textContent=Math.round(target*progress);if(progress<1)requestAnimationFrame(step)};
+      requestAnimationFrame(step);
+    });
+  </script>
+</body>
+</html>
