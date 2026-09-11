@@ -4,6 +4,9 @@
 
 This project demonstrates how a security operations team collects telemetry, investigates alerts, coordinates incident response, and improves defensive controls. The lab uses sanitized scenarios involving phishing, suspicious logins, and malware indicators.
 
+**Recruiter case study:** [SOC Alert Triage & Incident Investigation](../../soc-analyst-case-study.html)  
+**Live simulations:** [SOC triage and log investigation](../../hands-on-labs.html)
+
 ## Objectives
 
 - Centralize security-relevant logs in a SIEM
