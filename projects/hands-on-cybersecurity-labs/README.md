@@ -3,7 +3,7 @@
 Interactive, browser-based simulations demonstrating practical security-analysis decisions with synthetic data.
 
 **Live lab:** [Open the Hands-On Cybersecurity Labs](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html)  
-**Recruiter case study:** [Review the SOC Analyst case study](https://ayalewg8.github.io/cybersecurity-portfolio/soc-analyst-case-study.html)
+**SOC Analyst case study:** [Review the SOC Analyst case study](https://ayalewg8.github.io/cybersecurity-portfolio/soc-analyst-case-study.html)
 
 ## Project Purpose
 
