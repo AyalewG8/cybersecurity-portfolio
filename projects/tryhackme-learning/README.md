@@ -35,7 +35,7 @@ Future entries will use this format:
 |---|---|---|---|---|
 | YYYY-MM-DD | Verified title | Specific technical skill | Public link or sanitized image | Concise explanation of what was learned and applied |
 
-## Recruiter Value
+## Professional Value
 
 This approach shows continuous learning without inflating experience. Each future entry will identify what was practiced, how it relates to security operations, and where the supporting evidence can be reviewed.
 
