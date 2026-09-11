@@ -27,7 +27,7 @@ I am an IT and Cybersecurity student preparing for an entry-level SOC Analyst or
 2. [Review the professional resume](https://ayalewg8.github.io/cybersecurity-portfolio/resume.html)
 3. [Read the SOC Analyst case study](https://ayalewg8.github.io/cybersecurity-portfolio/soc-analyst-case-study.html)
 4. [Try the interactive cybersecurity labs](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html)
-5. [Read the four-page portfolio overview](https://ayalewg8.github.io/cybersecurity-portfolio/portfolio-overview.html)
+5. [Read the professional portfolio overview](https://ayalewg8.github.io/cybersecurity-portfolio/portfolio-overview.html)
 6. Review the highlighted security case studies below.
 
 ## Interactive Hands-On Labs
@@ -79,7 +79,7 @@ A professional [TryHackMe learning record](projects/tryhackme-learning/README.md
 | Security operations | Incident-response concepts, alert analysis, SIEM concepts, documentation |
 | Risk and vulnerability | Risk assessment, CVSS, prioritization, remediation tracking, reporting |
 | Identity and data | IAM, RBAC, least privilege, MFA concepts, PostgreSQL, SQL |
-| Network and application | Wireshark, Nmap, network security, OWASP Top 10, SAST/DAST concepts |
+| Network and application | Network security, OWASP Top 10, SAST/DAST concepts; developing familiarity with Wireshark and Nmap |
 | Cryptography | AES, TLS, PKI, ECDSA/ECDH, hashing, key-management concepts |
 | Platforms and development | Git, GitHub, Python, Linux, Raspberry Pi, MQTT |
 
