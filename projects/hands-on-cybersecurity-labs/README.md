@@ -148,6 +148,8 @@ A strong result requires the beaconing conclusion, the isolation response, at le
 
 The scenario uses a reserved `.example` domain and an RFC 5737 documentation IP address. It creates no network traffic and contacts no live systems.
 
+**Python companion:** [Review the tested SOC triage and beacon-detection project](../python-soc-alert-triage/README.md).
+
 ## Technology
 
 - Semantic HTML
