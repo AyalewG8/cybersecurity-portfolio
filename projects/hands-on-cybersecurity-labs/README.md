@@ -7,13 +7,14 @@ Interactive, browser-based simulations demonstrating practical security-analysis
 
 ## Project Purpose
 
-This project turns five cybersecurity workflows into safe, repeatable practice exercises:
+This project turns six cybersecurity workflows into safe, repeatable practice exercises:
 
 1. SOC alert triage
 2. Vulnerability prioritization
 3. Risk assessment
 4. Log analysis and incident investigation
 5. Phishing email analysis and containment
+6. Network traffic analysis and beacon detection
 
 The goal is to show analytical reasoning, not simply display definitions. Each simulation asks the user to review evidence, make a decision, and compare that decision with a documented model.
 
@@ -25,6 +26,8 @@ The goal is to show analytical reasoning, not simply display definitions. Each s
 - Indicator identification
 - Email-header and authentication analysis
 - Phishing triage and containment
+- DNS and network-traffic correlation
+- Command-and-control beacon recognition
 - Incident-response decision making
 - CVSS interpretation
 - Asset-criticality analysis
@@ -120,6 +123,20 @@ The analyst inspects a synthetic payroll-themed message and evaluates:
 The supported verdict is **credential phishing**. Authentication failures, unrelated sender domains, urgency, and a credential-verification link form a defensible evidence chain. The evidence does not establish that an internal account was compromised, so the simulation does not label the message as confirmed business email compromise.
 
 All domains use the reserved `.example` namespace, and the source uses an RFC 5737 documentation address. The link is displayed as inert text and should not be opened.
+
+## Lab 6 — Network-Traffic Investigation
+
+The investigator correlates a synthetic DNS and encrypted-connection timeline from one workstation. The exercise tests recognition of:
+
+- regular connection intervals;
+- repeated DNS TXT requests;
+- a rare, unapproved external domain;
+- consistent small TLS transfers; and
+- missing approved-software context in the asset record.
+
+The supported conclusion is **suspected command-and-control beaconing**. The appropriate first response is to isolate the endpoint, block confirmed indicators, preserve DNS and endpoint evidence, and escalate through the incident-response process. The limited records do not prove large-scale data exfiltration.
+
+The scenario uses a reserved `.example` domain and an RFC 5737 documentation IP address. It creates no network traffic and contacts no live systems.
 
 ## Technology
 
