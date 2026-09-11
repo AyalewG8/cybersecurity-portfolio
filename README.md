@@ -27,8 +27,9 @@ I am an IT and Cybersecurity student preparing for an entry-level SOC Analyst or
 2. [Review the professional resume](https://ayalewg8.github.io/cybersecurity-portfolio/resume.html)
 3. [Read the SOC Analyst case study](https://ayalewg8.github.io/cybersecurity-portfolio/soc-analyst-case-study.html)
 4. [Try the interactive security simulations](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html)
-5. [Read the professional portfolio overview](https://ayalewg8.github.io/cybersecurity-portfolio/portfolio-overview.html)
-6. Review the highlighted security case studies below.
+5. [Review the Python SOC Alert Triage case study](https://ayalewg8.github.io/cybersecurity-portfolio/python-soc-case-study.html)
+6. [Read the professional portfolio overview](https://ayalewg8.github.io/cybersecurity-portfolio/portfolio-overview.html)
+7. Review the highlighted security case studies below.
 
 ## Interactive Security Simulations
 
@@ -67,7 +68,7 @@ A professional [TryHackMe learning record](projects/tryhackme-learning/README.md
 | 06 | [IoT Smart Home Monitoring System](projects/iot-smart-home-monitoring/README.md) | Designs secure sensor telemetry, MQTT over TLS, alerting, and resilience controls |
 | 07 | [Food Expense Tracker](projects/food-expense-tracker/README.md) | Uses Python, Tkinter, JSON, CSV, validation, filtering, and reporting |
 | 08 | [MAKEDA — Queen of Sheba](projects/makeda-shopify-ecommerce/README.md) | Demonstrates Shopify configuration, product organization, mobile usability, and security awareness |
-| 09 | [Python SOC Alert Triage Lab](projects/python-soc-alert-triage/README.md) | Generates synthetic logs and detects password spraying, persistence, beaconing, and large outbound uploads with 28 unit tests |
+| 09 | [Python SOC Alert Triage Lab](https://ayalewg8.github.io/cybersecurity-portfolio/python-soc-case-study.html) | Generates synthetic logs and detects password spraying, persistence, beaconing, and large outbound uploads with 28 unit tests |
 
 ## Additional Security Labs
 
