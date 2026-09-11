@@ -32,7 +32,7 @@ I am an IT and Cybersecurity student preparing for an entry-level SOC Analyst or
 
 ## Interactive Hands-On Labs
 
-The [browser-based lab suite](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html) uses synthetic data, requires no installation, and resets when the page is reloaded.
+The [six-part browser-based lab suite](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html) uses synthetic data, requires no installation, and resets when the page is reloaded.
 
 - **SOC Alert Triage:** interpret indicators, assign severity, select a response, and download a structured analyst note.
 - **Vulnerability Prioritization:** combine CVSS with business and threat context.
