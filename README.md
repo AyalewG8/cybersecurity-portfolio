@@ -25,9 +25,10 @@ I am an IT and Cybersecurity student preparing for an entry-level SOC Analyst or
 
 1. [Open the live recruiter portfolio](https://ayalewg8.github.io/cybersecurity-portfolio/)
 2. [Review the professional resume](https://ayalewg8.github.io/cybersecurity-portfolio/resume.html)
-3. [Try the interactive cybersecurity labs](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html)
-4. [Read the four-page portfolio overview](https://ayalewg8.github.io/cybersecurity-portfolio/portfolio-overview.html)
-5. Review the three highlighted security case studies below.
+3. [Read the SOC Analyst recruiter case study](https://ayalewg8.github.io/cybersecurity-portfolio/soc-analyst-case-study.html)
+4. [Try the interactive cybersecurity labs](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html)
+5. [Read the four-page portfolio overview](https://ayalewg8.github.io/cybersecurity-portfolio/portfolio-overview.html)
+6. Review the highlighted security case studies below.
 
 ## Interactive Hands-On Labs
 
@@ -43,6 +44,7 @@ The [browser-based lab suite](https://ayalewg8.github.io/cybersecurity-portfolio
 
 | Case study | Analytical focus | Key deliverable |
 |---|---|---|
+| [SOC Alert Triage & Incident Investigation](soc-analyst-case-study.html) | Alert validation, multi-source log correlation, false-positive control, containment, and evidence-based scoping | Interactive investigation and downloadable structured analyst note |
 | [Northbridge Logistics Risk Assessment](projects/northbridge-risk-assessment/README.md) | NIST-aligned risk analysis, CVSS prioritization, MITRE ATT&CK awareness | Prioritized risk register and phased 90-day security roadmap |
 | [RetailHub Web Application Security Assessment](projects/web-application-security/README.md) | OWASP Top 10, access control, injection, XSS, authentication, logging, and API risk | Prioritized findings and secure-development remediation plan |
 | [ABC Logistics Threat & Vulnerability Management](projects/threat-vulnerability-management/README.md) | Discover → prioritize → remediate → verify → report | Repeatable workflow with ownership, verification, and reporting metrics |
