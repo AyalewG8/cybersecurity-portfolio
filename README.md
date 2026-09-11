@@ -67,6 +67,7 @@ A professional [TryHackMe learning record](projects/tryhackme-learning/README.md
 | 06 | [IoT Smart Home Monitoring System](projects/iot-smart-home-monitoring/README.md) | Designs secure sensor telemetry, MQTT over TLS, alerting, and resilience controls |
 | 07 | [Food Expense Tracker](projects/food-expense-tracker/README.md) | Uses Python, Tkinter, JSON, CSV, validation, filtering, and reporting |
 | 08 | [MAKEDA — Queen of Sheba](projects/makeda-shopify-ecommerce/README.md) | Demonstrates Shopify configuration, product organization, mobile usability, and security awareness |
+| 09 | [Python SOC Alert Triage Lab](projects/python-soc-alert-triage/README.md) | Generates synthetic logs and detects password spraying, persistence, beaconing, and large outbound uploads with 28 unit tests |
 
 ## Additional Security Labs
 
@@ -78,7 +79,7 @@ A professional [TryHackMe learning record](projects/tryhackme-learning/README.md
 
 | Area | Skills |
 |---|---|
-| Security operations | Incident-response concepts, alert analysis, SIEM concepts, documentation |
+| Security operations | Incident-response concepts, alert analysis, SIEM concepts, Python log parsing, behavioral detection, documentation |
 | Risk and vulnerability | Risk assessment, CVSS, prioritization, remediation tracking, reporting |
 | Identity and data | IAM, RBAC, least privilege, MFA concepts, PostgreSQL, SQL |
 | Network and application | Network security, OWASP Top 10, SAST/DAST concepts; developing familiarity with Wireshark and Nmap |
