@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Interactive cybersecurity practice labs by Ayalew Cherenet: SOC alert triage, log investigation, phishing analysis, vulnerability prioritization, and risk assessment using synthetic data.">
+  <meta name="description" content="Interactive cybersecurity practice labs by Ayalew Cherenet: SOC alert triage, log and network investigation, phishing analysis, vulnerability prioritization, and risk assessment using synthetic data.">
   <meta name="theme-color" content="#050b14">
   <title>Hands-On Cybersecurity Labs | Ayalew Cherenet</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +42,7 @@
       <div>
         <p class="eyebrow">Interactive Practice Portfolio</p>
         <h1>Hands-On <span>Cybersecurity Labs</span></h1>
-        <p class="lead">Practice the judgment used in security operations: interpret an alert, investigate event logs, analyze a suspicious email, prioritize a vulnerability, and translate likelihood and impact into a defensible risk decision.</p>
+        <p class="lead">Practice the judgment used in security operations: interpret an alert, investigate host and network activity, analyze a suspicious email, prioritize a vulnerability, and translate likelihood and impact into a defensible risk decision.</p>
       </div>
       <aside class="scope"><strong>Safe simulation:</strong> All organizations, identities, logs, and scores on this page are fictional or synthetic. No live systems are scanned or changed.</aside>
     </section>
@@ -53,6 +53,7 @@
       <a href="#risk-lab">03 · Risk Assessment<small>Calculate inherent and residual risk.</small></a>
       <a href="#log-lab">04 · Log Investigation<small>Filter events and identify a compromise.</small></a>
       <a href="#phishing-lab">05 · Phishing Analysis<small>Inspect indicators and contain the threat.</small></a>
+      <a href="#network-lab">06 · Network Investigation<small>Recognize beaconing and choose containment.</small></a>
     </nav>
 
     <section class="lab" id="soc-lab">
@@ -277,6 +278,48 @@
       </div>
     </section>
 
+    <section class="lab" id="network-lab">
+      <div class="lab-head">
+        <div><p class="eyebrow">Network Detection</p><h2>Network-Traffic Investigation</h2><p>Correlate synthetic DNS and connection records, identify suspicious patterns, and select an evidence-based response.</p></div>
+        <span class="lab-number">06</span>
+      </div>
+      <div class="workspace">
+        <div class="panel">
+          <h3>Traffic timeline: wkstn-118</h3>
+          <pre class="log" style="min-height:330px">09:00:12  DNS  api.company.example  A     NOERROR
+09:02:00  DNS  sync-check.example  TXT   NOERROR
+09:02:02  NET  203.0.113.88:443    TLS   842 bytes
+09:03:00  DNS  sync-check.example  TXT   NOERROR
+09:03:02  NET  203.0.113.88:443    TLS   851 bytes
+09:04:00  DNS  sync-check.example  TXT   NOERROR
+09:04:02  NET  203.0.113.88:443    TLS   846 bytes
+09:05:00  DNS  sync-check.example  TXT   NOERROR
+09:05:02  NET  203.0.113.88:443    TLS   849 bytes
+09:07:31  NET  10.20.8.12:443      TLS   approved backup
+09:09:18  CMDB wkstn-118           no approved sync agent</pre>
+          <p class="formula">The public address is from an RFC 5737 documentation range, and all domains are reserved examples. No live traffic is generated.</p>
+        </div>
+        <div class="panel">
+          <fieldset class="choice-group">
+            <legend>Select the suspicious network indicators</legend>
+            <div class="choice-list">
+              <label class="choice"><input type="checkbox" name="network-indicator" value="interval"> Connections repeat at nearly exact one-minute intervals</label>
+              <label class="choice"><input type="checkbox" name="network-indicator" value="txt"> Repeated DNS TXT queries to the same external domain</label>
+              <label class="choice"><input type="checkbox" name="network-indicator" value="rare-domain"> The external domain is not part of an approved service</label>
+              <label class="choice"><input type="checkbox" name="network-indicator" value="small-tls"> Similar small TLS transfers follow each DNS request</label>
+              <label class="choice"><input type="checkbox" name="network-indicator" value="no-agent"> Asset records show no approved synchronization agent</label>
+              <label class="choice"><input type="checkbox" name="network-indicator" value="normal-a"> A normal A-record lookup reaches the company API</label>
+              <label class="choice"><input type="checkbox" name="network-indicator" value="backup"> An approved internal backup connection occurs</label>
+            </div>
+          </fieldset>
+          <div class="field" style="margin-top:18px"><label for="network-conclusion">Investigation conclusion</label><select id="network-conclusion"><option value="">Select conclusion</option><option value="normal">Normal workstation activity</option><option value="scan">Inbound network scan</option><option value="beacon">Suspected command-and-control beaconing</option><option value="exfiltration">Confirmed large-scale data exfiltration</option></select></div>
+          <div class="field"><label for="network-action">Recommended first response</label><select id="network-action"><option value="">Select response</option><option value="monitor">Continue monitoring only</option><option value="reboot">Reboot the workstation and close the alert</option><option value="isolate">Isolate the endpoint, block confirmed indicators, preserve evidence, and escalate</option><option value="shutdown">Shut down the entire company network</option></select></div>
+          <div class="actions"><button class="button primary" id="evaluate-network">Evaluate investigation</button><button class="button secondary" id="reset-network">Reset</button></div>
+          <div class="result" id="network-result" role="status" aria-live="polite"><strong>Investigation ready</strong>Select the supported indicators, conclusion, and response.</div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer><div class="container footer-row"><span>© <span id="year"></span> Ayalew Cherenet · Educational cybersecurity simulations</span><a href="index.html">Return to portfolio</a></div></footer>
@@ -321,6 +364,10 @@
     const phishingIndicators=new Set(["auth-fail","reply-mismatch","urgency","credential-link","display-spoof"]);
     document.getElementById("evaluate-phishing").addEventListener("click",()=>{const selected=[...document.querySelectorAll('input[name="phishing-indicator"]:checked')].map(item=>item.value),verdict=document.getElementById("phishing-verdict").value,action=document.getElementById("phishing-action").value,out=document.getElementById("phishing-result");if(!verdict||!action){out.className="result warning";out.innerHTML="<strong>Complete the analysis</strong>Select a verdict and a first response before evaluating.";return}const truePositive=selected.filter(item=>phishingIndicators.has(item)).length,falsePositive=selected.filter(item=>!phishingIndicators.has(item)).length,strong=verdict==="phishing"&&action==="quarantine"&&truePositive>=4&&falsePositive<=1;out.className="result "+(strong?"success":"warning");out.innerHTML="<strong>"+(strong?"Strong phishing analysis":"Review the message evidence")+"</strong>You identified "+truePositive+" of "+phishingIndicators.size+" suspicious indicators with "+falsePositive+" likely false positive"+(falsePositive===1?"":"s")+". The supported verdict is credential phishing: authentication fails, sender domains do not align, urgency pressures the recipient, and the link requests credentials. Quarantine and report the message, block confirmed indicators, notify the affected user, and follow approved procedures. The evidence does not confirm a compromised internal account, so business email compromise is not established."});
     document.getElementById("reset-phishing").addEventListener("click",()=>{document.querySelectorAll('input[name="phishing-indicator"]').forEach(item=>item.checked=false);document.getElementById("phishing-verdict").value="";document.getElementById("phishing-action").value="";const out=document.getElementById("phishing-result");out.className="result";out.innerHTML="<strong>Analysis ready</strong>Select the indicators, verdict, and response supported by the evidence."});
+
+    const networkIndicators=new Set(["interval","txt","rare-domain","small-tls","no-agent"]);
+    document.getElementById("evaluate-network").addEventListener("click",()=>{const selected=[...document.querySelectorAll('input[name="network-indicator"]:checked')].map(item=>item.value),conclusion=document.getElementById("network-conclusion").value,action=document.getElementById("network-action").value,out=document.getElementById("network-result");if(!conclusion||!action){out.className="result warning";out.innerHTML="<strong>Complete the investigation</strong>Select a conclusion and first response before evaluating.";return}const truePositive=selected.filter(item=>networkIndicators.has(item)).length,falsePositive=selected.filter(item=>!networkIndicators.has(item)).length,strong=conclusion==="beacon"&&action==="isolate"&&truePositive>=4&&falsePositive<=1;out.className="result "+(strong?"success":"warning");out.innerHTML="<strong>"+(strong?"Strong network investigation":"Review the traffic pattern")+"</strong>You identified "+truePositive+" of "+networkIndicators.size+" suspicious indicators with "+falsePositive+" likely false positive"+(falsePositive===1?"":"s")+". Regular one-minute timing, repeated TXT requests, consistent small encrypted transfers, a rare external destination, and no approved software mapping support suspected command-and-control beaconing. Isolate wkstn-118, block confirmed indicators, preserve DNS and endpoint evidence, and escalate. The records do not confirm large-scale data exfiltration."});
+    document.getElementById("reset-network").addEventListener("click",()=>{document.querySelectorAll('input[name="network-indicator"]').forEach(item=>item.checked=false);document.getElementById("network-conclusion").value="";document.getElementById("network-action").value="";const out=document.getElementById("network-result");out.className="result";out.innerHTML="<strong>Investigation ready</strong>Select the supported indicators, conclusion, and response."});
     document.getElementById("year").textContent=new Date().getFullYear();
   </script>
 </body>
