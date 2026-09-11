@@ -6,17 +6,20 @@ Interactive, browser-based simulations demonstrating practical security-analysis
 
 ## Project Purpose
 
-This project turns three cybersecurity workflows into safe, repeatable practice exercises:
+This project turns four cybersecurity workflows into safe, repeatable practice exercises:
 
 1. SOC alert triage
 2. Vulnerability prioritization
 3. Risk assessment
+4. Log analysis and incident investigation
 
 The goal is to show analytical reasoning, not simply display definitions. Each simulation asks the user to review evidence, make a decision, and compare that decision with a documented model.
 
 ## Skills Demonstrated
 
 - Security alert triage
+- Log filtering and event correlation
+- Evidence-based incident investigation
 - Indicator identification
 - Incident-response decision making
 - CVSS interpretation
@@ -92,6 +95,14 @@ Residual risk = inherent risk × (1 − estimated control effectiveness)
 
 Residual scores are projections, not proof of actual risk reduction. Control effectiveness should be supported by testing, monitoring, audit evidence, and ownership.
 
+## Lab 4 — Log-Analysis Investigation
+
+The investigator searches and filters a ten-event synthetic timeline, flags suspicious activity, and selects an incident conclusion and containment action.
+
+The evidence chain includes repeated failed sign-ins, a later successful sign-in from the same documentation address, encoded PowerShell, credential-storage access, and internal SMB connection attempts. Benign backup, policy, inventory, and software-update events are included to test false-positive control.
+
+The supported conclusion is **suspected endpoint compromise with lateral-movement activity**. The evidence does not prove data exfiltration, reinforcing the difference between a defensible conclusion and an unsupported assumption.
+
 ## Technology
 
 - Semantic HTML
@@ -124,7 +135,7 @@ No frameworks, external APIs, databases, accounts, or installations are required
 
 - Add more synthetic SOC scenarios mapped to MITRE ATT&CK techniques.
 - Add downloadable incident-triage notes.
-- Add a log-search exercise using a larger synthetic event set.
+- Expand the log investigation with a larger synthetic event set and additional filters.
 - Add unit tests for the scoring functions.
 
 > Educational portfolio project. Use only authorized systems and approved organizational procedures for real security work.
