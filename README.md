@@ -26,21 +26,21 @@ I am an IT and Cybersecurity student preparing for an entry-level SOC Analyst or
 1. [Open the live professional portfolio](https://ayalewg8.github.io/cybersecurity-portfolio/)
 2. [Review the professional resume](https://ayalewg8.github.io/cybersecurity-portfolio/resume.html)
 3. [Read the SOC Analyst case study](https://ayalewg8.github.io/cybersecurity-portfolio/soc-analyst-case-study.html)
-4. [Try the interactive cybersecurity labs](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html)
+4. [Try the interactive security simulations](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html)
 5. [Read the professional portfolio overview](https://ayalewg8.github.io/cybersecurity-portfolio/portfolio-overview.html)
 6. Review the highlighted security case studies below.
 
-## Interactive Hands-On Labs
+## Interactive Security Simulations
 
-The [six-part browser-based lab suite](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html) uses synthetic data, requires no installation, and resets when the page is reloaded.
+The [six-part browser-based simulation suite](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html) uses synthetic data, requires no installation, and resets when the page is reloaded.
 
 - **SOC Alert Triage:** interpret indicators, assign severity, select a response, and download a structured analyst note.
 - **Vulnerability Prioritization:** combine CVSS with business and threat context.
 - **Risk Assessment:** calculate inherent and projected residual risk.
 - **Log Investigation:** search events, flag suspicious activity, control false positives, and choose containment.
 - **Phishing Analysis:** inspect email authentication and message indicators, choose a verdict, and select containment.
-- **Network Investigation:** correlate DNS and connection records, identify beaconing, and select containment.
-- **Documentation:** [review the lab methodology, formulas, assumptions, and security boundaries](projects/hands-on-cybersecurity-labs/README.md).
+- **Network Investigation:** correlate DNS and TLS session records with an asset record, rule out shadow IT, identify beaconing, and select containment.
+- **Documentation:** [review the simulation methodology, formulas, assumptions, and security boundaries](projects/hands-on-cybersecurity-labs/README.md).
 
 ## TryHackMe Learning Progress
 
