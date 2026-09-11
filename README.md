@@ -23,9 +23,9 @@ I am an IT and Cybersecurity student preparing for an entry-level SOC Analyst or
 
 ## Start Here
 
-1. [Open the live recruiter portfolio](https://ayalewg8.github.io/cybersecurity-portfolio/)
+1. [Open the live professional portfolio](https://ayalewg8.github.io/cybersecurity-portfolio/)
 2. [Review the professional resume](https://ayalewg8.github.io/cybersecurity-portfolio/resume.html)
-3. [Read the SOC Analyst recruiter case study](https://ayalewg8.github.io/cybersecurity-portfolio/soc-analyst-case-study.html)
+3. [Read the SOC Analyst case study](https://ayalewg8.github.io/cybersecurity-portfolio/soc-analyst-case-study.html)
 4. [Try the interactive cybersecurity labs](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html)
 5. [Read the four-page portfolio overview](https://ayalewg8.github.io/cybersecurity-portfolio/portfolio-overview.html)
 6. Review the highlighted security case studies below.
@@ -42,7 +42,7 @@ The [browser-based lab suite](https://ayalewg8.github.io/cybersecurity-portfolio
 
 ## TryHackMe Learning Progress
 
-A recruiter-facing [TryHackMe learning record](projects/tryhackme-learning/README.md) tracks how authorized practice will be documented across Linux, networking, SOC analysis, log review, incident response, and web security. Scores, ranks, streaks, rooms, badges, and certificates are published only when supported by a public profile or verifiable evidence.
+A professional [TryHackMe learning record](projects/tryhackme-learning/README.md) tracks how authorized practice will be documented across Linux, networking, SOC analysis, log review, incident response, and web security. Scores, ranks, streaks, rooms, badges, and certificates are published only when supported by a public profile or verifiable evidence.
 
 ## Highlighted Security Case Studies
 
