@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Recruiter-facing SOC Analyst case study by Ayalew Cherenet covering alert triage, log correlation, containment, and incident documentation using synthetic evidence.">
+  <meta name="theme-color" content="#050b14">
+  <title>SOC Analyst Case Study | Ayalew Cherenet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="case soc-case-page">
+    <a href="index.html#hands-on">← Back to Portfolio</a>
+
+    <header class="case-hero case-animate">
+      <p class="kicker">Recruiter Case Study · Security Operations</p>
+      <h1>From Alert to Documented Incident Decision</h1>
+      <p class="lead">A browser-based SOC simulation showing how I validate alerts, correlate identity and endpoint evidence, control false positives, select containment, and write a clear analyst note.</p>
+      <div class="case-hero-actions">
+        <a class="button primary" href="hands-on-labs.html#soc-lab"><i class="fa-solid fa-play"></i> Try SOC Triage</a>
+        <a class="button secondary" href="hands-on-labs.html#log-lab"><i class="fa-solid fa-magnifying-glass-chart"></i> Try Log Investigation</a>
+      </div>
+    </header>
+
+    <section class="case-metrics" aria-label="Verified project outcomes">
+      <article class="case-stat case-animate"><strong data-case-count="4">0</strong><span>interactive workflows</span></article>
+      <article class="case-stat case-animate"><strong data-case-count="3">0</strong><span>alert-triage scenarios</span></article>
+      <article class="case-stat case-animate"><strong data-case-count="10">0</strong><span>events in the investigation</span></article>
+      <article class="case-stat case-animate"><strong data-case-count="1">0</strong><span>downloadable analyst note</span></article>
+    </section>
+
+    <section class="grid">
+      <article class="panel case-animate">
+        <p class="kicker">Challenge</p>
+        <h2>Separate meaningful indicators from normal activity.</h2>
+        <p>The synthetic timeline mixes suspicious authentication, endpoint, and network activity with benign policy, backup, inventory, and update events. The task is to reach a defensible conclusion without overclaiming what the evidence proves.</p>
+      </article>
+      <article class="panel case-animate">
+        <p class="kicker">My Role</p>
+        <h2>Act as the first-line analyst.</h2>
+        <p>I designed the scenarios, defined evaluation logic, correlated the evidence chain, selected severity and containment decisions, and built a structured note that records indicators, disposition, and scope.</p>
+      </article>
+    </section>
+
+    <section class="panel case-animate">
+      <p class="kicker">Analyst Workflow</p>
+      <h2>Repeatable alert-to-incident methodology</h2>
+      <div class="case-flow">
+        <article class="case-animate"><h3>Validate</h3><p>Confirm the alert, affected identity, endpoint, and time window.</p></article>
+        <article class="case-animate"><h3>Correlate</h3><p>Join authentication, EDR, network, and file activity into one timeline.</p></article>
+        <article class="case-animate"><h3>Scope</h3><p>Separate supported indicators from benign events and assumptions.</p></article>
+        <article class="case-animate"><h3>Contain</h3><p>Isolate the endpoint, contain the account, preserve evidence, and escalate.</p></article>
+        <article class="case-animate"><h3>Document</h3><p>Record severity, evidence, decision, disposition, and limitations.</p></article>
+      </div>
+    </section>
+
+    <section class="panel case-animate">
+      <p class="kicker">Evidence Chain</p>
+      <h2>Why the alert required containment</h2>
+      <div style="overflow-x:auto">
+        <table class="evidence-table">
+          <thead><tr><th>Time</th><th>Source</th><th>Observation</th><th>Analyst interpretation</th></tr></thead>
+          <tbody>
+            <tr><td>08:13</td><td>AUTH</td><td>Nine failed sign-ins from one external source</td><td>Possible credential attack; investigate further.</td></tr>
+            <tr><td>08:14</td><td>AUTH</td><td>Successful sign-in from the same source</td><td>Raises confidence that credentials may be compromised.</td></tr>
+            <tr><td>08:16</td><td>EDR</td><td>Encoded PowerShell launched on ws-044</td><td>Suspicious execution requiring endpoint correlation.</td></tr>
+            <tr><td>08:17</td><td>EDR</td><td>Unsigned process accessed browser credential storage</td><td>Credential-access behavior increases severity.</td></tr>
+            <tr><td>08:19</td><td>NET</td><td>SMB attempts against four internal hosts</td><td>Consistent with suspected lateral-movement activity.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel case-note case-animate">
+      <p class="kicker">Decision</p>
+      <h2>Suspected endpoint compromise with lateral movement</h2>
+      <p><strong>Recommended first action:</strong> Isolate ws-044, contain the jsmith account, preserve relevant evidence, and escalate under the incident-response process.</p>
+      <p><strong>Analytical restraint:</strong> The timeline does not establish data exfiltration. The conclusion stays within the evidence.</p>
+    </section>
+
+    <section class="panel case-animate">
+      <p class="kicker">Outcomes</p>
+      <h2>What the finished project demonstrates</h2>
+      <div class="case-outcomes">
+        <article><i class="fa-solid fa-filter-circle-dollar"></i><h3>Better signal handling</h3><p>The investigation requires flagging five suspicious events while limiting false positives from routine activity.</p></article>
+        <article><i class="fa-solid fa-shield-halved"></i><h3>Actionable containment</h3><p>The response connects technical evidence to specific endpoint, account, evidence-preservation, and escalation actions.</p></article>
+        <article><i class="fa-solid fa-file-circle-check"></i><h3>Consistent documentation</h3><p>The triage simulator generates a local text note containing the alert ID, indicators, analyst decision, recommended disposition, and scope statement.</p></article>
+        <article><i class="fa-solid fa-scale-balanced"></i><h3>Defensible conclusions</h3><p>The model rewards evidence-based scoping and explicitly distinguishes confirmed observations from unsupported assumptions.</p></article>
+      </div>
+    </section>
+
+    <section class="panel case-animate">
+      <p class="kicker">Tools &amp; Methods</p>
+      <h2>Technology and security concepts used</h2>
+      <table class="tool-table">
+        <tbody>
+          <tr><th>Telemetry</th><td>Synthetic authentication, endpoint/EDR, network, and file-activity events</td></tr>
+          <tr><th>SOC methods</th><td>Alert validation, severity assignment, log correlation, false-positive control, scoping, containment, escalation, and incident documentation</td></tr>
+          <tr><th>Risk methods</th><td>CVSS interpretation, asset criticality, exposure, exploitation context, likelihood × impact, and residual-risk reasoning</td></tr>
+          <tr><th>Build tools</th><td>Semantic HTML, responsive CSS, vanilla JavaScript, accessible controls, local file generation, Git, GitHub, and GitHub Pages</td></tr>
+          <tr><th>Safety boundary</th><td>Fictional identities and documentation IP ranges; no live scanning, credentials, personal data, external APIs, or data storage</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel case-animate">
+      <p class="kicker">Review the Evidence</p>
+      <h2>Live demonstrations and methodology</h2>
+      <div class="evidence-links">
+        <a href="hands-on-labs.html#soc-lab"><span>SOC alert-triage simulator</span><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="hands-on-labs.html#log-lab"><span>Log-analysis investigation</span><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="https://github.com/AyalewG8/cybersecurity-portfolio/tree/main/projects/hands-on-cybersecurity-labs" target="_blank" rel="noopener noreferrer"><span>Methodology and formulas</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </section>
+
+    <section class="panel case-note case-animate">
+      <p class="kicker">Recruiter Takeaway</p>
+      <h2>Built for an entry-level SOC Analyst conversation</h2>
+      <p>This project provides concrete evidence that I can follow a structured investigation, explain why an alert matters, choose a proportionate response, document the decision clearly, and recognize the limits of available evidence.</p>
+      <div class="case-cta"><a class="button primary" href="resume.html"><i class="fa-solid fa-file-lines"></i> View Resume</a><a class="button secondary" href="index.html#contact"><i class="fa-solid fa-envelope"></i> Contact Ayalew</a></div>
+    </section>
+  </main>
+
+  <script>
+    const items=document.querySelectorAll(".case-animate");
+    if("IntersectionObserver" in window){
+      const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");observer.unobserve(entry.target)}}),{threshold:.12});
+      items.forEach(item=>observer.observe(item));
+    }else{items.forEach(item=>item.classList.add("is-visible"))}
+    document.querySelectorAll("[data-case-count]").forEach(counter=>{
+      const target=Number(counter.dataset.caseCount);
+      const run=()=>{let start=0;const step=()=>{start+=1;counter.textContent=start;if(start<target)requestAnimationFrame(step)};step()};
+      if("IntersectionObserver" in window){const countObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){run();countObserver.disconnect()}}),{threshold:.7});countObserver.observe(counter)}
+      else{counter.textContent=target}
+    });
+  </script>
+</body>
+</html>
