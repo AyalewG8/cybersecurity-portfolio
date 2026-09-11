@@ -1,8 +1,8 @@
-# Hands-On Cybersecurity Labs
+# Interactive Security Simulations
 
 Interactive, browser-based simulations demonstrating practical security-analysis decisions with synthetic data.
 
-**Live lab:** [Open the Hands-On Cybersecurity Labs](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html)  
+**Live simulations:** [Open the Interactive Security Simulations](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html)  
 **SOC Analyst case study:** [Review the SOC Analyst case study](https://ayalewg8.github.io/cybersecurity-portfolio/soc-analyst-case-study.html)
 
 ## Project Purpose
@@ -126,15 +126,25 @@ All domains use the reserved `.example` namespace, and the source uses an RFC 57
 
 ## Lab 6 — Network-Traffic Investigation
 
-The investigator correlates a synthetic DNS and encrypted-connection timeline from one workstation. The exercise tests recognition of:
+The investigator correlates a synthetic DNS and TLS session timeline from one workstation with that workstation's asset record. Each TLS session shows its server name (SNI) and the bytes sent in each direction, so the external domain can be tied to the destination address and transfer volume can be judged by direction.
 
-- regular connection intervals;
-- repeated DNS TXT requests;
-- a rare, unapproved external domain;
-- consistent small TLS transfers; and
-- missing approved-software context in the asset record.
+The exercise tests recognition of:
 
-The supported conclusion is **suspected command-and-control beaconing**. The appropriate first response is to isolate the endpoint, block confirmed indicators, preserve DNS and endpoint evidence, and escalate through the incident-response process. The limited records do not prove large-scale data exfiltration.
+- session intervals that repeat at roughly one minute with realistic jitter (55–64 second gaps, each within ±10% of 60 seconds);
+- a fresh DNS TXT lookup before each external session;
+- small, near-identical sessions;
+- a destination that is absent from the asset record's approved list; and
+- no approved agent on the host that explains the traffic.
+
+Two unsupported indicators are included to test false-positive control: an internal company API lookup and a 2.1 MB backup session to an approved destination. Transfer volume alone is not an indicator.
+
+The supported conclusion is **suspected command-and-control beaconing**. Unapproved but legitimate sync software (shadow IT) is offered as the competing hypothesis; it is ruled out because legitimate clients rarely perform a TXT lookup before every connection. The five external sessions total 2,065 bytes outbound, so the records do not support large-scale data exfiltration.
+
+The appropriate first response is to isolate the endpoint through EDR network isolation, block confirmed indicators, preserve DNS and endpoint evidence, and escalate through the incident-response process. Network isolation keeps the host powered on and preserves volatile memory; rebooting would destroy that evidence.
+
+### Scoring
+
+A strong result requires the beaconing conclusion, the isolation response, at least four of the five supported indicators, and no unsupported indicators. Feedback explains each missed or unsupported indicator and each conclusion and response choice individually.
 
 The scenario uses a reserved `.example` domain and an RFC 5737 documentation IP address. It creates no network traffic and contacts no live systems.
 
