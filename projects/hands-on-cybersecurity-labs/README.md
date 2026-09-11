@@ -2,7 +2,8 @@
 
 Interactive, browser-based simulations demonstrating practical security-analysis decisions with synthetic data.
 
-**Live lab:** [Open the Hands-On Cybersecurity Labs](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html)
+**Live lab:** [Open the Hands-On Cybersecurity Labs](https://ayalewg8.github.io/cybersecurity-portfolio/hands-on-labs.html)  
+**Recruiter case study:** [Review the SOC Analyst case study](https://ayalewg8.github.io/cybersecurity-portfolio/soc-analyst-case-study.html)
 
 ## Project Purpose
 
@@ -134,7 +135,7 @@ No frameworks, external APIs, databases, accounts, or installations are required
 ## Future Improvements
 
 - Add more synthetic SOC scenarios mapped to MITRE ATT&CK techniques.
-- Add downloadable incident-triage notes.
+- Add downloadable investigation summaries for the log-analysis scenario.
 - Expand the log investigation with a larger synthetic event set and additional filters.
 - Add unit tests for the scoring functions.
 
