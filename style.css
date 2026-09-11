@@ -25,7 +25,7 @@
 
 /* Hands-on lab preview */
 .labs-preview-section{background:linear-gradient(180deg,transparent,rgba(73,214,199,.035),transparent)}
-.lab-preview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.lab-preview-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .lab-preview-card{position:relative;padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(145deg,rgba(20,43,68,.74),rgba(9,20,34,.94));box-shadow:0 16px 40px rgba(0,0,0,.12)}
 .lab-preview-card>span{position:absolute;right:22px;top:20px;font:700 2.2rem/1 "Space Grotesk";color:rgba(255,255,255,.07)}
 .lab-preview-card>i{font-size:1.65rem;color:var(--accent);margin-bottom:20px}
