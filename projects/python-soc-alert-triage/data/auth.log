@@ -1,0 +1,52 @@
+2026-09-10T00:12:41Z bastion-01 sshd[4100]: Accepted publickey for m.reyes from 10.20.1.26 port 43214 ssh2
+2026-09-10T01:37:09Z bastion-01 sshd[4107]: Accepted publickey for a.mensah from 10.20.1.40 port 52810 ssh2
+2026-09-10T01:58:22Z bastion-01 sshd[4149]: Failed password for t.brooks from 10.20.2.55 port 49244 ssh2
+2026-09-10T02:05:55Z bastion-01 sshd[4114]: Accepted publickey for m.reyes from 10.20.1.38 port 43372 ssh2
+2026-09-10T02:35:00Z bastion-01 sshd[4163]: Failed password for i.petrov from 203.0.113.47 port 54769 ssh2
+2026-09-10T02:35:20Z bastion-01 sshd[4170]: Failed password for h.tanaka from 203.0.113.47 port 50939 ssh2
+2026-09-10T02:35:37Z bastion-01 sshd[4177]: Failed password for j.brennan from 203.0.113.47 port 63761 ssh2
+2026-09-10T02:35:54Z bastion-01 sshd[4184]: Failed password for c.duarte from 203.0.113.47 port 43455 ssh2
+2026-09-10T02:36:15Z bastion-01 sshd[4191]: Failed password for l.chen from 203.0.113.47 port 45161 ssh2
+2026-09-10T02:36:32Z bastion-01 sshd[4198]: Failed password for p.singh from 203.0.113.47 port 60734 ssh2
+2026-09-10T02:36:51Z bastion-01 sshd[4205]: Failed password for p.rossi from 203.0.113.47 port 63908 ssh2
+2026-09-10T02:37:12Z bastion-01 sshd[4212]: Failed password for t.brooks from 203.0.113.47 port 61540 ssh2
+2026-09-10T02:37:30Z bastion-01 sshd[4219]: Failed password for v.costa from 203.0.113.47 port 62040 ssh2
+2026-09-10T02:37:51Z bastion-01 sshd[4226]: Failed password for a.mensah from 203.0.113.47 port 62582 ssh2
+2026-09-10T02:38:11Z bastion-01 sshd[4233]: Failed password for s.weber from 203.0.113.47 port 44973 ssh2
+2026-09-10T02:38:32Z bastion-01 sshd[4240]: Failed password for k.larsen from 203.0.113.47 port 61673 ssh2
+2026-09-10T02:38:52Z bastion-01 sshd[4247]: Failed password for n.okoro from 203.0.113.47 port 61053 ssh2
+2026-09-10T02:39:10Z bastion-01 sshd[4254]: Failed password for b.nakamura from 203.0.113.47 port 44151 ssh2
+2026-09-10T02:39:29Z bastion-01 sshd[4261]: Failed password for r.osei from 203.0.113.47 port 60919 ssh2
+2026-09-10T02:39:50Z bastion-01 sshd[4268]: Failed password for q.nguyen from 203.0.113.47 port 47135 ssh2
+2026-09-10T02:40:11Z bastion-01 sshd[4275]: Failed password for f.moreau from 203.0.113.47 port 46725 ssh2
+2026-09-10T02:40:28Z bastion-01 sshd[4282]: Failed password for g.ivanova from 203.0.113.47 port 42168 ssh2
+2026-09-10T02:40:45Z bastion-01 sshd[4289]: Failed password for b.carter from 203.0.113.47 port 60658 ssh2
+2026-09-10T02:41:06Z bastion-01 sshd[4296]: Failed password for m.santos from 203.0.113.47 port 43421 ssh2
+2026-09-10T02:41:26Z bastion-01 sshd[4303]: Failed password for d.silva from 203.0.113.47 port 60089 ssh2
+2026-09-10T02:41:43Z bastion-01 sshd[4310]: Failed password for w.murphy from 203.0.113.47 port 56715 ssh2
+2026-09-10T02:42:02Z bastion-01 sshd[4317]: Failed password for n.bauer from 203.0.113.47 port 40532 ssh2
+2026-09-10T02:42:23Z bastion-01 sshd[4324]: Failed password for k.adeyemi from 203.0.113.47 port 56600 ssh2
+2026-09-10T02:42:44Z bastion-01 sshd[4331]: Failed password for r.garcia from 203.0.113.47 port 51882 ssh2
+2026-09-10T02:43:03Z bastion-01 sshd[4338]: Failed password for t.kim from 203.0.113.47 port 40125 ssh2
+2026-09-10T02:43:20Z bastion-01 sshd[4345]: Failed password for a.alvarez from 203.0.113.47 port 62811 ssh2
+2026-09-10T02:43:37Z bastion-01 sshd[4352]: Failed password for c.oyelaran from 203.0.113.47 port 56347 ssh2
+2026-09-10T02:43:55Z bastion-01 sshd[4359]: Failed password for s.patel from 203.0.113.47 port 47847 ssh2
+2026-09-10T02:44:16Z bastion-01 sshd[4366]: Failed password for e.haddad from 203.0.113.47 port 50781 ssh2
+2026-09-10T02:44:34Z bastion-01 sshd[4373]: Failed password for u.ahmed from 203.0.113.47 port 43793 ssh2
+2026-09-10T02:44:53Z bastion-01 sshd[4380]: Failed password for e.lindqvist from 203.0.113.47 port 46495 ssh2
+2026-09-10T02:45:10Z bastion-01 sshd[4387]: Failed password for o.hughes from 203.0.113.47 port 64080 ssh2
+2026-09-10T02:45:30Z bastion-01 sshd[4394]: Failed password for d.kowalski from 203.0.113.47 port 48263 ssh2
+2026-09-10T02:45:47Z bastion-01 sshd[4401]: Failed password for l.fischer from 203.0.113.47 port 42065 ssh2
+2026-09-10T02:46:05Z bastion-01 sshd[4408]: Failed password for m.reyes from 203.0.113.47 port 43615 ssh2
+2026-09-10T02:47:03Z bastion-01 sshd[4415]: Accepted password for j.okafor from 203.0.113.47 port 50122 ssh2
+2026-09-10T02:51:39Z bastion-01 sudo: j.okafor : TTY=pts/0 ; PWD=/home/j.okafor ; USER=root ; COMMAND=/usr/sbin/useradd -m -s /bin/bash svc-backup2
+2026-09-10T02:51:42Z bastion-01 useradd[5120]: new user: name=svc-backup2, UID=1007, GID=1007, home=/home/svc-backup2, shell=/bin/bash
+2026-09-10T02:52:18Z bastion-01 sudo: j.okafor : TTY=pts/0 ; PWD=/home/j.okafor ; USER=root ; COMMAND=/usr/bin/tee /etc/sudoers.d/svc-backup2
+2026-09-10T02:53:05Z bastion-01 sudo: j.okafor : TTY=pts/0 ; PWD=/home/j.okafor ; USER=root ; COMMAND=/usr/bin/tee -a /home/svc-backup2/.ssh/authorized_keys
+2026-09-10T03:04:55Z bastion-01 sshd[4422]: Accepted publickey for svc-backup2 from 203.0.113.47 port 50988 ssh2
+2026-09-10T04:18:30Z bastion-01 sshd[4121]: Accepted publickey for s.patel from 10.20.1.27 port 44070 ssh2
+2026-09-10T04:18:52Z bastion-01 sudo: m.reyes : TTY=pts/1 ; PWD=/home/m.reyes ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+2026-09-10T05:11:03Z bastion-01 sshd[4156]: Failed password for l.chen from 10.20.2.66 port 56079 ssh2
+2026-09-10T05:52:14Z bastion-01 sshd[4128]: Accepted publickey for a.mensah from 10.20.1.39 port 41090 ssh2
+2026-09-10T07:26:48Z bastion-01 sshd[4135]: Accepted publickey for d.kowalski from 10.20.1.30 port 60764 ssh2
+2026-09-10T08:03:17Z bastion-01 sshd[4142]: Accepted publickey for m.reyes from 10.20.1.49 port 58035 ssh2
