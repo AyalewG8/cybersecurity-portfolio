@@ -38,6 +38,7 @@ The [browser-based lab suite](https://ayalewg8.github.io/cybersecurity-portfolio
 - **Vulnerability Prioritization:** combine CVSS with business and threat context.
 - **Risk Assessment:** calculate inherent and projected residual risk.
 - **Log Investigation:** search events, flag suspicious activity, control false positives, and choose containment.
+- **Phishing Analysis:** inspect email authentication and message indicators, choose a verdict, and select containment.
 - **Documentation:** [review the lab methodology, formulas, assumptions, and security boundaries](projects/hands-on-cybersecurity-labs/README.md).
 
 ## TryHackMe Learning Progress
