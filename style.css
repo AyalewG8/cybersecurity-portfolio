@@ -38,7 +38,7 @@
 @media(max-width:600px){.labs-preview-action{align-items:stretch;flex-direction:column;text-align:center}.labs-preview-action .button{justify-content:center}}
 
 
-/* SOC recruiter case study */
+/* SOC analyst case study */
 .soc-spotlight{display:grid;grid-template-columns:1.35fr .65fr;gap:24px;margin-bottom:54px;padding:34px;border:1px solid rgba(73,214,199,.28);border-radius:24px;background:linear-gradient(135deg,rgba(20,43,68,.93),rgba(6,16,28,.98));box-shadow:var(--shadow);overflow:hidden}
 .soc-story h3{max-width:620px;margin:7px 0 13px;font-size:clamp(1.65rem,3vw,2.35rem)}
 .soc-story>p:not(.project-type){max-width:720px;color:var(--muted)}
