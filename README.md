@@ -40,6 +40,10 @@ The [browser-based lab suite](https://ayalewg8.github.io/cybersecurity-portfolio
 - **Log Investigation:** search events, flag suspicious activity, control false positives, and choose containment.
 - **Documentation:** [review the lab methodology, formulas, assumptions, and security boundaries](projects/hands-on-cybersecurity-labs/README.md).
 
+## TryHackMe Learning Progress
+
+A recruiter-facing [TryHackMe learning record](projects/tryhackme-learning/README.md) tracks how authorized practice will be documented across Linux, networking, SOC analysis, log review, incident response, and web security. Scores, ranks, streaks, rooms, badges, and certificates are published only when supported by a public profile or verifiable evidence.
+
 ## Highlighted Security Case Studies
 
 | Case study | Analytical focus | Key deliverable |
