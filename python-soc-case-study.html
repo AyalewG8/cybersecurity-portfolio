@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Python SOC Alert Triage case study by Ayalew Cherenet: synthetic log generation, behavioral detections, severity-ranked findings, incident reporting, and 28 passing unit tests.">
   <meta name="theme-color" content="#050b14">
+  <link rel="canonical" href="https://ayalewg8.github.io/cybersecurity-portfolio/python-soc-case-study.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Python SOC Alert Triage Case Study | Ayalew Cherenet">
+  <meta property="og:description" content="A tested Python SOC project covering synthetic log generation, behavioral detection, incident correlation, and evidence-based response.">
+  <meta property="og:url" content="https://ayalewg8.github.io/cybersecurity-portfolio/python-soc-case-study.html">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/304734625?v=4">
+  <meta property="og:image:alt" content="Ayalew Cherenet">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Python SOC Alert Triage Case Study | Ayalew Cherenet">
+  <meta name="twitter:description" content="28 tested Python SOC detections across 527 synthetic authentication and proxy events.">
+  <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/304734625?v=4">
   <title>Python SOC Alert Triage Case Study | Ayalew Cherenet</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,10 +45,10 @@
     </header>
 
     <section class="case-metrics" aria-label="Verified project outcomes">
-      <article class="case-stat case-animate"><strong data-case-count="28">0</strong><span>passing unit tests</span></article>
-      <article class="case-stat case-animate"><strong data-case-count="527">0</strong><span>synthetic log events</span></article>
-      <article class="case-stat case-animate"><strong data-case-count="8">0</strong><span>ranked findings</span></article>
-      <article class="case-stat case-animate"><strong data-case-count="5">0</strong><span>detection analytics</span></article>
+      <article class="case-stat case-animate"><strong data-case-count="28">28</strong><span>passing unit tests</span></article>
+      <article class="case-stat case-animate"><strong data-case-count="527">527</strong><span>synthetic log events</span></article>
+      <article class="case-stat case-animate"><strong data-case-count="8">8</strong><span>ranked findings</span></article>
+      <article class="case-stat case-animate"><strong data-case-count="5">5</strong><span>detection analytics</span></article>
     </section>
 
     <section class="grid">
@@ -104,10 +116,12 @@ OK</pre>
         <table class="tool-table">
           <thead><tr><th>Severity</th><th>Analytic</th><th>Verified result</th></tr></thead>
           <tbody>
-            <tr><th class="finding-critical">Critical</th><td>Login after spray</td><td>Password and planted-key logins from the spray source.</td></tr>
+            <tr><th class="finding-critical">Critical</th><td>Login after spray</td><td>Password login for j.okafor from the password-spray source.</td></tr>
+            <tr><th class="finding-critical">Critical</th><td>Login after spray</td><td>Key-based re-entry by svc-backup2 from the same source.</td></tr>
             <tr><th class="finding-critical">Critical</th><td>Large upload</td><td>88.8 MiB outbound to the suspicious destination.</td></tr>
             <tr><th class="finding-high">High</th><td>Password spray</td><td>37 distinct accounts targeted; 36 failures before success.</td></tr>
-            <tr><th class="finding-high">High</th><td>Persistence</td><td>Privileged sudoers and SSH authorized-key modifications.</td></tr>
+            <tr><th class="finding-high">High</th><td>Persistence</td><td>Privileged write to the svc-backup2 sudoers rule.</td></tr>
+            <tr><th class="finding-high">High</th><td>Persistence</td><td>Privileged write to the svc-backup2 SSH authorized key.</td></tr>
             <tr><th class="finding-high">High</th><td>Beaconing</td><td>55 requests; 300-second median interval; 93% agreement.</td></tr>
             <tr><th class="finding-medium">Medium</th><td>Persistence</td><td>New local account created on the bastion host.</td></tr>
           </tbody>
@@ -175,6 +189,7 @@ OK</pre>
     document.querySelectorAll("[data-case-count]").forEach(counter=>{
       const target=Number(counter.dataset.caseCount);
       const duration=Math.min(900,Math.max(300,target*5));
+      counter.textContent="0";
       const started=performance.now();
       const step=now=>{const progress=Math.min(1,(now-started)/duration);counter.textContent=Math.round(target*progress);if(progress<1)requestAnimationFrame(step)};
       requestAnimationFrame(step);
