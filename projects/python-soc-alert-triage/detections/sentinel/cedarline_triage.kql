@@ -1,0 +1,45 @@
+// Cedarline Systems SOC triage queries
+// Example custom tables contain RawData. Map names and fields before production use.
+
+// 1. Password spray
+CedarlineAuth_CL
+| where RawData has "Failed password"
+| extend SourceIP=extract(@"from\s+(\S+)\s+port",1,RawData), User=extract(@"Failed password for (?:invalid user )?(\S+) from",1,RawData)
+| summarize FailedAccounts=dcount(User), Failures=count(), Users=make_set(User,100) by SourceIP, bin(TimeGenerated,15m)
+| where FailedAccounts>=10
+
+// 2. Successful login from the synthetic spray source
+CedarlineAuth_CL
+| where RawData matches regex @"Accepted (password|publickey) for \S+ from 203\.0\.113\.47"
+| extend Method=extract(@"Accepted (password|publickey)",1,RawData), User=extract(@"Accepted (?:password|publickey) for (\S+)",1,RawData), SourceIP=extract(@"from\s+(\S+)\s+port",1,RawData)
+| project TimeGenerated, User, Method, SourceIP, RawData
+
+// 3. Privileged persistence
+CedarlineAuth_CL
+| where RawData has_any ("useradd","/etc/sudoers","authorized_keys")
+| extend PersistenceType=case(RawData has "new user: name=","new_account",RawData has "/etc/sudoers","sudoers_write",RawData has "authorized_keys","ssh_key_write","other")
+| where PersistenceType!="other"
+| project TimeGenerated, PersistenceType, RawData
+
+// 4. Beacon timing consensus
+let ProxyParsed=CedarlineProxy_CL
+| extend SourceIP=extract(@"src=(\S+)",1,RawData), Destination=extract(@"host=(\S+)",1,RawData), Method=extract(@"method=(\S+)",1,RawData)
+| where Method=="GET"
+| sort by SourceIP asc, Destination asc, TimeGenerated asc
+| serialize
+| extend PreviousTime=prev(TimeGenerated), PreviousSource=prev(SourceIP), PreviousDestination=prev(Destination)
+| extend GapSeconds=iff(SourceIP==PreviousSource and Destination==PreviousDestination,datetime_diff("second",TimeGenerated,PreviousTime),long(null));
+ProxyParsed
+| where isnotnull(GapSeconds)
+| summarize Requests=count()+1, MedianGap=percentile(GapSeconds,50), Gaps=make_list(GapSeconds,10000) by SourceIP, Destination
+| mv-apply Gap=Gaps to typeof(long) on (summarize AgreeingGaps=countif(Gap>=MedianGap*0.9 and Gap<=MedianGap*1.1),TotalGaps=count())
+| extend AgreementPct=round(100.0*AgreeingGaps/TotalGaps,0)
+| where Requests>=10 and MedianGap>=30 and AgreementPct>=80
+
+// 5. Large outbound upload
+CedarlineProxy_CL
+| extend SourceIP=extract(@"src=(\S+)",1,RawData), Destination=extract(@"host=(\S+)",1,RawData), Method=extract(@"method=(\S+)",1,RawData), BytesOut=tolong(extract(@"bytes_out=(\d+)",1,RawData))
+| where Method=="POST"
+| summarize TotalBytes=sum(BytesOut), Requests=count() by SourceIP, Destination, bin(TimeGenerated,15m)
+| extend MiB=round(TotalBytes/1048576.0,1)
+| where TotalBytes>=52428800
