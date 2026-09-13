@@ -25,6 +25,10 @@ python-soc-alert-triage/
 ├── tools/
 │   ├── triage.py
 │   └── test_triage.py
+├── detections/
+│   ├── sigma/      # Four portable YAML rules
+│   ├── splunk/     # Five SPL queries
+│   └── sentinel/   # Five KQL queries
 ├── INCIDENT-REPORT.md
 └── README.md
 ```
@@ -48,6 +52,16 @@ python -m unittest discover -s tools -v
 ```
 
 The suite contains 28 tests covering parsers, password-spray detection, login-after-spray correlation, persistence, beaconing, upload direction and volume, generated-dataset figures, JSON output, and expected false-positive cases.
+
+## Detection Engineering Content
+
+| Platform | Content | Purpose |
+|---|---|---|
+| Sigma | Four YAML rules | Portable templates for SSH spraying, privileged persistence, periodic outbound activity, and large uploads |
+| Splunk | Five SPL queries | Parses the bundled raw logs and implements time-window, distinct-account, timing-consensus, and byte-volume logic |
+| Microsoft Sentinel | Five KQL queries | Demonstrates equivalent investigation logic for example custom Log Analytics tables |
+
+Review the [detection content and field-mapping notes](detections/README.md). These examples require field mapping, allowlists, threshold tuning, and validation before production use.
 
 ## Verified Dataset Results
 
