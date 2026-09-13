@@ -1,0 +1,27 @@
+title: Linux Privileged Account or SSH Key Persistence
+id: 3f68debb-1455-4132-8ad5-3f420b742d55
+status: experimental
+description: Detects account creation or privileged writes to sudoers and SSH authorized_keys.
+author: Ayalew Cherenet
+date: 2026-09-13
+tags:
+  - attack.persistence
+  - attack.t1098
+  - attack.t1136.001
+logsource:
+  product: linux
+detection:
+  process_selection:
+    process.name:
+      - useradd
+      - sudo
+  command_selection:
+    process.command_line|contains:
+      - '/etc/sudoers'
+      - '/.ssh/authorized_keys'
+      - 'useradd'
+  condition: process_selection and command_selection
+falsepositives:
+  - Approved account provisioning
+  - Authorized configuration management
+level: high
