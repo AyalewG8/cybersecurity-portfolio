@@ -1,0 +1,23 @@
+title: Large Outbound Proxy Upload
+id: f0d7b3a3-53f0-4763-932e-d40be29ffb50
+status: experimental
+description: Detects large outbound POST requests that may indicate data transfer.
+author: Ayalew Cherenet
+date: 2026-09-13
+tags:
+  - attack.exfiltration
+  - attack.t1041
+logsource:
+  category: proxy
+detection:
+  selection:
+    http.request.method: POST
+    network.bytes_out|gte: 10485760
+  filter_approved:
+    destination.domain|endswith:
+      - '.company.example'
+  condition: selection and not filter_approved
+falsepositives:
+  - Approved cloud backup or bulk upload
+  - Software distribution
+level: high
