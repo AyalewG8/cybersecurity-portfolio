@@ -26,8 +26,8 @@
   <style>
     .code-panel{overflow:auto;margin:18px 0 0;padding:20px;border:1px solid rgba(124,168,255,.25);border-radius:14px;background:#050b14;color:#c8d9e8;font:14px/1.65 Consolas,monospace;white-space:pre}
     .finding-critical{color:#ff8a8a;font-weight:800}.finding-high{color:#ffd166;font-weight:800}.finding-medium{color:#7ca8ff;font-weight:800}
-    .test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.test-grid article{padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02)}.test-grid strong{display:block;color:var(--accent);font:700 1.55rem "Space Grotesk"}.test-grid span{color:var(--muted);font-size:.82rem}
-    @media(max-width:760px){.test-grid{grid-template-columns:1fr}.code-panel{font-size:.75rem}}
+    .test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.test-grid article{padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02)}.test-grid strong{display:block;color:var(--accent);font:700 1.55rem "Space Grotesk"}.test-grid span{color:var(--muted);font-size:.82rem}.detection-links{grid-template-columns:repeat(2,1fr)}
+    @media(max-width:760px){.test-grid,.detection-links{grid-template-columns:1fr}.code-panel{font-size:.75rem}}
   </style>
 </head>
 <body>
@@ -157,6 +157,7 @@ OK</pre>
           <tr><th>Language</th><td>Python standard library: argparse, dataclasses, datetime, pathlib, regular expressions, statistics, unittest, and JSON.</td></tr>
           <tr><th>Engineering</th><td>Seeded deterministic generation, self-checking dataset, modular analytics, structured findings, CLI output, and automated tests.</td></tr>
           <tr><th>Security concepts</th><td>Password spraying, account compromise, persistence, command-and-control beaconing, outbound transfer, containment, and evidence preservation.</td></tr>
+          <tr><th>Detection content</th><td>Four Sigma rules, five Splunk SPL searches, and five Microsoft Sentinel KQL queries with documented field-mapping and tuning requirements.</td></tr>
           <tr><th>Safety boundary</th><td>Fictional organization and identities, RFC 5737 addresses, reserved .example destination, and no external network connections.</td></tr>
         </tbody>
       </table>
@@ -165,8 +166,9 @@ OK</pre>
     <section class="panel case-animate">
       <p class="kicker">Review the Evidence</p>
       <h2>Code, tests, report, and interactive companion</h2>
-      <div class="evidence-links">
+      <div class="evidence-links detection-links">
         <a href="https://github.com/AyalewG8/cybersecurity-portfolio/tree/main/projects/python-soc-alert-triage" target="_blank" rel="noopener noreferrer"><span>Python source and dataset</span><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/AyalewG8/cybersecurity-portfolio/tree/main/projects/python-soc-alert-triage/detections" target="_blank" rel="noopener noreferrer"><span>Sigma, SPL, and KQL detections</span><i class="fa-solid fa-shield-halved"></i></a>
         <a href="https://github.com/AyalewG8/cybersecurity-portfolio/blob/main/projects/python-soc-alert-triage/INCIDENT-REPORT.md" target="_blank" rel="noopener noreferrer"><span>Incident report</span><i class="fa-solid fa-file-shield"></i></a>
         <a href="hands-on-labs.html#network-lab"><span>Network simulation</span><i class="fa-solid fa-arrow-right"></i></a>
       </div>
