@@ -1,0 +1,46 @@
+/*
+Cedarline Systems SOC triage queries
+Expected sourcetypes: linux:sshd and cedarline:proxy in index=cedarline.
+Tune field mappings, allowlists, thresholds, and schedules before production use.
+*/
+
+-- 1. Password spray: 10+ distinct failed accounts from one source in 15 minutes
+index=cedarline sourcetype=linux:sshd "Failed password"
+| rex "Failed password for (?:invalid user )?(?<user>\S+) from (?<src>\S+)"
+| bin _time span=15m
+| stats dc(user) as distinct_accounts count as failures values(user) as users by _time src
+| where distinct_accounts>=10
+
+-- 2. Successful login from a source that sprayed in the preceding 30 minutes
+index=cedarline sourcetype=linux:sshd ("Failed password" OR "Accepted password" OR "Accepted publickey")
+| rex "from (?<src>\S+) port"
+| rex "(?:Failed password for (?:invalid user )?|Accepted (?:password|publickey) for )(?<user>\S+)"
+| eval outcome=if(match(_raw,"Accepted (password|publickey)"),"success","failure")
+| sort 0 src _time
+| streamstats time_window=30m dc(eval(if(outcome="failure",user,null()))) as failed_accounts by src
+| where outcome="success" AND failed_accounts>=10
+
+-- 3. Privileged persistence
+index=cedarline sourcetype=linux:sshd ("useradd" OR "/etc/sudoers" OR "authorized_keys")
+| rex "^(?<event_time>\S+) (?<host>\S+) (?<process>[\w.-]+)(?:\[\d+\])?: (?<message>.*)$"
+| eval persistence_type=case(match(message,"new user: name="),"new_account",match(message,"/etc/sudoers"),"sudoers_write",match(message,"authorized_keys"),"ssh_key_write",true(),"other")
+| where persistence_type!="other"
+| table _time host process persistence_type message
+
+-- 4. Beacon consensus: 10+ requests and 80% of gaps within 10% of the median
+index=cedarline sourcetype=cedarline:proxy method=GET
+| sort 0 src host _time
+| streamstats current=f last(_time) as previous_time by src host
+| eval gap_seconds=_time-previous_time
+| eventstats median(gap_seconds) as median_gap by src host
+| eval agrees=if(gap_seconds>=median_gap*0.9 AND gap_seconds<=median_gap*1.1,1,0)
+| stats count as requests sum(agrees) as agreeing_gaps median(gap_seconds) as median_gap by src host
+| eval total_gaps=requests-1, agreement_pct=round(100*agreeing_gaps/total_gaps,0)
+| where requests>=10 AND median_gap>=30 AND agreement_pct>=80
+
+-- 5. Large outbound upload: 50 MiB+ by source and destination in 15 minutes
+index=cedarline sourcetype=cedarline:proxy method=POST
+| bin _time span=15m
+| stats sum(bytes_out) as total_bytes count as requests by _time src host
+| eval mib=round(total_bytes/1048576,1)
+| where total_bytes>=52428800
